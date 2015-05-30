@@ -1,3 +1,7 @@
+# Config files
+config.js
+config.example.js
+
 # Logs
 logs
 *.log
