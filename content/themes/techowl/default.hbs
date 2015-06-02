@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+  <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:400,400italic,700" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:400,400italic,700" />
 
-    {{ghost_head}}
+  {{ghost_head}}
 </head>
 
 <body class="{{body_class}} flex-container">
 
-  <header class="main-header">
-    <div>
-        <div class="main-header-content">
-            <h1 class="page-title">{{@blog.title}}</h1>
-            <h2 class="page-description">{{@blog.description}}</h2>
-        </div>
-    </div>
-    <nav class="main-nav flex-container">
-    </nav>
-  </header>
+  <header class="main-header full-width">
+    <div class="page-title-holder flex-container">
+      <div class="page-title-flair-holder flex-container left">
+        <hr class="long-flair" />
+        <hr class="medium-flair" />
+        <hr class="short-flair" />
+      </div>{{!-- .page-title-open-flair-holder --}}
+      <h1 class="page-title">{{@blog.title}}</h1>
+      <div class="page-title-flair-holder flex-container right">
+        <hr class="short-flair" />
+        <hr class="medium-flair" />
+        <hr class="long-flair" />
+      </div>{{!-- .page-title-close-flair-holder --}}
+    </div>{{!-- .page-title-holder --}}
+
+    <h2 class="page-description">{{@blog.description}}</h2>
+
+    <nav class="main-nav full-width flex-container">
+    </nav>{{!-- .main-nav --}}
+  </header>{{!-- .main-header --}}
 
   {{{body}}}
 
   <footer class="site-footer">
-      <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">Daniel Kimbel</a> </section>
-      <section class="poweredby">Powered by <a href="https://ghost.org">Ghost</a></section>
+    <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">Daniel Kimbel</a> </section>
+    <section class="poweredby">Powered by <a href="https://ghost.org">Ghost</a></section>
   </footer>
 
 </div>

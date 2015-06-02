@@ -111,13 +111,146 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flex-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
 }
+
+.full-width {
+  flex: 100%;
+}
+
+.main-header {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.page-title-holder {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.page-title {
+  flex: 0 0 auto;
+  padding: 0 15px;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.page-title-flair-holder {
+  flex: auto;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.page-title-flair-holder hr {
+  background-color: transparent;
+  border: 0;
+  border-top: 2px solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.page-title-flair-holder.left .short-flair {
+  margin-left: 50%;
+  border-color: #007F3B;
+}
+
+.page-title-flair-holder.left .medium-flair {
+  margin-left: 25%;
+  border-color: #00CC5E;
+}
+
+.page-title-flair-holder.left .long-flair {
+  border-color: #4CFF9E;
+}
+
+.page-title-flair-holder.right .short-flair {
+  margin-right: 50%;
+  border-color: #4CFF9E;
+}
+
+.page-title-flair-holder.right .medium-flair {
+  margin-right: 25%;
+  border-color: #00CC5E;
+}
+
+.page-title-flair-holder.right .long-flair {
+  border-color: #007F3B;
+}
+
+.long-flair {
+  width: 100%;
+}
+
+.medium-flair {
+  width: 75%;
+}
+
+.short-flair {
+  width: 50%;
+}
+
+.page-description {
+  font-weight: 300;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+/*.large-nav-button.left {
+  background: #D9FAFF;
+}
+
+.large-nav-button.center {
+  background: #C9FFDC;
+}
+
+.large-nav-button.right {
+  background: #FFDEFB;
+}
+
+.one.left {
+  border-right: solid #4CDCFF 5px;
+}
+
+.one.center {
+  border-right: solid #4CFF9E 5px;
+}
+
+.one.right {
+  border-right: solid #F64CFF 5px;
+}
+
+.two.left {
+  border-top: solid #00A4CC 9px;
+}
+
+.two.center {
+  border-top: solid #00CC5E 9px;
+}
+
+.two.right {
+  border-top: solid #C200CC 9px;
+}
+
+.three.left {
+  border-left: solid #00667F 14px;
+}
+
+.three.center {
+  border-left: solid #007F3B 14px;
+}
+
+.three.right {
+  border-left: solid #79007F 14px;
+}*/
 
 
 /* ==========================================================================
