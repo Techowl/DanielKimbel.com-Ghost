@@ -142,17 +142,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-title {
   flex: 0 0 auto;
-  padding: 0 15px;
   font-size: 50px;
   font-weight: 300;
-  margin: 0;
+  margin: 0 15px;
 }
 
 .page-title-flair-holder {
   flex: auto;
-  overflow: hidden;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 .page-title-flair-holder hr {
@@ -161,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 2px solid;
   margin-top: 5px;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .page-title-flair-holder.left .short-flair {
@@ -171,10 +171,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 25%;
 }
 
-.page-title-flair-holder.left hr {
-  border-left: 10px solid transparent;
-}
-
 .page-title-flair-holder.right .short-flair {
   margin-right: 50%;
 }
@@ -183,23 +179,37 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 25%;
 }
 
-.page-title-flair-holder.right hr {
-  border-right: 10px solid transparent;
-}
-
 hr.long-flair {
   width: 100%;
-  border-top-color: #4CFF9E;
+  border-top-color: #FEC239;
 }
 
 hr.medium-flair {
   width: 75%;
-  border-top-color: #00CC5E;
+  border-top-color: #F6AD2E;
 }
 
 hr.short-flair {
   width: 50%;
-  border-top-color: #007F3B;
+  border-top-color: #D67E10;
+}
+
+.page-title-flair-holder.left hr {
+  border-left: 10px solid transparent;
+}
+
+.page-title-flair-holder.right hr {
+  border-right: 10px solid transparent;
+}
+
+.page-title-flair-holder.left hr.long-flair:before {
+  content: "\A";
+  border-style: solid;
+  border-width: 2px 0 0 10px;
+  border-color: transparent transparent transparent #FEC239;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .page-description {
@@ -207,54 +217,6 @@ hr.short-flair {
   margin: 10px auto;
   font-size: 20px;
 }
-
-/*.large-nav-button.left {
-  background: #D9FAFF;
-}
-
-.large-nav-button.center {
-  background: #C9FFDC;
-}
-
-.large-nav-button.right {
-  background: #FFDEFB;
-}
-
-.one.left {
-  border-right: solid #4CDCFF 5px;
-}
-
-.one.center {
-  border-right: solid #4CFF9E 5px;
-}
-
-.one.right {
-  border-right: solid #F64CFF 5px;
-}
-
-.two.left {
-  border-top: solid #00A4CC 9px;
-}
-
-.two.center {
-  border-top: solid #00CC5E 9px;
-}
-
-.two.right {
-  border-top: solid #C200CC 9px;
-}
-
-.three.left {
-  border-left: solid #00667F 14px;
-}
-
-.three.center {
-  border-left: solid #007F3B 14px;
-}
-
-.three.right {
-  border-left: solid #79007F 14px;
-}*/
 
 
 /* ==========================================================================
