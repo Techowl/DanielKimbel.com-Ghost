@@ -147,69 +147,54 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 15px;
 }
 
-.page-title-flair-holder {
+.page-title-wing-holder {
   flex: auto;
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
 }
 
-.page-title-flair-holder hr {
-  background-color: transparent;
-  border: 0;
-  border-top: 2px solid;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  box-sizing: border-box;
+.wing-part-holder {
+
 }
 
-.page-title-flair-holder.left .short-flair {
+.page-title-wing-holder-left .short-wing {
   margin-left: 50%;
 }
 
-.page-title-flair-holder.left .medium-flair {
+.page-title-wing-holder-left .medium-wing {
   margin-left: 25%;
 }
 
-.page-title-flair-holder.right .short-flair {
+.page-title-wing-holder-right .short-wing {
   margin-right: 50%;
 }
 
-.page-title-flair-holder.right .medium-flair {
+.page-title-wing-holder-right .medium-wing {
   margin-right: 25%;
 }
 
-hr.long-flair {
+.wing-part-holder-long {
   width: 100%;
   border-top-color: #FEC239;
 }
 
-hr.medium-flair {
+.wing-part-holder-medium {
   width: 75%;
   border-top-color: #F6AD2E;
 }
 
-hr.short-flair {
+.wing-part-holder-short {
   width: 50%;
   border-top-color: #D67E10;
 }
 
-.page-title-flair-holder.left hr {
+.page-title-wing-holder-left hr {
   border-left: 10px solid transparent;
 }
 
-.page-title-flair-holder.right hr {
+.page-title-wing-holder-right hr {
   border-right: 10px solid transparent;
-}
-
-.page-title-flair-holder.left hr.long-flair:before {
-  content: "\A";
-  border-style: solid;
-  border-width: 2px 0 0 10px;
-  border-color: transparent transparent transparent #FEC239;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .page-description {

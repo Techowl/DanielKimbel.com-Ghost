@@ -23,18 +23,35 @@
   <div class="site-inner flex-container">
 
     <header class="main-header full-width">
+
       <div class="page-title-holder flex-container">
-        <div class="page-title-flair-holder flex-container left">
-          <hr class="long-flair" />
-          <hr class="medium-flair" />
-          <hr class="short-flair" />
-        </div>{{!-- .page-title-open-flair-holder --}}
+        <div class="page-title-wing-holder flex-container page-title-wing-holder-left">
+          <div class="wing-part-holder wing-part-holder-long">
+            <div class="wing-tip"></div>
+            <div class="wing-body"></div>
+          </div>
+          <div class="wing-part-holder wing-part-holder-medium">
+            <div class="wing-body"></div>
+          </div>
+          <div class="wing-part-holder wing-part-holder-short">
+            <div class="wing-tip"></div>
+            <div class="wing-body"></div>
+          </div>
+        </div>{{!-- .page-title-wing-holder-left --}}
         <h1 class="page-title">{{@blog.title}}</h1>
-        <div class="page-title-flair-holder flex-container right">
-          <hr class="long-flair" />
-          <hr class="medium-flair" />
-          <hr class="short-flair" />
-        </div>{{!-- .page-title-close-flair-holder --}}
+        <div class="page-title-wing-holder flex-container page-title-wing-holder-right">
+          <div class="wing-part-holder wing-part-holder-long">
+            <div class="wing-tip"></div>
+            <div class="wing-body"></div>
+          </div>
+          <div class="wing-part-holder wing-part-holder-medium">
+            <div class="wing-body"></div>
+          </div>
+          <div class="wing-part-holder wing-part-holder-short">
+            <div class="wing-tip"></div>
+            <div class="wing-body"></div>
+          </div>
+        </div>{{!-- .page-title-wing-holder-right --}}
       </div>{{!-- .page-title-holder --}}
 
       <h2 class="page-description">{{@blog.description}}</h2>
