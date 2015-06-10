@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;
   font-size: 50px;
   font-weight: 300;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .page-title-wing-holder {
@@ -152,49 +152,118 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
+  max-width: 260px;
+  min-width: 187px;
 }
 
 .wing-part-holder {
-
-}
-
-.page-title-wing-holder-left .short-wing {
-  margin-left: 50%;
-}
-
-.page-title-wing-holder-left .medium-wing {
-  margin-left: 25%;
-}
-
-.page-title-wing-holder-right .short-wing {
-  margin-right: 50%;
-}
-
-.page-title-wing-holder-right .medium-wing {
-  margin-right: 25%;
-}
-
-.wing-part-holder-long {
   width: 100%;
-  border-top-color: #FEC239;
 }
 
 .wing-part-holder-medium {
-  width: 75%;
-  border-top-color: #F6AD2E;
+  margin: 3px auto;
+}
+
+.wing-part {
+  height: 0;
+}
+
+.wing-body {
+  width: 100%;
+  border-top: 5px solid;
+  box-sizing: border-box;
+}
+
+.wing-tip {
+  width: 0;
 }
 
 .wing-part-holder-short {
   width: 50%;
-  border-top-color: #D67E10;
 }
 
-.page-title-wing-holder-left hr {
-  border-left: 10px solid transparent;
+.wing-part-holder-medium {
+  width: 75%;
 }
 
-.page-title-wing-holder-right hr {
-  border-right: 10px solid transparent;
+.wing-part-holder-long {
+  width: 100%;
+}
+
+.page-title-wing-holder-left .wing-part-holder-short {
+  margin-left: 50%;
+}
+
+.page-title-wing-holder-left .wing-part-holder-medium {
+  margin-left: 25%;
+}
+
+.page-title-wing-holder-right .wing-part-holder-short {
+  margin-right: 50%;
+}
+
+.page-title-wing-holder-right .wing-part-holder-medium {
+  margin-right: 25%;
+}
+
+.wing-part-holder-long .wing-part {
+  border-color: #FEC239;
+}
+
+.wing-part-holder-medium .wing-part {
+  border-color: #F6AD2E;
+}
+
+.wing-part-holder-short .wing-part {
+  border-color: #D67E10;
+}
+
+.page-title-wing-holder-left .wing-part-holder {
+  justify-content: flex-start;
+}
+
+.page-title-wing-holder-right .wing-part-holder {
+  justify-content: flex-end;
+}
+
+.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+  border: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #FEC239;
+  transform: translate(26px, 0) skewX(-77deg);
+}
+
+.page-title-wing-holder-right .wing-part-holder-long .wing-tip {
+  border: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #FEC239;
+  transform: translate(-26px, 0) skewX(77deg);
+}
+
+.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+  border: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #D67E10;
+  transform: translate(56px, 0) skewX(77deg);
+}
+
+.page-title-wing-holder-right .wing-part-holder-short .wing-tip {
+  border: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #D67E10;
+  transform: translate(-56px, 0) skewX(-77deg);
+}
+
+.page-title-wing-holder-left .wing-body {
+  border-left: 30px solid transparent;
+}
+
+.page-title-wing-holder-right .wing-body {
+  border-right: 30px solid transparent;
 }
 
 .page-description {
