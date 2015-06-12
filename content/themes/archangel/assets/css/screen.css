@@ -5,16 +5,15 @@
 /*
 
     0.  Normalize
-    1.  General
+    1.  Default Layout
     2.  Utilities
-    3.  Single Post
-    4.  Author Profile
-    5.  Read More
+    3.  Loop
+    4.  Single Post
+    5.  Author Profile
     6.  Pagination
-    7.  Footer
-    8.  Media Queries (Tablet)
-    9.  Media Queries (Mobile)
-    10. Animations
+    7.  Media Queries (Tablet)
+    8.  Media Queries (Mobile)
+    9. Animations
 
 */
 
@@ -98,7 +97,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 /* ==========================================================================
-   1. General - Setting up some base styles
+   1. Default Layout
    ========================================================================== */
 
 body {
@@ -107,7 +106,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .site-inner {
@@ -130,7 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 17px;
+  margin-bottom: 15px;
 }
 
 .page-title-holder {
@@ -297,6 +297,30 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #D67E10;
 }
 
+.body-content-holder {
+  width: 80%;
+}
+
+.site-footer {
+  color: #CCC;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: #999;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s linear;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 21px;
+}
+
+.site-footer a:hover {
+  border-bottom: 1px solid #999;
+}
+
 
 /* ==========================================================================
    2. Utilities - These things get used a lot
@@ -308,8 +332,29 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+
 /* ==========================================================================
-   3. Single Post - When you click on an individual post
+   3. Loop
+   ========================================================================== */
+
+.post-title {
+}
+
+.post-title a {
+  color: black;
+  font-size: 28px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s linear;
+}
+
+.post-title a:hover {
+  border-bottom: 1px solid black;
+}
+
+
+/* ==========================================================================
+   4. Single Post - When you click on an individual post
    ========================================================================== */
 
 .author-thumb {
@@ -319,12 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   4. Author profile
-   ========================================================================== */
-
-
-/* ==========================================================================
-   5. Read More - Next/Prev Post Links
+   5. Author profile
    ========================================================================== */
 
 
@@ -334,12 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   7. Footer - The bottom of every page
-   ========================================================================== */
-
-
-/* ==========================================================================
-   8. Media Queries (Tablet) - Smaller than 900px
+   7. Media Queries (Tablet) - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
@@ -348,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   9. Media Queries (Mobile) - Smaller than 500px
+   8. Media Queries (Mobile) - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
@@ -357,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   10. Animations
+   9. Animations
    ========================================================================== */
 
 @-webkit-keyframes fade-in-down {
