@@ -103,13 +103,18 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+  color: #D67E10;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
 .site-inner {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -133,16 +138,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title-holder {
+  color: #8A3200;
   width: 80%;
+  max-width: 1000px;
   margin: 0 auto;
   align-items: center;
   flex-wrap: nowrap;
 }
 
+.page-title-holder:hover .page-title {
+  border-bottom: 3px solid #8A3200;
+}
+
+.page-title-link {
+  width: 100%;
+}
+
 .page-title {
   flex: 0 0 auto;
   font-size: 50px;
-  margin: 0 7px;
+  margin: 0 4px;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transition: border-bottom 0.2s linear;
+  box-sizing: border-box;
+  height: 60px;
 }
 
 .page-title-wing-holder {
@@ -285,7 +306,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #D67E10;
   border-radius: 4px;
   padding: 5px 12px;
-  text-decoration: none;
   transition: color 0.2s linear, background-color 0.2s linear;
 }
 
@@ -295,15 +315,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  color: #CCC;
-  font-size: 14px;
   margin-top: 10px;
   padding: 10px 0;
 }
 
-.site-footer a {
-  text-decoration: none;
-  color: #999;
+.site-footer, .post-meta {
+  color: #666;
+  font-size: 14px;
+}
+
+.site-footer a, .post-meta a {
+  color: #8A3200;
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -311,8 +333,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 19px;
 }
 
-.site-footer a:hover {
-  border-bottom: 1px solid #999;
+.site-footer a:hover, .post-meta a:hover {
+  border-bottom: 1px solid #8A3200;
 }
 
 .hidden {
@@ -347,15 +369,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-title a {
-  color: inherit;
+  color: #8A3200;
   font-size: 28px;
-  text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border 0.2s linear;
 }
 
 .post-title a:hover {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #8A3200;
+}
+
+.read-more {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s linear;
+  height: 22px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.read-more:hover {
+  border-bottom: 1px solid #D67E10;
 }
 
 nav.pagination {
