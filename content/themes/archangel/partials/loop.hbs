@@ -1,17 +1,19 @@
 {{#foreach posts}}
-<article class="{{post_class}}">
-    <header class="post-header">
+  <article class="{{post_class}} post-summary">
+    <div class="post-summary-inner">
+      <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-    </header>
-    <section class="post-excerpt">
+      </header>
+      <section class="post-excerpt">
         <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-    </section>
-    <footer class="post-meta">
-        {{author}}
+      </section>
+      <footer class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> &#124;
+        {{author.name}}
         {{tags prefix=" on "}}
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </footer>
-</article>
+      </footer>
+    </div>{{!-- .post-summary-inner --}}
+  </article>
 {{/foreach}}
 
 {{pagination}}
