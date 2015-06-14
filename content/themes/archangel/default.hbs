@@ -20,63 +20,59 @@
 
 <body class="{{body_class}}">
 
-  <div class="site-inner flex-container">
+  <header class="main-header full-width">
 
-    <header class="main-header full-width">
+    <a href="{{@blog.url}}" class="page-title-holder flex-container">
+      <div class="page-title-wing-holder flex-container page-title-wing-holder-left">
+        <div class="wing-part-holder wing-part-holder-long flex-container">
+          <div class="wing-tip wing-part"></div>
+          <div class="wing-body wing-part"></div>
+        </div>
+        <div class="wing-part-holder wing-part-holder-medium">
+          <div class="wing-body wing-part"></div>
+        </div>
+        <div class="wing-part-holder wing-part-holder-short flex-container">
+          <div class="wing-body wing-part"></div>
+          <div class="wing-tip wing-part"></div>
+        </div>
+      </div>{{!-- .page-title-wing-holder-left --}}
 
-      <a href="{{@blog.url}}" class="page-title-holder flex-container">
-        <div class="page-title-wing-holder flex-container page-title-wing-holder-left">
-          <div class="wing-part-holder wing-part-holder-long flex-container">
-            <div class="wing-tip wing-part"></div>
-            <div class="wing-body wing-part"></div>
-          </div>
-          <div class="wing-part-holder wing-part-holder-medium">
-            <div class="wing-body wing-part"></div>
-          </div>
-          <div class="wing-part-holder wing-part-holder-short flex-container">
-            <div class="wing-body wing-part"></div>
-            <div class="wing-tip wing-part"></div>
-          </div>
-        </div>{{!-- .page-title-wing-holder-left --}}
+      <h1 class="page-title">{{@blog.title}}</h1>
 
-        <h1 class="page-title">{{@blog.title}}</h1>
+      <div class="page-title-wing-holder flex-container page-title-wing-holder-right">
+        <div class="wing-part-holder wing-part-holder-long flex-container">
+          <div class="wing-tip wing-part"></div>
+          <div class="wing-body wing-part"></div>
+        </div>
+        <div class="wing-part-holder wing-part-holder-medium">
+          <div class="wing-body wing-part"></div>
+        </div>
+        <div class="wing-part-holder wing-part-holder-short flex-container">
+          <div class="wing-body wing-part"></div>
+          <div class="wing-tip wing-part"></div>
+        </div>
+      </div>{{!-- .page-title-wing-holder-right --}}
+    </a>{{!-- .page-title-holder --}}
 
-        <div class="page-title-wing-holder flex-container page-title-wing-holder-right">
-          <div class="wing-part-holder wing-part-holder-long flex-container">
-            <div class="wing-tip wing-part"></div>
-            <div class="wing-body wing-part"></div>
-          </div>
-          <div class="wing-part-holder wing-part-holder-medium">
-            <div class="wing-body wing-part"></div>
-          </div>
-          <div class="wing-part-holder wing-part-holder-short flex-container">
-            <div class="wing-body wing-part"></div>
-            <div class="wing-tip wing-part"></div>
-          </div>
-        </div>{{!-- .page-title-wing-holder-right --}}
-      </a>{{!-- .page-title-holder --}}
+    <h2 class="page-description">{{@blog.description}}</h2>
 
-      <h2 class="page-description">{{@blog.description}}</h2>
+    <nav class="main-nav flex-container">
+      <a href="/about" class="nav-button">About</a>
+      <a href="/" class="nav-button">Blog</a>
+      <a href="/reading-list" class="nav-button">Reading List</a>
+    </nav>{{!-- .main-nav --}}
 
-      <nav class="main-nav flex-container">
-        <a href="/about" class="nav-button">About</a>
-        <a href="/" class="nav-button">Blog</a>
-        <a href="/reading-list" class="nav-button">Reading List</a>
-      </nav>{{!-- .main-nav --}}
+  </header>{{!-- .main-header --}}
 
-    </header>{{!-- .main-header --}}
+  {{{body}}}
 
-    {{{body}}}
+  <footer class="site-footer full-width">
+    <div>&copy; {{date format="YYYY"}} <a href="{{@blog.url}}/about">Daniel Kimbel</a> &#124; Powered by <a href="https://ghost.org">Ghost</a> &#124; Coded in <a href="http://en.wikipedia.org/wiki/California">California</a></div>
+  </footer>
 
-    <footer class="site-footer">
-      <div>&copy; {{date format="YYYY"}} <a href="{{@blog.url}}/about">Daniel Kimbel</a> &#124; Powered by <a href="https://ghost.org">Ghost</a> &#124; Coded in <a href="http://en.wikipedia.org/wiki/California">California</a></div>
-    </footer>
+  {{ghost_foot}}
 
-    {{ghost_foot}}
-
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
-  </div>{{!-- .site-inner --}}
+  <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>

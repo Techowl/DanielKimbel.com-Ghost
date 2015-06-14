@@ -113,11 +113,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.site-inner {
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -128,7 +123,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .full-width {
-  flex: 100%;
+  width: 100%;
+  max-width: 1500px;
+  max-width: 1500px;
 }
 
 .main-header {
@@ -315,8 +312,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  margin-top: 10px;
-  padding: 10px 0;
+  margin-top: 14px;
+  padding: 14px 0;
+  text-align: center;
 }
 
 .site-footer, .post-meta {
@@ -391,8 +389,38 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #D67E10;
 }
 
-nav.pagination {
-  margin-top: 20px;
+.pagination {
+  margin: 28px auto 0;
+  width: 70%;
+  position: relative;
+  text-align: center;
+  height: 34px;
+}
+
+.pagination .page-number {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.pagination .older-posts, .pagination .newer-posts {
+  padding: 5px 12px;
+  border: 1px solid #D67E10;
+  border-radius: 4px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  position: absolute;
+}
+
+.pagination .older-posts {
+  right: 0;
+}
+
+.pagination .newer-posts {
+  left: 0;
+}
+
+.pagination .older-posts:hover, .pagination .newer-posts:hover {
+  background-color: #D67E10;
+  color: #FFF;
 }
 
 
