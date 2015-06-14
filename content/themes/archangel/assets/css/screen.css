@@ -8,9 +8,8 @@
     1.  Default Layout
     2.  Loop
     3.  Single Post
-    4.  Pagination
-    5.  Media Queries (Tablet)
-    6.  Media Queries (Mobile)
+    4.  Media Queries (Tablet)
+    5.  Media Queries (Mobile)
 
 */
 
@@ -124,7 +123,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .full-width {
   width: 100%;
-  max-width: 1500px;
   max-width: 1500px;
 }
 
@@ -310,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav .nav-button:hover {
-  color: white;
+  color: #FFF;
   background-color: #D67E10;
 }
 
@@ -352,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   2. Loop
+   2. Loop / Pagination
    ========================================================================== */
 
 .post-summaries-holder {
@@ -404,11 +402,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #D67E10;
 }
 
-.few-posts-message {
-  text-align: center;
-  font-style: italic;
-}
-
 .pagination {
   margin: 0 auto;
   width: 56%;
@@ -458,21 +451,231 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   4. Pagination - Tools to let you flick between pages
+   4. Media Queries (Tablet) - Smaller than 875px
    ========================================================================== */
 
+@media only screen and (max-width: 875px) {
 
-/* ==========================================================================
-   5. Media Queries (Tablet) - Smaller than 900px
-   ========================================================================== */
+  .main-header {
+    padding-top: 17px;
+    margin-bottom: 26px;
+  }
 
-@media only screen and (max-width: 900px) {
+  .page-title-holder {
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .page-title-holder:hover .page-title {
+    border-bottom: 3px solid #8A3200;
+  }
+
+  .page-title {
+    flex: 0 0 auto;
+    font-size: 50px;
+    margin: 0 4px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transition: border-bottom 0.2s linear;
+    box-sizing: border-box;
+    height: 60px;
+  }
+
+  .page-title-wing-holder {
+    max-width: 260px;
+    min-width: 187px;
+  }
+
+  .wing-part-holder-medium {
+    margin: 3px auto;
+  }
+
+  .wing-body {
+    width: 100%;
+    border-top: 6px solid;
+    box-sizing: border-box;
+  }
+
+/*  .wing-part-holder-short {
+    width: 50%;
+  }
+
+  .wing-part-holder-medium {
+    width: 75%;
+  }
+
+  .wing-part-holder-long {
+    width: 100%;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short {
+    margin-left: 50%;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-medium {
+    margin-left: 25%;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-short {
+    margin-right: 50%;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-medium {
+    margin-right: 25%;
+  }*/
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+    border: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #FEC239;
+    transform: translate(30px, 0) skewX(-77deg);
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
+    border: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #FEC239;
+    transform: translate(-30px, 0) skewX(77deg);
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+    border: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #D67E10;
+    transform: translate(56px, 0) skewX(77deg);
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
+    border: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #D67E10;
+    transform: translate(-56px, 0) skewX(-77deg);
+  }
+
+  .page-title-wing-holder-left .wing-body {
+    border-left: 30px solid transparent;
+  }
+
+  .page-title-wing-holder-right .wing-body {
+    border-right: 30px solid transparent;
+  }
+
+  .page-description {
+    margin: 10px auto 20px;
+    font-size: 20px;
+  }
+
+  .main-nav {
+    width: 400px;
+  }
+
+  .main-nav .nav-button {
+    flex: 0 1 126px;
+    border-radius: 4px;
+    padding: 5px 12px;
+  }
+
+  .home-template #blog-nav-button, .archive-template #blog-nav-button {
+    padding: 4px 12px;
+    border: 2px solid #D67E10;
+    font-weight: 400;
+  }
+
+  .site-footer {
+    margin-top: 14px;
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  .site-footer, .post-meta {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .site-footer a, .post-meta a {
+    height: 19px;
+  }
+
+  .post-summaries-holder {
+    margin: 28px auto;
+  }
+
+  .post-summary {
+    margin: 0 auto;
+    padding: 32px 0 38px;
+  }
+
+  .post-summary-inner {
+    width: 56%;
+    max-width: 800px;
+    min-width: 625px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .post-title a {
+    font-size: 28px;
+  }
+
+  .post-title a:hover {
+    border-bottom: 2px solid #8A3200;
+  }
+
+  .read-more {
+    border-bottom: 1px solid transparent;
+    height: 22px;
+  }
+
+  .read-more:hover {
+    border-bottom: 1px solid #D67E10;
+  }
+
+  .pagination {
+    margin: 0 auto;
+    width: 56%;
+    max-width: 800px;
+    min-width: 625px;
+    position: relative;
+    text-align: center;
+    height: 34px;
+  }
+
+  .pagination .page-number {
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .pagination .older-posts, .pagination .newer-posts {
+    padding: 5px 12px;
+    border: 1px solid #D67E10;
+    border-radius: 4px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    position: absolute;
+  }
+
+  .pagination .older-posts {
+    right: 0;
+  }
+
+  .pagination .newer-posts {
+    left: 0;
+  }
+
+  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+    background-color: #D67E10;
+    color: #FFF;
+  }
 
 }
 
 
 /* ==========================================================================
-   6. Media Queries (Mobile) - Smaller than 500px
+   5. Media Queries (Mobile) - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
