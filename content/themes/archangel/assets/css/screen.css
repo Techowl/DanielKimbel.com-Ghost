@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-summary {
   margin: 0 auto;
-  padding: 20px 0 24px;
+  padding: 32px 0 38px;
   position: relative;
 }
 
@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-title {
-  margin: 0 auto 10px;
+  margin: 0 auto;
 }
 
 .post-title a {
