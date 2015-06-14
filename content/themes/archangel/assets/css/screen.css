@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
   text-align: center;
   padding-top: 17px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .page-title-holder {
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  margin-top: 14px;
+  margin-top: 20px;
   padding: 14px 0;
   text-align: center;
 }
@@ -345,6 +345,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    2. Loop
    ========================================================================== */
+
+.post-summaries-holder {
+  margin: 28px auto;
+}
 
 .post-summary {
   margin: 0 auto;
@@ -390,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pagination {
-  margin: 28px auto 0;
+  margin: 0 auto;
   width: 70%;
   position: relative;
   text-align: center;
