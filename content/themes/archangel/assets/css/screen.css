@@ -411,7 +411,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .pagination {
   margin: 0 auto;
-  width: 70%;
+  width: 56%;
+  max-width: 800px;
+  min-width: 625px;
   position: relative;
   text-align: center;
   height: 34px;
