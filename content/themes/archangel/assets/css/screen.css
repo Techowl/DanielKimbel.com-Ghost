@@ -298,17 +298,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav .nav-button {
-  flex: 0 1 100px;
+  flex: 0 1 126px;
   border: 1px solid #D67E10;
   color: #D67E10;
+  position: relative;
   border-radius: 4px;
   padding: 5px 12px;
   transition: color 0.2s linear, background-color 0.2s linear;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .main-nav .nav-button:hover {
   color: white;
   background-color: #D67E10;
+}
+
+.home-template #blog-nav-button, .archive-template #blog-nav-button {
+  padding: 4px 12px;
+  border: 2px solid #D67E10;
+  font-weight: 400;
 }
 
 .site-footer {
@@ -393,6 +402,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .read-more:hover {
   border-bottom: 1px solid #D67E10;
+}
+
+.few-posts-message {
+  text-align: center;
+  font-style: italic;
 }
 
 .pagination {
