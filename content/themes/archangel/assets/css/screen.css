@@ -244,18 +244,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
   border: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid #FEC239;
-  transform: translate(26px, 0) skewX(-77deg);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #FEC239;
+  transform: translate(30px, 0) skewX(-77deg);
 }
 
 .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
   border: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid #FEC239;
-  transform: translate(-26px, 0) skewX(77deg);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #FEC239;
+  transform: translate(-30px, 0) skewX(77deg);
 }
 
 .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
