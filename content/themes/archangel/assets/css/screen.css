@@ -128,12 +128,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header {
   text-align: center;
-  padding-top: 17px;
-  margin-bottom: 26px;
+  padding: 17px 0 26px;
 }
 
 .page-title-holder {
-  color: #8A3200;
+  color: #8A4707;
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -142,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title-holder:hover .page-title {
-  border-bottom: 3px solid #8A3200;
+  border-bottom: 3px solid #8A4707;
 }
 
 .page-title-link {
@@ -330,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer a, .post-meta a {
-  color: #8A3200;
+  color: #8A4707;
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -339,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer a:hover, .post-meta a:hover {
-  border-bottom: 1px solid #8A3200;
+  border-bottom: 1px solid #8A4707;
 }
 
 .hidden {
@@ -354,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 .post-summaries-holder {
-  margin: 28px auto;
+  margin: 0 auto 28px;
 }
 
 .post-summary {
@@ -380,14 +379,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-title a {
-  color: #8A3200;
+  color: #8A4707;
   font-size: 28px;
   border-bottom: 2px solid transparent;
   transition: border 0.2s linear;
 }
 
 .post-title a:hover {
-  border-bottom: 2px solid #8A3200;
+  border-bottom: 2px solid #8A4707;
 }
 
 .read-more {
@@ -467,7 +466,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .page-title-holder:hover .page-title {
-    border-bottom: 3px solid #8A3200;
+    border-bottom: 3px solid #8A4707;
   }
 
   .page-title {
@@ -623,7 +622,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .post-title a:hover {
-    border-bottom: 2px solid #8A3200;
+    border-bottom: 2px solid #8A4707;
   }
 
   .read-more {
