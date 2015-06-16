@@ -128,7 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header {
   text-align: center;
-  padding: 17px 0 26px;
+  padding-top: 17px;
+  margin-bottom: 26px;
 }
 
 .page-title-holder {
@@ -353,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 .post-summaries-holder {
-  margin: 0 auto 28px;
+  margin: 28px auto;
 }
 
 .post-summary {
