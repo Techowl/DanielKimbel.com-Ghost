@@ -457,6 +457,190 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 875px) {
 
   .main-header {
+    padding-top: 9px;
+    margin-bottom: 26px; /* yet unchanged; elsewhere using ~67% of desktop sizes */
+  }
+
+  .page-title-holder:hover .page-title {
+    border-bottom: 2px solid #8A4707;
+  }
+
+  .page-title {
+    font-size: 34px;
+    margin: 0 3px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 40px;
+  }
+
+  .page-title-wing-holder {
+    max-width: 178px;
+    min-width: 124px;
+  }
+
+  .wing-part-holder-medium {
+    margin: 2px auto;
+  }
+
+  .wing-body {
+    width: 100%;
+    border-top: 4px solid;
+    box-sizing: border-box;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FEC239;
+    transform: translate(21px, 0) skewX(-77deg);
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FEC239;
+    transform: translate(-21px, 0) skewX(77deg);
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #D67E10;
+    transform: translate(37px, 0) skewX(77deg);
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #D67E10;
+    transform: translate(-37px, 0) skewX(-77deg);
+  }
+
+  .page-title-wing-holder-left .wing-body {
+    border-left: 20px solid transparent;
+  }
+
+  .page-title-wing-holder-right .wing-body {
+    border-right: 20px solid transparent;
+  }
+
+  .page-description { /* continue here */
+    margin: 10px auto 20px;
+    font-size: 20px;
+  }
+
+  .main-nav {
+    width: 400px;
+  }
+
+  .main-nav .nav-button {
+    flex: 0 1 126px;
+    border-radius: 4px;
+    padding: 5px 12px;
+  }
+
+  .home-template #blog-nav-button, .archive-template #blog-nav-button {
+    padding: 4px 12px;
+    border: 2px solid #D67E10;
+    font-weight: 400;
+  }
+
+  .site-footer {
+    margin-top: 14px;
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  .site-footer, .post-meta {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .site-footer a, .post-meta a {
+    height: 19px;
+  }
+
+  .post-summaries-holder {
+    margin: 28px auto;
+  }
+
+  .post-summary {
+    margin: 0 auto;
+    padding: 32px 0 38px;
+  }
+
+  .post-summary-inner {
+    width: 56%;
+    max-width: 800px;
+    min-width: 625px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .post-title a {
+    font-size: 28px;
+  }
+
+  .post-title a:hover {
+    border-bottom: 2px solid #8A4707;
+  }
+
+  .read-more {
+    border-bottom: 1px solid transparent;
+    height: 22px;
+  }
+
+  .read-more:hover {
+    border-bottom: 1px solid #D67E10;
+  }
+
+  .pagination {
+    margin: 0 auto;
+    width: 56%;
+    max-width: 800px;
+    min-width: 625px;
+    position: relative;
+    text-align: center;
+    height: 34px;
+  }
+
+  .pagination .page-number {
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .pagination .older-posts, .pagination .newer-posts {
+    padding: 5px 12px;
+    border: 1px solid #D67E10;
+    border-radius: 4px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    position: absolute;
+  }
+
+  .pagination .older-posts {
+    right: 0;
+  }
+
+  .pagination .newer-posts {
+    left: 0;
+  }
+
+  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+    background-color: #D67E10;
+    color: #FFF;
+  }
+
+}
+
+
+/* ==========================================================================
+   5. Media Queries (Mobile) - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+  .main-header {
     padding-top: 17px;
     margin-bottom: 26px;
   }
@@ -472,14 +656,12 @@ h1, h2, h3, h4, h5, h6 {
 
   .page-title {
     flex: 0 0 auto;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 4px;
     border-bottom: 3px solid transparent;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    transition: border-bottom 0.2s linear;
-    box-sizing: border-box;
-    height: 60px;
+    height: 48px;
   }
 
   .page-title-wing-holder {
@@ -673,12 +855,4 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
-/* ==========================================================================
-   5. Media Queries (Mobile) - Smaller than 500px
-   ========================================================================== */
-
-@media only screen and (max-width: 500px) {
-
-}
 
