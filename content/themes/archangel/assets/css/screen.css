@@ -570,9 +570,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 580px) {
 
-  .main-header { /* margin-bottom yet unchanged */
+  .main-header {
     padding-top: 7px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .page-title {
@@ -633,113 +633,79 @@ h1, h2, h3, h4, h5, h6 {
 
   .page-description {
     width: 80%;
-    margin: 6px auto 10px;
+    margin: 6px auto 11px;
     font-size: 14px;
   }
 
   .main-nav {
-    width: 310px;
+    width: 280px;
+    justify-content: space-between;
   }
 
   .main-nav .nav-button {
     font-size: 13px;
-    flex: 0 1 98px;
-    border-radius: 4px;
-    padding: 5px 12px;
-  }
-
-  .home-template #blog-nav-button, .archive-template #blog-nav-button {
-    padding: 4px 12px;
-    border: 2px solid #D67E10;
-    font-weight: 400;
+    flex: 0 1 86px;
+    padding: 5px 6px;
   }
 
   .site-footer {
-    margin-top: 10px;
-    padding: 14px 0;
-    text-align: center;
+    margin: 6px auto 0;
+    width: 75%;
   }
 
   .site-footer, .post-meta {
-    color: #666;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .site-footer a, .post-meta a {
-    height: 19px;
+    height: 16px;
   }
 
   .post-summaries-holder {
-    margin: 16px auto;
+    margin: 14px auto;
   }
 
   .post-summary {
     margin: 0 auto;
-    padding: 26px 0 30px;
+    padding: 24px 0 26px;
   }
 
   .post-summary-inner {
-    width: 85%;
-    max-width: 625px;
-    min-width: 500px;
-    margin: 0 auto;
-    padding: 0;
+    max-width: 550px;
+    min-width: 280px;
+  }
+
+  .post-title {
+    line-height: 24px;
   }
 
   .post-title a {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .post-title a:hover {
-    border-bottom: 2px solid #8A4707;
+  .post-excerpt {
+    font-size: 15px;
   }
 
   .read-more {
-    border-bottom: 1px solid transparent;
-    height: 22px;
-  }
-
-  .read-more:hover {
-    border-bottom: 1px solid #D67E10;
+    height: 20px;
   }
 
   .pagination {
-    margin: 0 auto;
-    width: 85%;
-    max-width: 625px;
-    min-width: 500px;
-    font-size: 14px;
-    position: relative;
-    text-align: center;
-    height: 34px;
+    max-width: 550px;
+    min-width: 280px;
+    font-size: 13px;
+    height: 30px;
   }
 
   .pagination .page-number {
-    display: inline-block;
-    margin-top: 6px;
+    margin-top: 7px;
+    font-size: 11px;
   }
 
   .pagination .older-posts, .pagination .newer-posts {
-    padding: 5px 12px;
-    border: 1px solid #D67E10;
-    border-radius: 4px;
-    transition: background-color 0.2s linear, color 0.2s linear;
-    position: absolute;
+    padding: 5px 6px;
   }
-
-  .pagination .older-posts {
-    right: 0;
-  }
-
-  .pagination .newer-posts {
-    left: 0;
-  }
-
-  .pagination .older-posts:hover, .pagination .newer-posts:hover {
-    background-color: #D67E10;
-    color: #FFF;
-  }
-
 }
 
 
