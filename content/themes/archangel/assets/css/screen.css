@@ -570,14 +570,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 580px) {
 
-  .main-header { /* bottom yet unchanged */
+  .main-header { /* margin-bottom yet unchanged */
     padding-top: 7px;
     margin-bottom: 16px;
-  }
-
-  .page-title-holder { /* yet unchanged */
-    width: 80%;
-    max-width: 1000px;
   }
 
   .page-title {
@@ -586,11 +581,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 25px;
   }
 
-   /* .page-title-holder .page-title {
-    border-bottom: 2px solid #8A4707;
-  }*/
-
-  .page-title-wing-holder { /* width values yet unchanged */
+  .page-title-wing-holder {
     max-width: 122px;
     min-width: 65px;
     padding-bottom: 3px;
@@ -640,18 +631,19 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 15px solid transparent;
   }
 
-  .page-description { /* this and below yet unchanged */
-    margin: 10px auto 12px;
-    font-size: 17px;
+  .page-description {
+    width: 80%;
+    margin: 6px auto 10px;
+    font-size: 14px;
   }
 
   .main-nav {
-    width: 400px;
+    width: 310px;
   }
 
   .main-nav .nav-button {
-    font-size: 14px;
-    flex: 0 1 126px;
+    font-size: 13px;
+    flex: 0 1 98px;
     border-radius: 4px;
     padding: 5px 12px;
   }
