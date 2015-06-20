@@ -458,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .main-header {
     padding-top: 9px;
-    margin-bottom: 26px; /* yet unchanged; elsewhere using ~67% of desktop sizes */
+    margin-bottom: 16px;
   }
 
   .page-title-holder:hover .page-title {
@@ -484,9 +484,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .wing-body {
-    width: 100%;
     border-top: 4px solid;
-    box-sizing: border-box;
   }
 
   .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
@@ -525,110 +523,42 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 20px solid transparent;
   }
 
-  .page-description { /* continue here */
-    margin: 10px auto 20px;
-    font-size: 20px;
-  }
-
-  .main-nav {
-    width: 400px;
+  .page-description {
+    margin: 10px auto 12px;
+    font-size: 17px;
   }
 
   .main-nav .nav-button {
-    flex: 0 1 126px;
-    border-radius: 4px;
-    padding: 5px 12px;
-  }
-
-  .home-template #blog-nav-button, .archive-template #blog-nav-button {
-    padding: 4px 12px;
-    border: 2px solid #D67E10;
-    font-weight: 400;
-  }
-
-  .site-footer {
-    margin-top: 14px;
-    padding: 14px 0;
-    text-align: center;
-  }
-
-  .site-footer, .post-meta {
-    color: #666;
     font-size: 14px;
   }
 
-  .site-footer a, .post-meta a {
-    height: 19px;
+  .site-footer {
+    margin-top: 10px;
   }
 
   .post-summaries-holder {
-    margin: 28px auto;
+    margin: 16px auto;
   }
 
   .post-summary {
-    margin: 0 auto;
-    padding: 32px 0 38px;
+    padding: 26px 0 30px;
   }
 
   .post-summary-inner {
-    width: 56%;
-    max-width: 800px;
-    min-width: 625px;
-    margin: 0 auto;
-    padding: 0;
+    width: 85%;
+    max-width: 625px;
+    min-width: 500px;
   }
 
   .post-title a {
-    font-size: 28px;
-  }
-
-  .post-title a:hover {
-    border-bottom: 2px solid #8A4707;
-  }
-
-  .read-more {
-    border-bottom: 1px solid transparent;
-    height: 22px;
-  }
-
-  .read-more:hover {
-    border-bottom: 1px solid #D67E10;
+    font-size: 24px;
   }
 
   .pagination {
-    margin: 0 auto;
-    width: 56%;
-    max-width: 800px;
-    min-width: 625px;
-    position: relative;
-    text-align: center;
-    height: 34px;
-  }
-
-  .pagination .page-number {
-    display: inline-block;
-    margin-top: 6px;
-  }
-
-  .pagination .older-posts, .pagination .newer-posts {
-    padding: 5px 12px;
-    border: 1px solid #D67E10;
-    border-radius: 4px;
-    transition: background-color 0.2s linear, color 0.2s linear;
-    position: absolute;
-  }
-
-  .pagination .older-posts {
-    right: 0;
-  }
-
-  .pagination .newer-posts {
-    left: 0;
-  }
-
-  .pagination .older-posts:hover, .pagination .newer-posts:hover {
-    background-color: #D67E10;
-    color: #FFF;
+    width: 85%;
+    max-width: 625px;
+    min-width: 500px;
+    font-size: 14px;
   }
 
 }
@@ -640,9 +570,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 500px) {
 
-  .main-header {
-    padding-top: 17px;
-    margin-bottom: 26px;
+  .main-header { /* start by updating with reduced values from tablet size */
+    padding-top: 9px;
+    margin-bottom: 16px;
   }
 
   .page-title-holder {
@@ -651,105 +581,71 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .page-title-holder:hover .page-title {
-    border-bottom: 3px solid #8A4707;
+    border-bottom: 2px solid #8A4707;
   }
 
   .page-title {
     flex: 0 0 auto;
-    font-size: 40px;
-    margin: 0 4px;
-    border-bottom: 3px solid transparent;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    height: 48px;
+    font-size: 34px;
+    margin: 0 3px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 40px;
   }
 
   .page-title-wing-holder {
-    max-width: 260px;
-    min-width: 187px;
+    max-width: 178px;
+    min-width: 124px;
   }
 
   .wing-part-holder-medium {
-    margin: 3px auto;
+    margin: 2px auto;
   }
 
   .wing-body {
-    width: 100%;
-    border-top: 6px solid;
-    box-sizing: border-box;
+    border-top: 4px solid;
   }
-
-/*  .wing-part-holder-short {
-    width: 50%;
-  }
-
-  .wing-part-holder-medium {
-    width: 75%;
-  }
-
-  .wing-part-holder-long {
-    width: 100%;
-  }
-
-  .page-title-wing-holder-left .wing-part-holder-short {
-    margin-left: 50%;
-  }
-
-  .page-title-wing-holder-left .wing-part-holder-medium {
-    margin-left: 25%;
-  }
-
-  .page-title-wing-holder-right .wing-part-holder-short {
-    margin-right: 50%;
-  }
-
-  .page-title-wing-holder-right .wing-part-holder-medium {
-    margin-right: 25%;
-  }*/
 
   .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
-    border: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 14px solid #FEC239;
-    transform: translate(30px, 0) skewX(-77deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FEC239;
+    transform: translate(21px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
-    border: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 14px solid #FEC239;
-    transform: translate(-30px, 0) skewX(77deg);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FEC239;
+    transform: translate(-21px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
-    border: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #D67E10;
-    transform: translate(56px, 0) skewX(77deg);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #D67E10;
+    transform: translate(37px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
-    border: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 12px solid #D67E10;
-    transform: translate(-56px, 0) skewX(-77deg);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #D67E10;
+    transform: translate(-37px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-left .wing-body {
-    border-left: 30px solid transparent;
+    border-left: 20px solid transparent;
   }
 
   .page-title-wing-holder-right .wing-body {
-    border-right: 30px solid transparent;
+    border-right: 20px solid transparent;
   }
 
   .page-description {
-    margin: 10px auto 20px;
-    font-size: 20px;
+    margin: 10px auto 12px;
+    font-size: 17px;
   }
 
   .main-nav {
@@ -757,6 +653,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .main-nav .nav-button {
+    font-size: 14px;
     flex: 0 1 126px;
     border-radius: 4px;
     padding: 5px 12px;
@@ -769,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .site-footer {
-    margin-top: 14px;
+    margin-top: 10px;
     padding: 14px 0;
     text-align: center;
   }
@@ -784,24 +681,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .post-summaries-holder {
-    margin: 28px auto;
+    margin: 16px auto;
   }
 
   .post-summary {
     margin: 0 auto;
-    padding: 32px 0 38px;
+    padding: 26px 0 30px;
   }
 
   .post-summary-inner {
-    width: 56%;
-    max-width: 800px;
-    min-width: 625px;
+    width: 85%;
+    max-width: 625px;
+    min-width: 500px;
     margin: 0 auto;
     padding: 0;
   }
 
   .post-title a {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .post-title a:hover {
@@ -819,9 +716,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .pagination {
     margin: 0 auto;
-    width: 56%;
-    max-width: 800px;
-    min-width: 625px;
+    width: 85%;
+    max-width: 625px;
+    min-width: 500px;
+    font-size: 14px;
     position: relative;
     text-align: center;
     height: 34px;
