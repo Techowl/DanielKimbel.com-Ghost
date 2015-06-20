@@ -54,7 +54,11 @@
       </div>{{!-- .page-title-wing-holder-right --}}
     </a>{{!-- .page-title-holder --}}
 
-    <h2 class="page-description">{{@blog.description}}</h2>
+    {{#if tag}}
+      <h2 class="page-description">All posts for tag '{{tag.name}}'{{#if tag.description}}: {{tag.description}}{{/if}}</h2>
+    {{else}}
+      <h2 class="page-description">{{@blog.description}}</h2>
+    {{/if}}
 
     <nav class="main-nav flex-container">
       <a href="/about" class="nav-button" id="about-nav-button">About</a>

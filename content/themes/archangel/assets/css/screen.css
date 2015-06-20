@@ -312,7 +312,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #D67E10;
 }
 
-.home-template #blog-nav-button, .archive-template #blog-nav-button {
+.home-template #blog-nav-button,
+.archive-template #blog-nav-button,
+.tag-template #blog-nav-button {
   padding: 4px 12px;
   border: 2px solid #D67E10;
   font-weight: 400;
