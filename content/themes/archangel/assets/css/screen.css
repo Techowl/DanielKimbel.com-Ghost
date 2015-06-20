@@ -565,12 +565,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
-   5. Media Queries (Mobile) - Smaller than 500px
+   5. Media Queries (Mobile) - Smaller than 580px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
 
-  .main-header { /* start by updating with reduced values from tablet size */
+  .main-header {
     padding-top: 9px;
     margin-bottom: 16px;
   }
