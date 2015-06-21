@@ -706,7 +706,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .pagination .older-posts, .pagination .newer-posts {
-    padding: 5px 6px;
+    padding: 5px 0;
+    width: 100px;
   }
 }
 
