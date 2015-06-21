@@ -370,11 +370,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-summary-inner {
+  padding: 0;
+}
+
+.site-inner, .pagination {
   width: 56%;
   max-width: 800px;
   min-width: 625px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .post-title {
@@ -405,10 +408,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pagination {
-  margin: 0 auto;
-  width: 56%;
-  max-width: 800px;
-  min-width: 625px;
   position: relative;
   text-align: center;
   height: 34px;
@@ -546,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 26px 0 30px;
   }
 
-  .post-summary-inner {
+  .site-inner, .pagination {
     width: 85%;
     max-width: 625px;
     min-width: 500px;
@@ -557,9 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .pagination {
-    width: 85%;
-    max-width: 625px;
-    min-width: 500px;
     font-size: 14px;
   }
 
@@ -672,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 24px 0 26px;
   }
 
-  .post-summary-inner {
+  .site-inner, .pagination {
     max-width: 550px;
     min-width: 280px;
   }
@@ -694,8 +690,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .pagination {
-    max-width: 550px;
-    min-width: 280px;
     font-size: 13px;
     height: 30px;
   }
