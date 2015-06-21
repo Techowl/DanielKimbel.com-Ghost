@@ -45,20 +45,4 @@
   </article>
 </main>
 
-<aside class="read-next">
-  {{#prev_post}}
-  <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-    Read Previous Post
-  </a>
-  {{/prev_post}}
-
-  <a class="return-home" href="{{@blog.url}}">Home</a>
-
-  {{#next_post}}
-  <a class="read-next-story" href="{{url}}">
-    Read Next Post
-  </a>
-  {{/next_post}}
-</aside>
-
 {{/post}}
