@@ -299,11 +299,9 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 1 126px;
   border: 1px solid #D67E10;
   color: #D67E10;
-  position: relative;
   border-radius: 4px;
   padding: 5px 12px;
   transition: color 0.2s linear, background-color 0.2s linear;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -469,15 +467,76 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.post-footer {
+  text-align: center;
+}
+
 .post-template .post-signature {
   display: inline-block;
   text-align: right;
+}
+
+.post-template .post-signature .author-link-holder a {
+  color: #8A4707;
+  display: inline-block;
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s linear;
+}
+
+.post-template .post-signature .author-link-holder a:hover {
+  border-bottom: 1px solid #8A4707;
 }
 
 .post-template .post-signature .em-dash {
   position: relative;
   bottom: 1px;
 }
+
+.post-template .share {
+  padding: 20px 0 30px;
+  justify-content: space-around;
+}
+
+.share-btn {
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 164px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.share-twitter {
+  color: #4099FF;
+  border: 1px solid #4099FF;
+}
+
+.share-twitter:hover {
+  color: #FFFFFF;
+  background-color: #4099FF;
+}
+
+.share-facebook {
+  color: #3B5998;
+  border: 1px solid #3B5998;
+}
+
+.share-facebook:hover {
+  color: #FFFFFF;
+  background-color: #3B5998;
+}
+
+.share-google-plus {
+  color: #DD4B39;
+  border: 1px solid #DD4B39;
+}
+
+.share-google-plus:hover {
+  color: #FFFFFF;
+  background-color: #DD4B39;
+}
+
 
 
 /* ==========================================================================
