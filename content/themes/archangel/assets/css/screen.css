@@ -469,6 +469,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.post-signature {
+  display: inline-block;
+  text-align: right;
+}
+
 
 /* ==========================================================================
    4. Media Queries (Tablet) - Smaller than 875px
