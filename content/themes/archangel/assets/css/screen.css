@@ -476,6 +476,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-template .post-signature {
   display: inline-block;
   text-align: right;
+  font-weight: 400;
 }
 
 .post-template .post-signature .author-link-holder a {
@@ -499,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 160px;
+  width: 212px;
 }
 
 .share-header {
@@ -525,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .share-twitter {
   color: #4099FF;
-  border: 1px solid #4099FF;
+  border: 2px solid #4099FF;
 }
 
 .share-twitter:hover {
@@ -535,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .share-facebook {
   color: #3B5998;
-  border: 1px solid #3B5998;
+  border: 2px solid #3B5998;
 }
 
 .share-facebook:hover {
@@ -551,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .share-google-plus {
   color: #DD4B39;
-  border: 1px solid #DD4B39;
+  border: 2px solid #DD4B39;
 }
 
 .share-google-plus:hover {
@@ -563,6 +564,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   left: 2px;
   top: 1px;
+}
+
+.share-email {
+  color: #FF9400;
+  border: 2px solid #FF9400;
+}
+
+.share-email:hover {
+  color: #FFFFFF;
+  background-color: #FF9400;
+}
+
+.share-email .icon-envelope-o {
+  position: relative;
+  bottom: 1px;
 }
 
 
