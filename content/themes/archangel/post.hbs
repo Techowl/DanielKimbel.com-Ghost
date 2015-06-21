@@ -14,7 +14,7 @@
       {{content}}
     </section>
 
-    <footer class="post-footer">
+    <footer class="post-footer flex-container">
 
       <section class="post-signature">
         <div class="author-link-holder">
@@ -26,17 +26,18 @@
       </section>
 
       <section class="share flex-container">
+        <h4 class="share-header">Share this post</h4>
         <a class="share-twitter share-btn" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-          Share on Twitter
+          <i class="icon icon-twitter icon-2x"></i>
         </a>
         <a class="share-facebook share-btn" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-          Share on Facebook
+          <i class="icon icon-facebook icon-2x"></i>
         </a>
         <a class="share-google-plus share-btn" href="https://plus.google.com/share?url={{url absolute="true"}}"
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-           Share on Google+
+          <i class="icon icon-google-plus icon-2x"></i>
         </a>
       </section>
 

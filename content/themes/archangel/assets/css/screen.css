@@ -110,7 +110,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #8A4707;
 }
 
 .flex-container {
@@ -321,8 +320,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  margin-top: 14px;
-  padding: 14px 0;
+  margin: 0 auto;
+  padding: 28px 0;
   text-align: center;
 }
 
@@ -387,7 +386,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-title {
   margin: 0 auto;
-  color: #8A4707;
   font-size: 32px;
 }
 
@@ -469,7 +467,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-footer {
-  text-align: center;
+  padding: 20px 0 30px;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .post-template .post-signature {
@@ -495,15 +496,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-template .share {
-  padding: 20px 0 30px;
-  justify-content: space-around;
+  display: inline-flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.share-header {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 0 auto 10px;
 }
 
 .share-btn {
-  border-radius: 4px;
-  padding: 5px 0;
-  width: 164px;
-  text-align: center;
+  border-radius: 23px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 46px;
+  width: 46px;
+  background-color: #FFFFFF;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
   box-sizing: border-box;
   transition: color 0.2s linear, background-color 0.2s linear;
 }
@@ -528,6 +543,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #3B5998;
 }
 
+.share-facebook .icon-facebook {
+  position: relative;
+  right: 1px;
+  top: 1px;
+}
+
 .share-google-plus {
   color: #DD4B39;
   border: 1px solid #DD4B39;
@@ -536,6 +557,12 @@ h1, h2, h3, h4, h5, h6 {
 .share-google-plus:hover {
   color: #FFFFFF;
   background-color: #DD4B39;
+}
+
+.share-google-plus .icon-google-plus {
+  position: relative;
+  left: 2px;
+  top: 1px;
 }
 
 
@@ -623,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .site-footer {
-    margin-top: 10px;
+    padding: 24px 0;
   }
 
   .post-summaries-holder {
@@ -740,7 +767,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .site-footer {
-    margin: 6px auto 0;
+    padding: 20px 0;
     width: 75%;
   }
 
