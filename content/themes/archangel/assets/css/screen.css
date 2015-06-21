@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
   text-align: center;
   padding-top: 17px;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .page-title-holder {
@@ -314,7 +314,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-template #blog-nav-button,
 .archive-template #blog-nav-button,
-.tag-template #blog-nav-button {
+.tag-template #blog-nav-button,
+.post-template #blog-nav-button {
   padding: 4px 12px;
   border: 2px solid #D67E10;
   font-weight: 400;
@@ -361,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-summary {
   margin: 0 auto;
-  padding: 32px 0 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -380,13 +381,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.post-header {
+  padding-top: 32px;
+  position: relative;
+}
+
 .post-title {
   margin: 0 auto;
+  color: #8A4707;
+  font-size: 32px;
 }
 
 .post-title a {
   color: #8A4707;
-  font-size: 28px;
   border-bottom: 2px solid transparent;
   transition: border 0.2s linear;
 }
@@ -395,10 +402,18 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #8A4707;
 }
 
+.post-excerpt, .post-content {
+  font-size: 18px;
+}
+
+.post-date {
+  text-transform: uppercase;
+}
+
 .read-more {
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s linear;
-  height: 22px;
+  height: 24px;
   box-sizing: border-box;
   display: inline-block;
 }
@@ -444,10 +459,14 @@ h1, h2, h3, h4, h5, h6 {
    3. Single Post - When you click on an individual post
    ========================================================================== */
 
-.author-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
+.post-template .content {
+  background: #F6F6F6;
+}
+
+.post-template .mini-text {
+  color: #666;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 
@@ -542,13 +561,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .post-summary {
-    padding: 26px 0 30px;
+    padding-bottom: 30px;
   }
 
   .site-inner, .pagination {
     width: 85%;
     max-width: 625px;
     min-width: 500px;
+  }
+
+  .post-header {
+    padding-top: 26px;
   }
 
   .post-title a {
@@ -665,12 +688,16 @@ h1, h2, h3, h4, h5, h6 {
 
   .post-summary {
     margin: 0 auto;
-    padding: 24px 0 26px;
+    padding-bottom: 26px;
   }
 
   .site-inner, .pagination {
     max-width: 550px;
     min-width: 280px;
+  }
+
+  .post-header {
+    padding-top: 24px;
   }
 
   .post-title {
@@ -681,7 +708,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
   }
 
-  .post-excerpt {
+  .post-excerpt, .post-content {
     font-size: 15px;
   }
 
@@ -703,6 +730,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 0;
     width: 100px;
   }
+
 }
 
 
