@@ -113,7 +113,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 blockquote {
-  box-sizing: border-box;
   border-left: 3px solid #CCCCCC;
   margin-left: 20px;
   padding-left: 17px;
@@ -473,6 +472,11 @@ blockquote {
   text-transform: uppercase;
 }
 
+.post-template .post-content a {
+  color: #8A4707;
+  text-decoration: underline;
+}
+
 .post-footer {
   padding: 20px 0 30px;
   justify-content: space-around;
@@ -668,8 +672,8 @@ blockquote {
   }
 
   .page-description {
-    margin: 10px auto 12px;
-    font-size: 17px;
+    margin: 11px auto 13px;
+    font-size: 18px;
   }
 
   .main-nav .nav-button {
@@ -689,17 +693,29 @@ blockquote {
   }
 
   .site-inner, .pagination {
-    width: 85%;
+    width: 75%;
     max-width: 625px;
-    min-width: 500px;
+    min-width: 450px;
   }
 
   .post-header {
     padding-top: 26px;
   }
 
-  .post-title a {
-    font-size: 24px;
+  .post-title, .post-content h1 {
+    font-size: 26px;
+  }
+
+  .post-content h2 {
+    font-size: 23px;
+  }
+
+  .read-more {
+    height: 22px;
+  }
+
+  .post-excerpt, .post-content {
+    font-size: 17px;
   }
 
   .pagination {
@@ -824,12 +840,13 @@ blockquote {
     padding-top: 24px;
   }
 
-  .post-title {
+  .post-title, .post-content h1 {
     line-height: 24px;
+    font-size: 20px;
   }
 
-  .post-title a {
-    font-size: 20px;
+  .post-content h2 {
+    font-size: 18px;
   }
 
   .post-excerpt, .post-content {
