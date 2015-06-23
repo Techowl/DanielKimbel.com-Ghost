@@ -8,8 +8,10 @@
     1.  Default Layout
     2.  Loop
     3.  Single Post
-    4.  Media Queries (Tablet)
-    5.  Media Queries (Mobile)
+    4.  About
+    5.  Reading List
+    6.  Media Queries (Tablet)
+    7.  Media Queries (Mobile)
 
 */
 
@@ -325,6 +327,24 @@ blockquote {
   font-weight: 400;
 }
 
+.page-about #about-nav-button {
+  padding: 4px 12px;
+  border: 2px solid #D67E10;
+  font-weight: 400;
+}
+
+.page-reading-list #reading-list-nav-button {
+  padding: 4px 12px;
+  border: 2px solid #D67E10;
+  font-weight: 400;
+}
+
+.page-about #blog-nav-button, .page-reading-list #blog-nav-button {
+  padding: 5px 12px;
+  border: 1px solid #D67E10;
+  font-weight: 300;
+}
+
 .site-footer {
   margin: 0 auto;
   padding: 28px 0;
@@ -597,9 +617,22 @@ blockquote {
 }
 
 
+/* ==========================================================================
+   4. About page
+   ========================================================================== */
+
+
+
 
 /* ==========================================================================
-   4. Media Queries (Tablet) - Smaller than 875px
+   5. Reading List page
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   6. Media Queries (Tablet) - Smaller than 875px
    ========================================================================== */
 
 @media only screen and (max-width: 875px) {
@@ -734,7 +767,7 @@ blockquote {
 
 
 /* ==========================================================================
-   5. Media Queries (Mobile) - Smaller than 580px
+   7. Media Queries (Mobile) - Smaller than 580px
    ========================================================================== */
 
 @media only screen and (max-width: 580px) {
@@ -807,13 +840,13 @@ blockquote {
   }
 
   .main-nav {
-    width: 280px;
+    width: 314px;
     justify-content: space-between;
   }
 
   .main-nav .nav-button {
     font-size: 13px;
-    flex: 0 1 90px;
+    flex: 0 1 102px;
     padding: 5px 6px;
   }
 
