@@ -634,6 +634,9 @@ blockquote {
   border: 3px solid #333;
   border-radius: 7px;
   padding: 10px;
+  background: #FFFFFF;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
 /*  justify-content: space-around;
   align-content: flex-start;
   align-items: flex-start;*/
@@ -645,9 +648,32 @@ blockquote {
   flex-basis: 100%;
 }
 
-#likes-card .icon-smile-o, #dislikes-card .icon-frown-o {
+.about-card .icon {
   position: relative;
+}
+
+#likes-card .icon-smile-o, #dislikes-card .icon-frown-o {
   bottom: 1px;
+}
+
+#ideals-card .icon-star-o {
+  bottom: 1px;
+}
+
+#education-card .icon-university {
+  bottom: 3px;
+}
+
+#appearance-card .icon-eye {
+  bottom: 3px;
+}
+
+#causes-card .icon-child {
+  bottom: 4px;
+}
+
+#contact-card .icon-comment-o {
+  bottom: 3px;
 }
 
 
