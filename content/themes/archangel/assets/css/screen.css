@@ -623,7 +623,31 @@ blockquote {
 
 .about-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+.about-card-holder {
+  justify-content: space-around;
+}
+
+.about-card {
+  border: 3px solid #333;
+  border-radius: 7px;
+  padding: 10px;
+/*  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;*/
+}
+
+.about-card h2 {
+  font-size: 30px;
+  margin: 0 auto 10px;
+  flex-basis: 100%;
+}
+
+#likes-card .icon-smile-o, #dislikes-card .icon-frown-o {
+  position: relative;
+  bottom: 1px;
 }
 
 
