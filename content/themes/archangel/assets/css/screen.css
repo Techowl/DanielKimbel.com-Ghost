@@ -645,6 +645,7 @@ blockquote {
   flex-basis: 100%;
   padding-bottom: 10px;
   border-bottom: 1px solid #333;
+  text-align: center;
 }
 
 .about-card .icon {
@@ -673,6 +674,10 @@ blockquote {
 
 #contact-card .icon-comment-o {
   bottom: 3px;
+}
+
+.about-card .about-thumbnail {
+  border-radius: 60px;
 }
 
 
