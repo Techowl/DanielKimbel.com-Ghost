@@ -687,6 +687,16 @@ blockquote {
   border-radius: 60px;
 }
 
+.banned-image-holder {
+  position: relative;
+}
+
+.banned-image-holder .ban-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 /* ==========================================================================
    5. Reading List page
