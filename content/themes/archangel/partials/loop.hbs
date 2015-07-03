@@ -1,5 +1,7 @@
 {{#if pagination.prev}}
-  {{pagination}}
+  <div class="upper-pagination-holder">
+    {{pagination}}
+  </div>
 {{/if}}
 
 <div class="post-summaries-holder">
@@ -22,4 +24,6 @@
   {{/foreach}}
 </div>
 
-{{pagination}}
+<div class="lower-pagination-holder">
+  {{pagination}}
+</div>

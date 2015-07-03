@@ -136,8 +136,7 @@ blockquote {
 
 .main-header {
   text-align: center;
-  padding-top: 17px;
-  margin-bottom: 28px;
+  padding: 17px 0 28px;
 }
 
 .page-title-holder {
@@ -381,7 +380,15 @@ blockquote {
    ========================================================================== */
 
 .post-summaries-holder {
-  margin: 28px auto;
+  margin: 0 auto;
+}
+
+.upper-pagination-holder {
+  padding-bottom: 28px;
+}
+
+.lower-pagination-holder {
+  padding-top: 28px;
 }
 
 .post-summary {
@@ -695,8 +702,7 @@ blockquote {
 @media only screen and (max-width: 875px) {
 
   .main-header {
-    padding-top: 9px;
-    margin-bottom: 16px;
+    padding: 9px 0 16px;
   }
 
   .page-title-holder:hover .page-title {
@@ -774,8 +780,12 @@ blockquote {
     padding: 24px 0;
   }
 
-  .post-summaries-holder {
-    margin: 16px auto;
+  .upper-pagination-holder {
+    padding-bottom: 16px;
+  }
+
+  .lower-pagination-holder {
+    padding-top: 16px;
   }
 
   .post-summary {
@@ -830,8 +840,7 @@ blockquote {
 @media only screen and (max-width: 580px) {
 
   .main-header {
-    padding-top: 7px;
-    margin-bottom: 14px;
+    padding: 7px 0 14px;
   }
 
   .page-title {
@@ -920,8 +929,12 @@ blockquote {
     height: 16px;
   }
 
-  .post-summaries-holder {
-    margin: 14px auto;
+  .upper-pagination-holder {
+    padding-bottom: 14px;
+  }
+
+  .lower-pagination-holder {
+    padding-top: 14px;
   }
 
   .post-summary {
