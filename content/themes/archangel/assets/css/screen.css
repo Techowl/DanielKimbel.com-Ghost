@@ -727,6 +727,38 @@ blockquote {
   opacity: 0.6;
 }
 
+.image-attributions-holder {
+  text-align: center;
+  margin: 30px auto 20px;
+  color: #BBBBBB;
+}
+
+.image-attributions-header {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.image-attributions {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.image-attributions a {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: #888888;
+  height: 15px;
+  transition: border 0.2s linear;
+}
+
+.image-attributions a:hover {
+  border-bottom: 1px solid #888888;
+}
+
 
 /* ==========================================================================
    5. Reading List page
