@@ -567,13 +567,13 @@ blockquote {
 }
 
 .share-twitter {
-  color: #4099FF;
-  border: 2px solid #4099FF;
+  color: #55ACEE;
+  border: 2px solid #55ACEE;
 }
 
 .share-twitter:hover {
   color: #FFFFFF;
-  background-color: #4099FF;
+  background-color: #55ACEE;
 }
 
 .share-facebook {
@@ -683,6 +683,18 @@ blockquote {
   bottom: 3px;
 }
 
+#contact-card .icon-twitter {
+  color: #55ACEE;
+}
+
+#contact-card .icon-linkedin {
+  color: #0077b5;
+}
+
+#contact-card .icon-envelope-o {
+  color: #FF9400;
+}
+
 .about-card .about-thumbnail {
   border-radius: 60px;
 }
@@ -695,6 +707,14 @@ blockquote {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.about-image-link, .contact-icon-link {
+  transition: opacity 0.1s linear;
+}
+
+.about-image-link:hover, .contact-icon-link:hover {
+  opacity: 0.6;
 }
 
 
