@@ -699,6 +699,13 @@ blockquote {
   border-radius: 60px;
 }
 
+.about-card .image-name-pair p {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .banned-image-holder {
   position: relative;
 }
