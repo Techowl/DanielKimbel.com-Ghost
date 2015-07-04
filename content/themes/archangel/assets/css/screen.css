@@ -699,8 +699,11 @@ blockquote {
   border-radius: 60px;
 }
 
-.about-card .image-name-pair p {
+.about-card .image-name-pair {
   text-align: center;
+}
+
+.about-card .image-name-pair p {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
