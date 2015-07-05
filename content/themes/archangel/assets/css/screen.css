@@ -413,12 +413,12 @@ blockquote {
   margin: 0 auto;
 }
 
-.post-header, .about-header {
+.post-header, .page-header {
   padding-top: 32px;
   position: relative;
 }
 
-.post-title, .about-header {
+.post-title, .page-header {
   margin: 0 auto;
   font-size: 32px;
 }
@@ -490,7 +490,7 @@ blockquote {
    3. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .content, .about-content {
+.post-template .content, .page-content {
   background: linear-gradient(#F6F6F6, #FFFFFF);
 }
 
@@ -629,7 +629,7 @@ blockquote {
    4. About page
    ========================================================================== */
 
-.about-header {
+.page-header {
   text-align: center;
   margin-bottom: 28px;
 }
@@ -789,7 +789,13 @@ blockquote {
    5. Reading List page
    ========================================================================== */
 
+.reading-list-table img {
+  box-shadow: 0 0 1px #333;
+}
 
+.reading-list-table img.no-shadow {
+  box-shadow: none;
+}
 
 
 /* ==========================================================================
@@ -895,11 +901,11 @@ blockquote {
     min-width: 450px;
   }
 
-  .post-header, .about-header {
+  .post-header, .page-header {
     padding-top: 26px;
   }
 
-  .post-title, .post-content h1, .about-header {
+  .post-title, .post-content h1, .page-header {
     font-size: 26px;
   }
 
@@ -1081,11 +1087,11 @@ blockquote {
     min-width: 280px;
   }
 
-  .post-header, .about-header {
+  .post-header, .page-header {
     padding-top: 24px;
   }
 
-  .post-title, .post-content h1, .about-header {
+  .post-title, .post-content h1, .page-header {
     line-height: 24px;
     font-size: 20px;
   }
