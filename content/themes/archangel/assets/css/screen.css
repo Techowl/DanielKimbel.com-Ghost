@@ -687,19 +687,19 @@ blockquote {
   bottom: 4px;
 }
 
-#contact-card .icon-comment-o {
+#connect-card .icon-comment-o {
   bottom: 3px;
 }
 
-#contact-card .icon-twitter {
+#connect-card .icon-twitter {
   color: #55ACEE;
 }
 
-#contact-card .icon-linkedin {
+#connect-card .icon-linkedin {
   color: #0077b5;
 }
 
-#contact-card .icon-envelope-o {
+#connect-card .icon-envelope-o {
   color: #FF9400;
 }
 
@@ -712,7 +712,7 @@ blockquote {
   margin: 0 10px 20px;
 }
 
-.contact-icon-link {
+.connect-icon-link {
   margin: 0 10px 15px;
 }
 
@@ -732,11 +732,11 @@ blockquote {
   left: 0;
 }
 
-.about-image-link, .contact-icon-link {
+.about-image-link, .connect-icon-link {
   transition: opacity 0.1s linear;
 }
 
-.about-image-link:hover, .contact-icon-link:hover {
+.about-image-link:hover, .connect-icon-link:hover {
   opacity: 0.6;
 }
 
