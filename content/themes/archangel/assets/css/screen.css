@@ -1153,6 +1153,40 @@ blockquote {
     transition: color 0.2s linear, background-color 0.2s linear;
   }
 
+  .about-card {
+    border: 1px solid #333;
+  }
+
+  .about-card h2 {
+    font-size: 20px;
+  }
+
+  .about-card .about-thumbnail {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .about-card .image-name-pair {
+    margin: 0 10px 18px;
+  }
+
+  .about-card .image-name-pair p {
+    font-size: 16px;
+  }
+
+  .appearance-image {
+    margin-bottom: 15px;
+  }
+
+  .connect-icon-link {
+    margin: 0 8px 15px;
+  }
+
+  .image-attributions-holder {
+    margin: 10px auto 10px;
+  }
+
 }
 
 
