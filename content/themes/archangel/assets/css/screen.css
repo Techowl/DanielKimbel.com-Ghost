@@ -693,6 +693,7 @@ blockquote {
 
 #connect-card .icon-twitter {
   color: #55ACEE;
+  top: 1px;
 }
 
 #connect-card .icon-linkedin {
@@ -733,6 +734,12 @@ blockquote {
 .appearance-image {
   border-radius: 7px;
   margin-bottom: 20px;
+}
+
+.hubski-logo {
+  height: 50px;
+  position: relative;
+  top: 6px;
 }
 
 .image-attributions-holder {
