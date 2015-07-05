@@ -642,7 +642,7 @@ blockquote {
   border-radius: 7px;
   padding: 10px;
   background: #FFFFFF;
-  margin: 0 auto 30px;
+  margin: 0 5px 30px;
   justify-content: center;
   align-items: flex-end;
   box-sizing: border-box;
@@ -698,7 +698,7 @@ blockquote {
 
 #connect-card .icon-twitter {
   color: #55ACEE;
-  top: 1px;
+  top: 2px;
 }
 
 #connect-card .icon-linkedin {
@@ -743,7 +743,8 @@ blockquote {
 
 .hubski-logo-link {
   position: relative;
-  top: 6px;
+  top: 7px;
+  right: 1px;
 }
 
 .hubski-logo {
