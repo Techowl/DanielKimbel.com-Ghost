@@ -11,7 +11,8 @@
     4.  About
     5.  Reading List
     6.  Media Queries (Tablet)
-    7.  Media Queries (Mobile)
+    7.  Media Queries (Intermediate)
+    8.  Media Queries (Mobile)
 
 */
 
@@ -738,7 +739,7 @@ blockquote {
 
 .appearance-image {
   border-radius: 7px;
-  margin-bottom: 20px;
+  margin: 0 5px 20px;
 }
 
 .hubski-logo-link {
@@ -926,11 +927,48 @@ blockquote {
     height: 21px;
   }
 
+  .about-card h2 {
+    font-size: 26px;
+  }
+
+  .about-card .about-thumbnail {
+    border-radius: 55px;
+    height: 110px;
+    width: 110px;
+  }
+
+  .about-card .image-name-pair p {
+    font-size: 19px;
+  }
+
+  .image-attributions-holder {
+    margin: 20px auto 20px;
+  }
+
+  .image-attributions {
+    font-size: 11px;
+  }
+
+  .image-attributions a {
+    height: 14px;
+  }
+
 }
 
 
 /* ==========================================================================
-   7. Media Queries (Mobile) - Smaller than 580px
+   8. Media Queries (Intermediate) - Smaller than 750px
+   ========================================================================== */
+
+@media only screen and (max-width: 750px) {
+  .about-card {
+    flex: 100%;
+  }
+}
+
+
+/* ==========================================================================
+   8. Media Queries (Mobile) - Smaller than 580px
    ========================================================================== */
 
 @media only screen and (max-width: 580px) {
