@@ -667,7 +667,7 @@ blockquote {
   position: relative;
 }
 
-#likes-card .icon-smile-o, #dislikes-card .icon-frown-o {
+#likes-card .icon-smile-o {
   bottom: 1px;
 }
 
@@ -720,16 +720,6 @@ blockquote {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
-}
-
-.banned-image-holder {
-  position: relative;
-}
-
-.banned-image-holder .ban-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .about-image-link, .connect-icon-link {
