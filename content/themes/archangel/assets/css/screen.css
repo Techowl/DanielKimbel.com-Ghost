@@ -736,10 +736,13 @@ blockquote {
   margin-bottom: 20px;
 }
 
-.hubski-logo {
-  height: 50px;
+.hubski-logo-link {
   position: relative;
   top: 6px;
+}
+
+.hubski-logo {
+  height: 50px;
 }
 
 .image-attributions-holder {
