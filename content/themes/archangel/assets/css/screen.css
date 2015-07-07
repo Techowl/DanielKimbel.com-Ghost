@@ -789,12 +789,64 @@ blockquote {
    5. Reading List page
    ========================================================================== */
 
+.reading-list-description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.reading-list-table {
+  margin: 50px auto 30px;
+  text-align: center;
+}
+
 .reading-list-table img {
   box-shadow: 0 0 1px #333;
 }
 
+.reading-list-table td {
+  padding: 15px 0;
+}
+
+.reading-list-table td:nth-of-type(3n-2) {
+  text-align: left;
+}
+
+.reading-list-table .duration-header {
+  padding: 0 20px;
+  max-width: 80px;
+}
+
 .reading-list-table img.no-shadow {
   box-shadow: none;
+}
+
+.reading-list-table img, .reading-list-book-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.reading-list-table a .reading-list-book-title {
+  color: #8A4707;
+}
+
+.reading-list-table a:hover .reading-list-book-title {
+  text-decoration: underline;
+}
+
+.reading-list-book-info {
+  margin-left: 12px;
+  max-width: 240px;
+}
+
+.reading-list-book-title {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.reading-list-book-author {
+  font-size: 14px;
 }
 
 
