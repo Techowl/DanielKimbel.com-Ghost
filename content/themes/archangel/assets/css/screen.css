@@ -799,16 +799,21 @@ blockquote {
 .reading-list-table {
   margin: 25px auto 30px;
   text-align: center;
-  /*display: table;*/
 }
 
 .table-row {
-  /*display: table-row;*/
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .table-cell {
   display: table-cell;
 }
+
+.reading-list-table .table-row-holder:nth-of-type(even) {
+  background: #F6F6F6;
+}
+
 
 .reading-list-table img {
   box-shadow: 0 0 1px #333;
@@ -818,10 +823,19 @@ blockquote {
   padding: 15px 0;
 }
 
+.reading-list-table .table-header {
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
 .reading-list-table .table-cell:nth-of-type(3n-2) {
   text-align: left;
   width: 380px;
   padding-right: 20px;
+}
+
+.reading-list-table .table-header:nth-of-type(3n-2) {
+  text-align: center;
 }
 
 .reading-list-table .table-cell:nth-of-type(3n-1) {
