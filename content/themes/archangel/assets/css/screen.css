@@ -490,7 +490,7 @@ blockquote {
    3. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .content, .about-content {
+.post-template .content, .page-content {
   background: linear-gradient(#F6F6F6, #FFFFFF);
 }
 
@@ -815,7 +815,7 @@ blockquote {
 }
 
 .reading-list-table .table-row-holder:nth-of-type(even) {
-  background: #F6F6F6;
+  background: #F0F0F0;
 }
 
 
