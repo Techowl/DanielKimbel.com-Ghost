@@ -490,7 +490,7 @@ blockquote {
    3. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .content {
+.post-template .content, .about-content {
   background: linear-gradient(#F6F6F6, #FFFFFF);
 }
 
@@ -789,6 +789,10 @@ blockquote {
    5. Reading List page
    ========================================================================== */
 
+.reading-list-header {
+  margin-bottom: 15px;
+}
+
 .reading-list-description {
   text-align: center;
   font-size: 18px;
@@ -797,7 +801,7 @@ blockquote {
 }
 
 .reading-list-table {
-  margin: 25px auto 30px;
+  margin: 0px auto 30px;
   text-align: center;
 }
 
@@ -824,7 +828,7 @@ blockquote {
 }
 
 .reading-list-table .table-header {
-  font-weight: 400;
+  font-weight: 700;
   padding-bottom: 5px;
 }
 
@@ -841,6 +845,11 @@ blockquote {
 .reading-list-table .table-cell:nth-of-type(3n-1) {
   width: 100px;
   padding-right: 20px;
+}
+
+.reading-list-table .table-header:nth-of-type(3n-1) {
+  position: relative;
+  bottom: 10px;
 }
 
 .reading-list-table .table-cell:nth-of-type(3n) {
