@@ -685,6 +685,10 @@ blockquote {
   bottom: 3px;
 }
 
+#career-card .icon-briefcase {
+  right: 1px;
+}
+
 #appearance-card .icon-eye {
   bottom: 3px;
 }
