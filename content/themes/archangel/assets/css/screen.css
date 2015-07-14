@@ -375,6 +375,10 @@ blockquote {
   display: none;
 }
 
+.smartphone-only {
+  display: none;
+}
+
 
 /* ==========================================================================
    2. Loop / Pagination
@@ -1067,6 +1071,11 @@ blockquote {
     padding-bottom: 0;
   }
 
+  .reading-list-table .table-cell:nth-of-type(3n-2) {
+    padding-right: 0;
+    width: 190px;
+  }
+
   .reading-list-table .table-header:nth-of-type(3n-2) {
     text-align: center;
   }
@@ -1115,6 +1124,10 @@ blockquote {
    ========================================================================== */
 
 @media only screen and (max-width: 580px) {
+
+  .smartphone-only {
+    display: default;
+  }
 
   .main-header {
     padding: 7px 0 14px;
