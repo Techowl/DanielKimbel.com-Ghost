@@ -107,6 +107,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+body.gold a, a {
   color: #D67E10;
 }
 
@@ -141,7 +144,6 @@ blockquote {
 }
 
 .page-title-holder {
-  color: #8A4707;
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -149,6 +151,11 @@ blockquote {
   flex-wrap: nowrap;
 }
 
+body.gold .page-title-holder, .page-title-holder {
+  color: #8A4707;
+}
+
+body.gold .page-title-holder:hover .page-title,
 .page-title-holder:hover .page-title {
   border-bottom: 3px solid #8A4707;
 }
@@ -228,14 +235,17 @@ blockquote {
   margin-right: 25%;
 }
 
+body.gold .wing-part-holder-long .wing-part,
 .wing-part-holder-long .wing-part {
   border-color: #FEC239;
 }
 
+body.gold .wing-part-holder-medium .wing-part,
 .wing-part-holder-medium .wing-part {
   border-color: #F6AD2E;
 }
 
+body.gold .wing-part-holder-short .wing-part,
 .wing-part-holder-short .wing-part {
   border-color: #D67E10;
 }
@@ -252,32 +262,48 @@ blockquote {
   border: 0;
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
   transform: translate(30px, 0) skewX(-77deg);
+}
+
+body.gold .page-title-wing-holder-left .wing-part-holder-long .wing-tip,
+.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+  border-bottom: 14px solid #FEC239;
 }
 
 .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
   border: 0;
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
   transform: translate(-30px, 0) skewX(77deg);
+}
+
+body.gold .page-title-wing-holder-right .wing-part-holder-long .wing-tip,
+.page-title-wing-holder-right .wing-part-holder-long .wing-tip {
+  border-bottom: 14px solid #FEC239;
 }
 
 .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
   border: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
   transform: translate(56px, 0) skewX(77deg);
+}
+
+body.gold .page-title-wing-holder-left .wing-part-holder-short .wing-tip,
+.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+  border-top: 12px solid #D67E10;
 }
 
 .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
   border: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
   transform: translate(-56px, 0) skewX(-77deg);
+}
+
+body.gold .page-title-wing-holder-right .wing-part-holder-short .wing-tip,
+.page-title-wing-holder-right .wing-part-holder-short .wing-tip {
+  border-top: 12px solid #D67E10;
 }
 
 .page-title-wing-holder-left .wing-body {
@@ -306,15 +332,23 @@ blockquote {
 .main-nav .nav-button {
   flex: 0 1 126px;
   border: 1px solid #D67E10;
-  color: #D67E10;
   border-radius: 4px;
   padding: 5px 12px;
   transition: color 0.2s linear, background-color 0.2s linear;
   box-sizing: border-box;
 }
 
+body.gold .main-nav .nav-button,
+.main-nav .nav-button {
+  color: #D67E10;
+}
+
 .main-nav .nav-button:hover {
   color: #FFF;
+}
+
+body.gold .main-nav .nav-button:hover,
+.main-nav .nav-button:hover {
   background-color: #D67E10;
 }
 
@@ -323,26 +357,50 @@ blockquote {
 .tag-template #blog-nav-button,
 .post-template #blog-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
   font-weight: 400;
+}
+
+body.gold .home-template #blog-nav-button,
+body.gold .archive-template #blog-nav-button,
+body.gold .tag-template #blog-nav-button,
+body.gold .post-template #blog-nav-button,
+.home-template #blog-nav-button,
+.archive-template #blog-nav-button,
+.tag-template #blog-nav-button,
+.post-template #blog-nav-button {
+  border: 2px solid #D67E10;
 }
 
 .page-about #about-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
   font-weight: 400;
+}
+
+body.gold .page-about #about-nav-button,
+.page-about #about-nav-button {
+  border: 2px solid #D67E10;
 }
 
 .page-reading-list #reading-list-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
   font-weight: 400;
+}
+
+body.gold .page-reading-list #reading-list-nav-button,
+.page-reading-list #reading-list-nav-button {
+  border: 2px solid #D67E10;
 }
 
 .page-about #blog-nav-button, .page-reading-list #blog-nav-button {
   padding: 5px 12px;
-  border: 1px solid #D67E10;
   font-weight: 300;
+}
+
+body.gold .page-about #blog-nav-button,
+body.gold .page-reading-list #blog-nav-button,
+.page-about #blog-nav-button,
+.page-reading-list #blog-nav-button {
+  border: 1px solid #D67E10;
 }
 
 .site-footer {
@@ -357,7 +415,6 @@ blockquote {
 }
 
 .site-footer a, .post-meta a {
-  color: #8A4707;
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -365,7 +422,17 @@ blockquote {
   height: 19px;
 }
 
-.site-footer a:hover, .post-meta a:hover {
+body.gold .site-footer a,
+body.gold .post-meta a,
+.site-footer a,
+.post-meta a {
+  color: #8A4707;
+}
+
+body.gold .site-footer a:hover,
+body.gold .post-meta a:hover,
+.site-footer a:hover,
+.post-meta a:hover {
   border-bottom: 1px solid #8A4707;
 }
 
