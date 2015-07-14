@@ -1054,6 +1054,52 @@ blockquote {
     height: 14px;
   }
 
+  .reading-list-header {
+    margin-bottom: 15px;
+  }
+
+  .reading-list-description {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .reading-list-table .table-cell {
+    padding: 15px 0;
+  }
+
+  .reading-list-table .table-header {
+    padding-bottom: 0;
+  }
+
+  .reading-list-table .table-header:nth-of-type(3n-2) {
+    text-align: center;
+  }
+
+  .table-row-inner-holder.site-inner {
+    width: 85%;
+  }
+
+  .reading-list-table img {
+    height: 110px;
+  }
+
+  .reading-list-book-info {
+    margin-left: 10px;
+    max-width: 190px;
+  }
+
+  .reading-list-book-title {
+    font-size: 15px;
+  }
+
+  .reading-list-book-author {
+    font-size: 13px;
+  }
+
+  .reading-list-expected-length, .reading-list-progress {
+    font-size: 15px;
+  }
+
 }
 
 
@@ -1286,6 +1332,52 @@ blockquote {
 
   .image-attributions-holder {
     margin: 10px auto 10px;
+  }
+
+  .reading-list-header {
+    margin-bottom: 15px;
+  }
+
+  .reading-list-description {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .reading-list-table .table-cell {
+    padding: 15px 0;
+  }
+
+  .reading-list-table .table-header {
+    padding-bottom: 0;
+  }
+
+  .reading-list-table .table-header:nth-of-type(3n-2) {
+    text-align: center;
+  }
+
+  .table-row-inner-holder.site-inner {
+    width: 85%;
+  }
+
+  .reading-list-table img {
+    height: 110px;
+  }
+
+  .reading-list-book-info {
+    margin-left: 10px;
+    max-width: 190px;
+  }
+
+  .reading-list-book-title {
+    font-size: 15px;
+  }
+
+  .reading-list-book-author {
+    font-size: 13px;
+  }
+
+  .reading-list-expected-length, .reading-list-progress {
+    font-size: 15px;
   }
 
 }
