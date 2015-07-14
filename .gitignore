@@ -1,3 +1,6 @@
+# Sass files
+.sass-cache/
+
 # Config files
 config.js
 config.example.js
