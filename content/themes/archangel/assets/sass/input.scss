@@ -100,11 +100,6 @@ table { border-collapse: collapse; border-spacing: 0; }
    1. Default Layout
    ========================================================================== */
 
-$darkest-color: #8A4707;
-$dark-color: #D67E10;
-$medium-color: #F6AD2E;
-$light-color: #FEC239;
-
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -490,7 +485,6 @@ blockquote {
 }
 
 .post-template .post-content a {
-  color: $darkest-color;
   text-decoration: underline;
 }
 
@@ -512,7 +506,6 @@ blockquote {
 }
 
 .post-template .post-signature .author-link-holder a {
-  color: $darkest-color;
   display: inline-block;
   height: 22px;
   border-bottom: 1px solid transparent;
@@ -520,7 +513,7 @@ blockquote {
 }
 
 .post-template .post-signature .author-link-holder a:hover {
-  border-bottom: 1px solid $darkest-color;
+  border-bottom: 1px solid;
 }
 
 .post-template .post-signature .em-dash {
@@ -696,7 +689,7 @@ blockquote {
 }
 
 #connect-card .icon-linkedin {
-  color: #0077b5;
+  color: #0077B5;
 }
 
 #connect-card .icon-envelope-o {
@@ -858,10 +851,6 @@ blockquote {
   vertical-align: middle;
 }
 
-.reading-list-table a .reading-list-book-title {
-  color: $darkest-color;
-}
-
 .reading-list-table a:hover .reading-list-book-title {
   text-decoration: underline;
 }
@@ -893,7 +882,7 @@ blockquote {
   }
 
   .page-title-holder:hover .page-title {
-    border-bottom: 2px solid $darkest-color;
+    border-bottom: 2px solid;
   }
 
   .page-title {
@@ -918,31 +907,33 @@ blockquote {
     border-top: 4px solid;
   }
 
-  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+  .wing-part-holder-long .wing-tip {
+    border: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid $light-color;
+    border-bottom: 10px solid;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
     transform: translate(21px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid $light-color;
     transform: translate(-21px, 0) skewX(77deg);
   }
 
-  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+  .wing-part-holder-short .wing-tip {
+    border: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid $dark-color;
+    border-top: 8px solid;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
     transform: translate(37px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid $dark-color;
     transform: translate(-37px, 0) skewX(-77deg);
   }
 
@@ -1138,31 +1129,33 @@ blockquote {
     border-top: 3px solid;
   }
 
-  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+  .wing-part-holder-long .wing-tip {
+    border: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid $light-color;
+    border-bottom: 6px solid;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
     transform: translate(13px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid $light-color;
     transform: translate(-13px, 0) skewX(77deg);
   }
 
-  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+  .wing-part-holder-short .wing-tip {
+    border: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 3px solid $dark-color;
+    border-top: 4px solid;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
     transform: translate(21px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 3px solid $dark-color;
     transform: translate(-21px, 0) skewX(-77deg);
   }
 
@@ -1457,6 +1450,22 @@ $light-color: #FEC239;
 
   .pagination .older-posts:hover, .pagination .newer-posts:hover {
     background-color: $dark-color;
+  }
+
+  .post-template .post-content a {
+    color: $darkest-color;
+  }
+
+  .post-template .post-signature .author-link-holder a {
+    color: $darkest-color;
+  }
+
+  .post-template .post-signature .author-link-holder a:hover {
+    border-bottom-color: $darkest-color;
+  }
+
+  .reading-list-table a .reading-list-book-title {
+    color: $darkest-color;
   }
 }
 
