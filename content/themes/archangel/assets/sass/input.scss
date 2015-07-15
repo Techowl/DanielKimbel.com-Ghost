@@ -1464,10 +1464,20 @@ $dark-gold: #D67E10;
 $medium-gold: #F6AD2E;
 $light-gold: #FEC239;
 
-$darkest-red: #660000;
-$dark-red: #7F0F00;
-$medium-red: #FF1F00;
-$light-red: #FF624C;
+$darkest-red: #A60000;
+$dark-red: #DB0616;
+$medium-red: #FA7175;
+$light-red: #FE9999;
+
+$darkest-blue: #1D22A4;
+$dark-blue: #262DD7;
+$medium-blue: #1C77FF;
+$light-blue: #51A7FF;
+
+$darkest-purple: #512E7C;
+$dark-purple: #6D5CA5;
+$medium-purple: #908AC0;
+$light-purple: #B4B3F0;
 
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
@@ -1475,6 +1485,14 @@ body, body.gold {
 
 body.red {
   @include scheme($darkest-red, $dark-red, $medium-red, $light-red);
+}
+
+body.blue {
+  @include scheme($darkest-blue, $dark-blue, $medium-blue, $light-blue);
+}
+
+body.purple {
+  @include scheme($darkest-purple, $dark-purple, $medium-purple, $light-purple);
 }
 
 
