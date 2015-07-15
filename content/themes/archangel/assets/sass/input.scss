@@ -288,7 +288,7 @@ blockquote {
   margin: 0 auto;
 }
 
-.main-nav .nav-button {
+#about-nav-button, #blog-nav-button, #reading-list-nav-button {
   flex: 0 1 126px;
   border: 1px solid;
   border-radius: 4px;
@@ -297,8 +297,8 @@ blockquote {
   box-sizing: border-box;
 }
 
-.main-nav .nav-button:hover {
-  color: #FFF;
+#about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
+  color: #FFFFFF;
 }
 
 .home-template #blog-nav-button,
@@ -950,7 +950,7 @@ blockquote {
     font-size: 18px;
   }
 
-  .main-nav .nav-button {
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
     font-size: 14px;
   }
 
@@ -1178,7 +1178,7 @@ blockquote {
     justify-content: space-between;
   }
 
-  .main-nav .nav-button {
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
     font-size: 13px;
     flex: 0 1 102px;
     padding: 5px 6px;
@@ -1353,16 +1353,6 @@ blockquote {
    9. Color Schemes
    ========================================================================== */
 
-$darkest-gold: #8A4707;
-$dark-gold: #D67E10;
-$medium-gold: #F6AD2E;
-$light-gold: #FEC239;
-
-$darkest-color: #8A4707;
-$dark-color: #D67E10;
-$medium-color: #F6AD2E;
-$light-color: #FEC239;
-
 @mixin scheme($darkest-color, $dark-color, $medium-color, $light-color) {
   a {
     color: $dark-color;
@@ -1414,12 +1404,12 @@ $light-color: #FEC239;
     border-top-color: $dark-color;
   }
 
-  .main-nav .nav-button {
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
     border-color: $dark-color;
     color: $dark-color;
   }
 
-  .main-nav .nav-button:hover {
+  #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
     background-color: $dark-color;
     color: #FFFFFF;
   }
@@ -1469,8 +1459,22 @@ $light-color: #FEC239;
   }
 }
 
+$darkest-gold: #8A4707;
+$dark-gold: #D67E10;
+$medium-gold: #F6AD2E;
+$light-gold: #FEC239;
+
+$darkest-red: #660000;
+$dark-red: #7F0F00;
+$medium-red: #FF1F00;
+$light-red: #FF624C;
+
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
+}
+
+body.red {
+  @include scheme($darkest-red, $dark-red, $medium-red, $light-red);
 }
 
 

@@ -321,7 +321,7 @@ blockquote {
   width: 400px;
   margin: 0 auto; }
 
-.main-nav .nav-button {
+#about-nav-button, #blog-nav-button, #reading-list-nav-button {
   flex: 0 1 126px;
   border: 1px solid;
   border-radius: 4px;
@@ -329,8 +329,8 @@ blockquote {
   transition: color 0.2s linear, background-color 0.2s linear;
   box-sizing: border-box; }
 
-.main-nav .nav-button:hover {
-  color: #FFF; }
+#about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
+  color: #FFFFFF; }
 
 .home-template #blog-nav-button,
 .archive-template #blog-nav-button,
@@ -849,7 +849,7 @@ blockquote {
     margin: 11px auto 13px;
     font-size: 18px; }
 
-  .main-nav .nav-button {
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
     font-size: 14px; }
 
   .site-footer {
@@ -1019,7 +1019,7 @@ blockquote {
     width: 314px;
     justify-content: space-between; }
 
-  .main-nav .nav-button {
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
     font-size: 13px;
     flex: 0 1 102px;
     padding: 5px 6px; }
@@ -1183,10 +1183,10 @@ body .wing-part-holder-long .wing-tip, body.gold .wing-part-holder-long .wing-ti
   border-bottom-color: #FEC239; }
 body .wing-part-holder-short .wing-tip, body.gold .wing-part-holder-short .wing-tip {
   border-top-color: #D67E10; }
-body .main-nav .nav-button, body.gold .main-nav .nav-button {
+body #about-nav-button, body #blog-nav-button, body #reading-list-nav-button, body.gold #about-nav-button, body.gold #blog-nav-button, body.gold #reading-list-nav-button {
   border-color: #D67E10;
   color: #D67E10; }
-body .main-nav .nav-button:hover, body.gold .main-nav .nav-button:hover {
+body #about-nav-button:hover, body #blog-nav-button:hover, body #reading-list-nav-button:hover, body.gold #about-nav-button:hover, body.gold #blog-nav-button:hover, body.gold #reading-list-nav-button:hover {
   background-color: #D67E10;
   color: #FFFFFF; }
 body .site-footer a, body .post-meta a, body.gold .site-footer a, body.gold .post-meta a {
@@ -1211,5 +1211,62 @@ body .post-template .post-signature .author-link-holder a:hover, body.gold .post
   border-bottom-color: #8A4707; }
 body .reading-list-table a .reading-list-book-title, body.gold .reading-list-table a .reading-list-book-title {
   color: #8A4707; }
+
+body.red a {
+  color: #7F0F00; }
+body.red .page-title-holder {
+  color: #660000; }
+body.red .page-title-holder:hover .page-title {
+  border-bottom-color: #660000; }
+body.red .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FF624C;
+  border-left-color: transparent; }
+body.red .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #FF1F00;
+  border-left-color: transparent; }
+body.red .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #7F0F00;
+  border-left-color: transparent; }
+body.red .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FF624C;
+  border-right-color: transparent; }
+body.red .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #FF1F00;
+  border-right-color: transparent; }
+body.red .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #7F0F00;
+  border-right-color: transparent; }
+body.red .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FF624C; }
+body.red .wing-part-holder-short .wing-tip {
+  border-top-color: #7F0F00; }
+body.red #about-nav-button, body.red #blog-nav-button, body.red #reading-list-nav-button {
+  border-color: #7F0F00;
+  color: #7F0F00; }
+body.red #about-nav-button:hover, body.red #blog-nav-button:hover, body.red #reading-list-nav-button:hover {
+  background-color: #7F0F00;
+  color: #FFFFFF; }
+body.red .site-footer a, body.red .post-meta a {
+  color: #660000; }
+body.red .site-footer a:hover, body.red .post-meta a:hover {
+  border-bottom-color: #660000; }
+body.red .post-title a {
+  color: #660000; }
+body.red .post-title a:hover {
+  border-bottom-color: #660000; }
+body.red .read-more:hover {
+  border-bottom-color: #7F0F00; }
+body.red .pagination .older-posts, body.red .pagination .newer-posts {
+  border-color: #7F0F00; }
+body.red .pagination .older-posts:hover, body.red .pagination .newer-posts:hover {
+  background-color: #7F0F00; }
+body.red .post-template .post-content a {
+  color: #660000; }
+body.red .post-template .post-signature .author-link-holder a {
+  color: #660000; }
+body.red .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #660000; }
+body.red .reading-list-table a .reading-list-book-title {
+  color: #660000; }
 
 /*# sourceMappingURL=screen.css.map */
