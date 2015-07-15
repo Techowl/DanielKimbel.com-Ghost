@@ -5,15 +5,15 @@
 /*
 
     0.  Normalize
-    1.  Color Schemes
-    2.  Default Layout
-    3.  Loop
-    4.  Single Post
-    5.  About
-    6.  Reading List
-    7.  Media Queries (Tablet)
-    8.  Media Queries (Intermediate)
-    9.  Media Queries (Mobile)
+    1.  Default Layout
+    2.  Loop
+    3.  Single Post
+    4.  About
+    5.  Reading List
+    6.  Media Queries (Tablet)
+    7.  Media Queries (Intermediate)
+    8.  Media Queries (Mobile)
+    9.  Color Schemes
 
 */
 
@@ -97,18 +97,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 /* ==========================================================================
-   1. Color Schemes
+   1. Default Layout
    ========================================================================== */
 
-$gold-darkest: #8A4707;
-$gold-dark: #D67E10;
-$gold-medium: #F6AD2E;
-$gold-light: #FEC239;
-
-
-/* ==========================================================================
-   2. Default Layout
-   ========================================================================== */
+$darkest-color: #8A4707;
+$dark-color: #D67E10;
+$medium-color: #F6AD2E;
+$light-color: #FEC239;
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -118,7 +113,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #D67E10;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -152,7 +146,6 @@ blockquote {
 }
 
 .page-title-holder {
-  color: #8A4707;
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -161,7 +154,7 @@ blockquote {
 }
 
 .page-title-holder:hover .page-title {
-  border-bottom: 3px solid #8A4707;
+  border-bottom: 3px solid;
 }
 
 .page-title-link {
@@ -239,18 +232,6 @@ blockquote {
   margin-right: 25%;
 }
 
-.wing-part-holder-long .wing-part {
-  border-color: #FEC239;
-}
-
-.wing-part-holder-medium .wing-part {
-  border-color: #F6AD2E;
-}
-
-.wing-part-holder-short .wing-part {
-  border-color: #D67E10;
-}
-
 .page-title-wing-holder-left .wing-part-holder {
   justify-content: flex-start;
 }
@@ -259,35 +240,33 @@ blockquote {
   justify-content: flex-end;
 }
 
-.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+.wing-part-holder-long .wing-tip {
   border: 0;
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
+  border-bottom: 14px solid;
+}
+
+.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
   transform: translate(30px, 0) skewX(-77deg);
 }
 
 .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
-  border: 0;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
   transform: translate(-30px, 0) skewX(77deg);
 }
 
-.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+.wing-part-holder-short .wing-tip {
   border: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
+  border-top: 12px solid;
+}
+
+.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
   transform: translate(56px, 0) skewX(77deg);
 }
 
 .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
-  border: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
   transform: translate(-56px, 0) skewX(-77deg);
 }
 
@@ -316,8 +295,7 @@ blockquote {
 
 .main-nav .nav-button {
   flex: 0 1 126px;
-  border: 1px solid #D67E10;
-  color: #D67E10;
+  border: 1px solid;
   border-radius: 4px;
   padding: 5px 12px;
   transition: color 0.2s linear, background-color 0.2s linear;
@@ -326,7 +304,6 @@ blockquote {
 
 .main-nav .nav-button:hover {
   color: #FFF;
-  background-color: #D67E10;
 }
 
 .home-template #blog-nav-button,
@@ -334,25 +311,25 @@ blockquote {
 .tag-template #blog-nav-button,
 .post-template #blog-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400;
 }
 
 .page-about #about-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400;
 }
 
 .page-reading-list #reading-list-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400;
 }
 
 .page-about #blog-nav-button, .page-reading-list #blog-nav-button {
   padding: 5px 12px;
-  border: 1px solid #D67E10;
+  border: 1px solid;
   font-weight: 300;
 }
 
@@ -368,7 +345,6 @@ blockquote {
 }
 
 .site-footer a, .post-meta a {
-  color: #8A4707;
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -377,7 +353,7 @@ blockquote {
 }
 
 .site-footer a:hover, .post-meta a:hover {
-  border-bottom: 1px solid #8A4707;
+  border-bottom: 1px solid;
 }
 
 .hidden {
@@ -392,7 +368,7 @@ blockquote {
 
 
 /* ==========================================================================
-   3. Loop / Pagination
+   2. Loop / Pagination
    ========================================================================== */
 
 .post-summaries-holder {
@@ -439,13 +415,12 @@ blockquote {
 }
 
 .post-title a {
-  color: #8A4707;
   border-bottom: 2px solid transparent;
   transition: border 0.2s linear;
 }
 
 .post-title a:hover {
-  border-bottom: 2px solid #8A4707;
+  border-bottom: 2px solid;
 }
 
 .post-excerpt, .post-content, .post-signature {
@@ -465,7 +440,7 @@ blockquote {
 }
 
 .read-more:hover {
-  border-bottom: 1px solid #D67E10;
+  border-bottom: 1px solid;
 }
 
 .pagination {
@@ -481,7 +456,7 @@ blockquote {
 
 .pagination .older-posts, .pagination .newer-posts {
   padding: 5px 12px;
-  border: 1px solid #D67E10;
+  border: 1px solid;
   border-radius: 4px;
   transition: background-color 0.2s linear, color 0.2s linear;
   position: absolute;
@@ -496,13 +471,12 @@ blockquote {
 }
 
 .pagination .older-posts:hover, .pagination .newer-posts:hover {
-  background-color: #D67E10;
   color: #FFF;
 }
 
 
 /* ==========================================================================
-   4. Single Post - When you click on an individual post
+   3. Single Post - When you click on an individual post
    ========================================================================== */
 
 .post-template .content, .page-content {
@@ -516,7 +490,7 @@ blockquote {
 }
 
 .post-template .post-content a {
-  color: #8A4707;
+  color: $darkest-color;
   text-decoration: underline;
 }
 
@@ -538,7 +512,7 @@ blockquote {
 }
 
 .post-template .post-signature .author-link-holder a {
-  color: #8A4707;
+  color: $darkest-color;
   display: inline-block;
   height: 22px;
   border-bottom: 1px solid transparent;
@@ -546,7 +520,7 @@ blockquote {
 }
 
 .post-template .post-signature .author-link-holder a:hover {
-  border-bottom: 1px solid #8A4707;
+  border-bottom: 1px solid $darkest-color;
 }
 
 .post-template .post-signature .em-dash {
@@ -641,7 +615,7 @@ blockquote {
 
 
 /* ==========================================================================
-   5. About page
+   4. About page
    ========================================================================== */
 
 .page-header, .reading-list-header {
@@ -805,7 +779,7 @@ blockquote {
 
 
 /* ==========================================================================
-   6. Reading List page
+   5. Reading List page
    ========================================================================== */
 
 .reading-list-header-holder {
@@ -885,7 +859,7 @@ blockquote {
 }
 
 .reading-list-table a .reading-list-book-title {
-  color: #8A4707;
+  color: $darkest-color;
 }
 
 .reading-list-table a:hover .reading-list-book-title {
@@ -909,7 +883,7 @@ blockquote {
 
 
 /* ==========================================================================
-   7. Media Queries (Tablet) - Smaller than 875px
+   6. Media Queries (Tablet) - Smaller than 875px
    ========================================================================== */
 
 @media only screen and (max-width: 875px) {
@@ -919,7 +893,7 @@ blockquote {
   }
 
   .page-title-holder:hover .page-title {
-    border-bottom: 2px solid #8A4707;
+    border-bottom: 2px solid $darkest-color;
   }
 
   .page-title {
@@ -947,28 +921,28 @@ blockquote {
   .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #FEC239;
+    border-bottom: 10px solid $light-color;
     transform: translate(21px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #FEC239;
+    border-bottom: 10px solid $light-color;
     transform: translate(-21px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #D67E10;
+    border-top: 8px solid $dark-color;
     transform: translate(37px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #D67E10;
+    border-top: 8px solid $dark-color;
     transform: translate(-37px, 0) skewX(-77deg);
   }
 
@@ -1120,7 +1094,7 @@ blockquote {
 
 
 /* ==========================================================================
-   8. Media Queries (Intermediate) - Smaller than 750px
+   7. Media Queries (Intermediate) - Smaller than 750px
    ========================================================================== */
 
 @media only screen and (max-width: 750px) {
@@ -1167,28 +1141,28 @@ blockquote {
   .page-title-wing-holder-left .wing-part-holder-long .wing-tip {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #FEC239;
+    border-bottom: 6px solid $light-color;
     transform: translate(13px, 0) skewX(-77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #FEC239;
+    border-bottom: 6px solid $light-color;
     transform: translate(-13px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-left .wing-part-holder-short .wing-tip {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 3px solid #D67E10;
+    border-top: 3px solid $dark-color;
     transform: translate(21px, 0) skewX(77deg);
   }
 
   .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 3px solid #D67E10;
+    border-top: 3px solid $dark-color;
     transform: translate(-21px, 0) skewX(-77deg);
   }
 
@@ -1380,6 +1354,114 @@ blockquote {
     min-width: 190px;
   }
 
+}
+
+/* ==========================================================================
+   9. Color Schemes
+   ========================================================================== */
+
+$darkest-gold: #8A4707;
+$dark-gold: #D67E10;
+$medium-gold: #F6AD2E;
+$light-gold: #FEC239;
+
+$darkest-color: #8A4707;
+$dark-color: #D67E10;
+$medium-color: #F6AD2E;
+$light-color: #FEC239;
+
+@mixin scheme($darkest-color, $dark-color, $medium-color, $light-color) {
+  a {
+    color: $dark-color;
+  }
+
+  .page-title-holder {
+    color: $darkest-color;
+  }
+
+  .page-title-holder:hover .page-title {
+    border-bottom-color: $darkest-color;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+    border-color: $light-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+    border-color: $medium-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+    border-color: $dark-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+    border-color: $light-color;
+    border-right-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+    border-color: $medium-color;
+    border-right-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+    border-color: $dark-color;
+    border-right-color: transparent;
+  }
+
+  .wing-part-holder-long .wing-tip {
+    border-bottom-color: $light-color;
+  }
+
+  .wing-part-holder-short .wing-tip {
+    border-top-color: $dark-color;
+  }
+
+  .main-nav .nav-button {
+    border-color: $dark-color;
+    color: $dark-color;
+  }
+
+  .main-nav .nav-button:hover {
+    background-color: $dark-color;
+    color: #FFFFFF;
+  }
+
+  .site-footer a, .post-meta a {
+    color: $darkest-color;
+  }
+
+  .site-footer a:hover, .post-meta a:hover {
+    border-bottom-color: $darkest-color;
+  }
+
+  .post-title a {
+    color: $darkest-color;
+  }
+
+  .post-title a:hover {
+    border-bottom-color: $darkest-color;
+  }
+
+  .read-more:hover {
+    border-bottom-color: $dark-color;
+  }
+
+  .pagination .older-posts, .pagination .newer-posts {
+    border-color: $dark-color;
+  }
+
+  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+    background-color: $dark-color;
+  }
+}
+
+body.gold {
+  @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
 
 

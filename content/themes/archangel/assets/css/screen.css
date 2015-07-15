@@ -4,15 +4,15 @@
 /*
 
     0.  Normalize
-    1.  Color Schemes
-    2.  Default Layout
-    3.  Loop
-    4.  Single Post
-    5.  About
-    6.  Reading List
-    7.  Media Queries (Tablet)
-    8.  Media Queries (Intermediate)
-    9.  Media Queries (Mobile)
+    1.  Default Layout
+    2.  Loop
+    3.  Single Post
+    4.  About
+    5.  Reading List
+    6.  Media Queries (Tablet)
+    7.  Media Queries (Intermediate)
+    8.  Media Queries (Mobile)
+    9.  Color Schemes
 
 */
 /* ==========================================================================
@@ -167,10 +167,7 @@ table {
   border-spacing: 0; }
 
 /* ==========================================================================
-   1. Color Schemes
-   ========================================================================== */
-/* ==========================================================================
-   2. Default Layout
+   1. Default Layout
    ========================================================================== */
 body {
   font-family: "Open Sans", sans-serif;
@@ -178,8 +175,7 @@ body {
   color: #333; }
 
 a {
-  text-decoration: none;
-  color: #D67E10; }
+  text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
@@ -207,7 +203,6 @@ blockquote {
   padding: 17px 0 28px; }
 
 .page-title-holder {
-  color: #8A4707;
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -215,7 +210,7 @@ blockquote {
   flex-wrap: nowrap; }
 
 .page-title-holder:hover .page-title {
-  border-bottom: 3px solid #8A4707; }
+  border-bottom: 3px solid; }
 
 .page-title-link {
   width: 100%; }
@@ -277,47 +272,34 @@ blockquote {
 .page-title-wing-holder-right .wing-part-holder-medium {
   margin-right: 25%; }
 
-.wing-part-holder-long .wing-part {
-  border-color: #FEC239; }
-
-.wing-part-holder-medium .wing-part {
-  border-color: #F6AD2E; }
-
-.wing-part-holder-short .wing-part {
-  border-color: #D67E10; }
-
 .page-title-wing-holder-left .wing-part-holder {
   justify-content: flex-start; }
 
 .page-title-wing-holder-right .wing-part-holder {
   justify-content: flex-end; }
 
-.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
+.wing-part-holder-long .wing-tip {
   border: 0;
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
+  border-bottom: 14px solid; }
+
+.page-title-wing-holder-left .wing-part-holder-long .wing-tip {
   transform: translate(30px, 0) skewX(-77deg); }
 
 .page-title-wing-holder-right .wing-part-holder-long .wing-tip {
-  border: 0;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-bottom: 14px solid #FEC239;
   transform: translate(-30px, 0) skewX(77deg); }
 
-.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
+.wing-part-holder-short .wing-tip {
   border: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
+  border-top: 12px solid; }
+
+.page-title-wing-holder-left .wing-part-holder-short .wing-tip {
   transform: translate(56px, 0) skewX(77deg); }
 
 .page-title-wing-holder-right .wing-part-holder-short .wing-tip {
-  border: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #D67E10;
   transform: translate(-56px, 0) skewX(-77deg); }
 
 .page-title-wing-holder-left .wing-body {
@@ -341,38 +323,36 @@ blockquote {
 
 .main-nav .nav-button {
   flex: 0 1 126px;
-  border: 1px solid #D67E10;
-  color: #D67E10;
+  border: 1px solid;
   border-radius: 4px;
   padding: 5px 12px;
   transition: color 0.2s linear, background-color 0.2s linear;
   box-sizing: border-box; }
 
 .main-nav .nav-button:hover {
-  color: #FFF;
-  background-color: #D67E10; }
+  color: #FFF; }
 
 .home-template #blog-nav-button,
 .archive-template #blog-nav-button,
 .tag-template #blog-nav-button,
 .post-template #blog-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400; }
 
 .page-about #about-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400; }
 
 .page-reading-list #reading-list-nav-button {
   padding: 4px 12px;
-  border: 2px solid #D67E10;
+  border: 2px solid;
   font-weight: 400; }
 
 .page-about #blog-nav-button, .page-reading-list #blog-nav-button {
   padding: 5px 12px;
-  border: 1px solid #D67E10;
+  border: 1px solid;
   font-weight: 300; }
 
 .site-footer {
@@ -385,7 +365,6 @@ blockquote {
   font-size: 14px; }
 
 .site-footer a, .post-meta a {
-  color: #8A4707;
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -393,7 +372,7 @@ blockquote {
   height: 19px; }
 
 .site-footer a:hover, .post-meta a:hover {
-  border-bottom: 1px solid #8A4707; }
+  border-bottom: 1px solid; }
 
 .hidden {
   text-indent: -9999px;
@@ -404,7 +383,7 @@ blockquote {
   display: none; }
 
 /* ==========================================================================
-   3. Loop / Pagination
+   2. Loop / Pagination
    ========================================================================== */
 .post-summaries-holder {
   margin: 0 auto; }
@@ -441,12 +420,11 @@ blockquote {
   font-size: 32px; }
 
 .post-title a {
-  color: #8A4707;
   border-bottom: 2px solid transparent;
   transition: border 0.2s linear; }
 
 .post-title a:hover {
-  border-bottom: 2px solid #8A4707; }
+  border-bottom: 2px solid; }
 
 .post-excerpt, .post-content, .post-signature {
   font-size: 18px; }
@@ -462,7 +440,7 @@ blockquote {
   display: inline-block; }
 
 .read-more:hover {
-  border-bottom: 1px solid #D67E10; }
+  border-bottom: 1px solid; }
 
 .pagination {
   position: relative;
@@ -475,7 +453,7 @@ blockquote {
 
 .pagination .older-posts, .pagination .newer-posts {
   padding: 5px 12px;
-  border: 1px solid #D67E10;
+  border: 1px solid;
   border-radius: 4px;
   transition: background-color 0.2s linear, color 0.2s linear;
   position: absolute; }
@@ -487,11 +465,10 @@ blockquote {
   left: 0; }
 
 .pagination .older-posts:hover, .pagination .newer-posts:hover {
-  background-color: #D67E10;
   color: #FFF; }
 
 /* ==========================================================================
-   4. Single Post - When you click on an individual post
+   3. Single Post - When you click on an individual post
    ========================================================================== */
 .post-template .content, .page-content {
   background: linear-gradient(#F6F6F6, #FFFFFF); }
@@ -605,7 +582,7 @@ blockquote {
   bottom: 1px; }
 
 /* ==========================================================================
-   5. About page
+   4. About page
    ========================================================================== */
 .page-header, .reading-list-header {
   text-align: center;
@@ -736,7 +713,7 @@ blockquote {
   border-bottom: 1px solid #888888; }
 
 /* ==========================================================================
-   6. Reading List page
+   5. Reading List page
    ========================================================================== */
 .reading-list-header-holder {
   margin-bottom: 20px; }
@@ -816,7 +793,7 @@ blockquote {
   font-size: 14px; }
 
 /* ==========================================================================
-   7. Media Queries (Tablet) - Smaller than 875px
+   6. Media Queries (Tablet) - Smaller than 875px
    ========================================================================== */
 @media only screen and (max-width: 875px) {
   .main-header {
@@ -977,7 +954,7 @@ blockquote {
   .reading-list-expected-length, .reading-list-progress {
     font-size: 15px; } }
 /* ==========================================================================
-   8. Media Queries (Intermediate) - Smaller than 750px
+   7. Media Queries (Intermediate) - Smaller than 750px
    ========================================================================== */
 @media only screen and (max-width: 750px) {
   .about-card {
@@ -1180,5 +1157,56 @@ blockquote {
     margin-left: 0;
     margin-top: 10px;
     min-width: 190px; } }
+/* ==========================================================================
+   9. Color Schemes
+   ========================================================================== */
+body.gold a {
+  color: #D67E10; }
+body.gold .page-title-holder {
+  color: #8A4707; }
+body.gold .page-title-holder:hover .page-title {
+  border-bottom-color: #8A4707; }
+body.gold .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FEC239;
+  border-left-color: transparent; }
+body.gold .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #F6AD2E;
+  border-left-color: transparent; }
+body.gold .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #D67E10;
+  border-left-color: transparent; }
+body.gold .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FEC239;
+  border-right-color: transparent; }
+body.gold .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #F6AD2E;
+  border-right-color: transparent; }
+body.gold .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #D67E10;
+  border-right-color: transparent; }
+body.gold .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FEC239; }
+body.gold .wing-part-holder-short .wing-tip {
+  border-top-color: #D67E10; }
+body.gold .main-nav .nav-button {
+  border-color: #D67E10;
+  color: #D67E10; }
+body.gold .main-nav .nav-button:hover {
+  background-color: #D67E10;
+  color: #FFFFFF; }
+body.gold .site-footer a, body.gold .post-meta a {
+  color: #8A4707; }
+body.gold .site-footer a:hover, body.gold .post-meta a:hover {
+  border-bottom-color: #8A4707; }
+body.gold .post-title a {
+  color: #8A4707; }
+body.gold .post-title a:hover {
+  border-bottom-color: #8A4707; }
+body.gold .read-more:hover {
+  border-bottom-color: #D67E10; }
+body.gold .pagination .older-posts, body.gold .pagination .newer-posts {
+  border-color: #D67E10; }
+body.gold .pagination .older-posts:hover, body.gold .pagination .newer-posts:hover {
+  background-color: #D67E10; }
 
 /*# sourceMappingURL=screen.css.map */
