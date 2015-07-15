@@ -1460,7 +1460,7 @@ $light-color: #FEC239;
   }
 }
 
-body.gold {
+body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
 

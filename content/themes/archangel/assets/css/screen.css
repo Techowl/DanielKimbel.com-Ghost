@@ -1160,53 +1160,53 @@ blockquote {
 /* ==========================================================================
    9. Color Schemes
    ========================================================================== */
-body.gold a {
+body a, body.gold a {
   color: #D67E10; }
-body.gold .page-title-holder {
+body .page-title-holder, body.gold .page-title-holder {
   color: #8A4707; }
-body.gold .page-title-holder:hover .page-title {
+body .page-title-holder:hover .page-title, body.gold .page-title-holder:hover .page-title {
   border-bottom-color: #8A4707; }
-body.gold .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+body .page-title-wing-holder-left .wing-part-holder-long .wing-body, body.gold .page-title-wing-holder-left .wing-part-holder-long .wing-body {
   border-color: #FEC239;
   border-left-color: transparent; }
-body.gold .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+body .page-title-wing-holder-left .wing-part-holder-medium .wing-body, body.gold .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
   border-color: #F6AD2E;
   border-left-color: transparent; }
-body.gold .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+body .page-title-wing-holder-left .wing-part-holder-short .wing-body, body.gold .page-title-wing-holder-left .wing-part-holder-short .wing-body {
   border-color: #D67E10;
   border-left-color: transparent; }
-body.gold .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+body .page-title-wing-holder-right .wing-part-holder-long .wing-body, body.gold .page-title-wing-holder-right .wing-part-holder-long .wing-body {
   border-color: #FEC239;
   border-right-color: transparent; }
-body.gold .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+body .page-title-wing-holder-right .wing-part-holder-medium .wing-body, body.gold .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
   border-color: #F6AD2E;
   border-right-color: transparent; }
-body.gold .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+body .page-title-wing-holder-right .wing-part-holder-short .wing-body, body.gold .page-title-wing-holder-right .wing-part-holder-short .wing-body {
   border-color: #D67E10;
   border-right-color: transparent; }
-body.gold .wing-part-holder-long .wing-tip {
+body .wing-part-holder-long .wing-tip, body.gold .wing-part-holder-long .wing-tip {
   border-bottom-color: #FEC239; }
-body.gold .wing-part-holder-short .wing-tip {
+body .wing-part-holder-short .wing-tip, body.gold .wing-part-holder-short .wing-tip {
   border-top-color: #D67E10; }
-body.gold .main-nav .nav-button {
+body .main-nav .nav-button, body.gold .main-nav .nav-button {
   border-color: #D67E10;
   color: #D67E10; }
-body.gold .main-nav .nav-button:hover {
+body .main-nav .nav-button:hover, body.gold .main-nav .nav-button:hover {
   background-color: #D67E10;
   color: #FFFFFF; }
-body.gold .site-footer a, body.gold .post-meta a {
+body .site-footer a, body .post-meta a, body.gold .site-footer a, body.gold .post-meta a {
   color: #8A4707; }
-body.gold .site-footer a:hover, body.gold .post-meta a:hover {
+body .site-footer a:hover, body .post-meta a:hover, body.gold .site-footer a:hover, body.gold .post-meta a:hover {
   border-bottom-color: #8A4707; }
-body.gold .post-title a {
+body .post-title a, body.gold .post-title a {
   color: #8A4707; }
-body.gold .post-title a:hover {
+body .post-title a:hover, body.gold .post-title a:hover {
   border-bottom-color: #8A4707; }
-body.gold .read-more:hover {
+body .read-more:hover, body.gold .read-more:hover {
   border-bottom-color: #D67E10; }
-body.gold .pagination .older-posts, body.gold .pagination .newer-posts {
+body .pagination .older-posts, body .pagination .newer-posts, body.gold .pagination .older-posts, body.gold .pagination .newer-posts {
   border-color: #D67E10; }
-body.gold .pagination .older-posts:hover, body.gold .pagination .newer-posts:hover {
+body .pagination .older-posts:hover, body .pagination .newer-posts:hover, body.gold .pagination .older-posts:hover, body.gold .pagination .newer-posts:hover {
   background-color: #D67E10; }
 
 /*# sourceMappingURL=screen.css.map */
