@@ -1479,6 +1479,16 @@ $dark-purple: #6D5CA5;
 $medium-purple: #908AC0;
 $light-purple: #B4B3F0;
 
+$darkest-green: #175702;
+$dark-green: #2E8C06;
+$medium-green: #75C155;
+$light-green: #9CD897;
+
+$darkest-orange: #D96000;
+$dark-orange: #F27E15;
+$medium-orange: #F49014;
+$light-orange: #F3A612;
+
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
@@ -1493,6 +1503,14 @@ body.blue {
 
 body.purple {
   @include scheme($darkest-purple, $dark-purple, $medium-purple, $light-purple);
+}
+
+body.green {
+  @include scheme($darkest-green, $dark-green, $medium-green, $light-green);
+}
+
+body.orange {
+  @include scheme($darkest-orange, $dark-orange, $medium-orange, $light-orange);
 }
 
 

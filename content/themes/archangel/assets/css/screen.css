@@ -1383,4 +1383,118 @@ body.purple .post-template .post-signature .author-link-holder a:hover {
 body.purple .reading-list-table a .reading-list-book-title {
   color: #512E7C; }
 
+body.green a {
+  color: #2E8C06; }
+body.green .page-title-holder {
+  color: #175702; }
+body.green .page-title-holder:hover .page-title {
+  border-bottom-color: #175702; }
+body.green .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #9CD897;
+  border-left-color: transparent; }
+body.green .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #75C155;
+  border-left-color: transparent; }
+body.green .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #2E8C06;
+  border-left-color: transparent; }
+body.green .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #9CD897;
+  border-right-color: transparent; }
+body.green .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #75C155;
+  border-right-color: transparent; }
+body.green .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #2E8C06;
+  border-right-color: transparent; }
+body.green .wing-part-holder-long .wing-tip {
+  border-bottom-color: #9CD897; }
+body.green .wing-part-holder-short .wing-tip {
+  border-top-color: #2E8C06; }
+body.green #about-nav-button, body.green #blog-nav-button, body.green #reading-list-nav-button {
+  border-color: #2E8C06;
+  color: #2E8C06; }
+body.green #about-nav-button:hover, body.green #blog-nav-button:hover, body.green #reading-list-nav-button:hover {
+  background-color: #2E8C06;
+  color: #FFFFFF; }
+body.green .site-footer a, body.green .post-meta a {
+  color: #175702; }
+body.green .site-footer a:hover, body.green .post-meta a:hover {
+  border-bottom-color: #175702; }
+body.green .post-title a {
+  color: #175702; }
+body.green .post-title a:hover {
+  border-bottom-color: #175702; }
+body.green .read-more:hover {
+  border-bottom-color: #2E8C06; }
+body.green .pagination .older-posts, body.green .pagination .newer-posts {
+  border-color: #2E8C06; }
+body.green .pagination .older-posts:hover, body.green .pagination .newer-posts:hover {
+  background-color: #2E8C06; }
+body.green .post-template .post-content a {
+  color: #175702; }
+body.green .post-template .post-signature .author-link-holder a {
+  color: #175702; }
+body.green .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #175702; }
+body.green .reading-list-table a .reading-list-book-title {
+  color: #175702; }
+
+body.orange a {
+  color: #F27E15; }
+body.orange .page-title-holder {
+  color: #D96000; }
+body.orange .page-title-holder:hover .page-title {
+  border-bottom-color: #D96000; }
+body.orange .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #F3A612;
+  border-left-color: transparent; }
+body.orange .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #F49014;
+  border-left-color: transparent; }
+body.orange .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #F27E15;
+  border-left-color: transparent; }
+body.orange .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #F3A612;
+  border-right-color: transparent; }
+body.orange .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #F49014;
+  border-right-color: transparent; }
+body.orange .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #F27E15;
+  border-right-color: transparent; }
+body.orange .wing-part-holder-long .wing-tip {
+  border-bottom-color: #F3A612; }
+body.orange .wing-part-holder-short .wing-tip {
+  border-top-color: #F27E15; }
+body.orange #about-nav-button, body.orange #blog-nav-button, body.orange #reading-list-nav-button {
+  border-color: #F27E15;
+  color: #F27E15; }
+body.orange #about-nav-button:hover, body.orange #blog-nav-button:hover, body.orange #reading-list-nav-button:hover {
+  background-color: #F27E15;
+  color: #FFFFFF; }
+body.orange .site-footer a, body.orange .post-meta a {
+  color: #D96000; }
+body.orange .site-footer a:hover, body.orange .post-meta a:hover {
+  border-bottom-color: #D96000; }
+body.orange .post-title a {
+  color: #D96000; }
+body.orange .post-title a:hover {
+  border-bottom-color: #D96000; }
+body.orange .read-more:hover {
+  border-bottom-color: #F27E15; }
+body.orange .pagination .older-posts, body.orange .pagination .newer-posts {
+  border-color: #F27E15; }
+body.orange .pagination .older-posts:hover, body.orange .pagination .newer-posts:hover {
+  background-color: #F27E15; }
+body.orange .post-template .post-content a {
+  color: #D96000; }
+body.orange .post-template .post-signature .author-link-holder a {
+  color: #D96000; }
+body.orange .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #D96000; }
+body.orange .reading-list-table a .reading-list-book-title {
+  color: #D96000; }
+
 /*# sourceMappingURL=screen.css.map */
