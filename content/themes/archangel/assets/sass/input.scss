@@ -1489,6 +1489,26 @@ $dark-orange: #F27E15;
 $medium-orange: #F49014;
 $light-orange: #F3A612;
 
+$darkest-silver: #555555;
+$dark-silver: #888888;
+$medium-silver: #AAAAAA;
+$light-silver: #CCCCCC;
+
+$darkest-pastel: #F97E55;
+$dark-pastel: #FFC770;
+$medium-pastel: #83F987;
+$light-pastel: #82E1FF;
+
+$darkest-tropical: #8C6E60;
+$dark-tropical: #EC523B;
+$medium-tropical: #1DB2F5;
+$light-tropical: #FECB42;
+
+$darkest-navyred: #7E0C00;
+$dark-navyred: #000A99;
+$medium-navyred: #CB1400;
+$light-navyred: #FE432E;
+
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
@@ -1511,6 +1531,22 @@ body.green {
 
 body.orange {
   @include scheme($darkest-orange, $dark-orange, $medium-orange, $light-orange);
+}
+
+body.silver {
+  @include scheme($darkest-silver, $dark-silver, $medium-silver, $light-silver);
+}
+
+body.pastel {
+  @include scheme($darkest-pastel, $dark-pastel, $medium-pastel, $light-pastel);
+}
+
+body.tropical {
+  @include scheme($darkest-tropical, $dark-tropical, $medium-tropical, $light-tropical);
+}
+
+body.navyred {
+  @include scheme($darkest-navyred, $dark-navyred, $medium-navyred, $light-navyred);
 }
 
 

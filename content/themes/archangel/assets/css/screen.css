@@ -1497,4 +1497,232 @@ body.orange .post-template .post-signature .author-link-holder a:hover {
 body.orange .reading-list-table a .reading-list-book-title {
   color: #D96000; }
 
+body.silver a {
+  color: #888888; }
+body.silver .page-title-holder {
+  color: #555555; }
+body.silver .page-title-holder:hover .page-title {
+  border-bottom-color: #555555; }
+body.silver .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #CCCCCC;
+  border-left-color: transparent; }
+body.silver .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #AAAAAA;
+  border-left-color: transparent; }
+body.silver .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #888888;
+  border-left-color: transparent; }
+body.silver .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #CCCCCC;
+  border-right-color: transparent; }
+body.silver .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #AAAAAA;
+  border-right-color: transparent; }
+body.silver .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #888888;
+  border-right-color: transparent; }
+body.silver .wing-part-holder-long .wing-tip {
+  border-bottom-color: #CCCCCC; }
+body.silver .wing-part-holder-short .wing-tip {
+  border-top-color: #888888; }
+body.silver #about-nav-button, body.silver #blog-nav-button, body.silver #reading-list-nav-button {
+  border-color: #888888;
+  color: #888888; }
+body.silver #about-nav-button:hover, body.silver #blog-nav-button:hover, body.silver #reading-list-nav-button:hover {
+  background-color: #888888;
+  color: #FFFFFF; }
+body.silver .site-footer a, body.silver .post-meta a {
+  color: #555555; }
+body.silver .site-footer a:hover, body.silver .post-meta a:hover {
+  border-bottom-color: #555555; }
+body.silver .post-title a {
+  color: #555555; }
+body.silver .post-title a:hover {
+  border-bottom-color: #555555; }
+body.silver .read-more:hover {
+  border-bottom-color: #888888; }
+body.silver .pagination .older-posts, body.silver .pagination .newer-posts {
+  border-color: #888888; }
+body.silver .pagination .older-posts:hover, body.silver .pagination .newer-posts:hover {
+  background-color: #888888; }
+body.silver .post-template .post-content a {
+  color: #555555; }
+body.silver .post-template .post-signature .author-link-holder a {
+  color: #555555; }
+body.silver .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #555555; }
+body.silver .reading-list-table a .reading-list-book-title {
+  color: #555555; }
+
+body.pastel a {
+  color: #FFC770; }
+body.pastel .page-title-holder {
+  color: #F97E55; }
+body.pastel .page-title-holder:hover .page-title {
+  border-bottom-color: #F97E55; }
+body.pastel .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #82E1FF;
+  border-left-color: transparent; }
+body.pastel .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #83F987;
+  border-left-color: transparent; }
+body.pastel .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #FFC770;
+  border-left-color: transparent; }
+body.pastel .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #82E1FF;
+  border-right-color: transparent; }
+body.pastel .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #83F987;
+  border-right-color: transparent; }
+body.pastel .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #FFC770;
+  border-right-color: transparent; }
+body.pastel .wing-part-holder-long .wing-tip {
+  border-bottom-color: #82E1FF; }
+body.pastel .wing-part-holder-short .wing-tip {
+  border-top-color: #FFC770; }
+body.pastel #about-nav-button, body.pastel #blog-nav-button, body.pastel #reading-list-nav-button {
+  border-color: #FFC770;
+  color: #FFC770; }
+body.pastel #about-nav-button:hover, body.pastel #blog-nav-button:hover, body.pastel #reading-list-nav-button:hover {
+  background-color: #FFC770;
+  color: #FFFFFF; }
+body.pastel .site-footer a, body.pastel .post-meta a {
+  color: #F97E55; }
+body.pastel .site-footer a:hover, body.pastel .post-meta a:hover {
+  border-bottom-color: #F97E55; }
+body.pastel .post-title a {
+  color: #F97E55; }
+body.pastel .post-title a:hover {
+  border-bottom-color: #F97E55; }
+body.pastel .read-more:hover {
+  border-bottom-color: #FFC770; }
+body.pastel .pagination .older-posts, body.pastel .pagination .newer-posts {
+  border-color: #FFC770; }
+body.pastel .pagination .older-posts:hover, body.pastel .pagination .newer-posts:hover {
+  background-color: #FFC770; }
+body.pastel .post-template .post-content a {
+  color: #F97E55; }
+body.pastel .post-template .post-signature .author-link-holder a {
+  color: #F97E55; }
+body.pastel .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #F97E55; }
+body.pastel .reading-list-table a .reading-list-book-title {
+  color: #F97E55; }
+
+body.tropical a {
+  color: #EC523B; }
+body.tropical .page-title-holder {
+  color: #8C6E60; }
+body.tropical .page-title-holder:hover .page-title {
+  border-bottom-color: #8C6E60; }
+body.tropical .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FECB42;
+  border-left-color: transparent; }
+body.tropical .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #1DB2F5;
+  border-left-color: transparent; }
+body.tropical .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #EC523B;
+  border-left-color: transparent; }
+body.tropical .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FECB42;
+  border-right-color: transparent; }
+body.tropical .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #1DB2F5;
+  border-right-color: transparent; }
+body.tropical .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #EC523B;
+  border-right-color: transparent; }
+body.tropical .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FECB42; }
+body.tropical .wing-part-holder-short .wing-tip {
+  border-top-color: #EC523B; }
+body.tropical #about-nav-button, body.tropical #blog-nav-button, body.tropical #reading-list-nav-button {
+  border-color: #EC523B;
+  color: #EC523B; }
+body.tropical #about-nav-button:hover, body.tropical #blog-nav-button:hover, body.tropical #reading-list-nav-button:hover {
+  background-color: #EC523B;
+  color: #FFFFFF; }
+body.tropical .site-footer a, body.tropical .post-meta a {
+  color: #8C6E60; }
+body.tropical .site-footer a:hover, body.tropical .post-meta a:hover {
+  border-bottom-color: #8C6E60; }
+body.tropical .post-title a {
+  color: #8C6E60; }
+body.tropical .post-title a:hover {
+  border-bottom-color: #8C6E60; }
+body.tropical .read-more:hover {
+  border-bottom-color: #EC523B; }
+body.tropical .pagination .older-posts, body.tropical .pagination .newer-posts {
+  border-color: #EC523B; }
+body.tropical .pagination .older-posts:hover, body.tropical .pagination .newer-posts:hover {
+  background-color: #EC523B; }
+body.tropical .post-template .post-content a {
+  color: #8C6E60; }
+body.tropical .post-template .post-signature .author-link-holder a {
+  color: #8C6E60; }
+body.tropical .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #8C6E60; }
+body.tropical .reading-list-table a .reading-list-book-title {
+  color: #8C6E60; }
+
+body.navyred a {
+  color: #000A99; }
+body.navyred .page-title-holder {
+  color: #7E0C00; }
+body.navyred .page-title-holder:hover .page-title {
+  border-bottom-color: #7E0C00; }
+body.navyred .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FE432E;
+  border-left-color: transparent; }
+body.navyred .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #CB1400;
+  border-left-color: transparent; }
+body.navyred .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #000A99;
+  border-left-color: transparent; }
+body.navyred .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FE432E;
+  border-right-color: transparent; }
+body.navyred .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #CB1400;
+  border-right-color: transparent; }
+body.navyred .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #000A99;
+  border-right-color: transparent; }
+body.navyred .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FE432E; }
+body.navyred .wing-part-holder-short .wing-tip {
+  border-top-color: #000A99; }
+body.navyred #about-nav-button, body.navyred #blog-nav-button, body.navyred #reading-list-nav-button {
+  border-color: #000A99;
+  color: #000A99; }
+body.navyred #about-nav-button:hover, body.navyred #blog-nav-button:hover, body.navyred #reading-list-nav-button:hover {
+  background-color: #000A99;
+  color: #FFFFFF; }
+body.navyred .site-footer a, body.navyred .post-meta a {
+  color: #7E0C00; }
+body.navyred .site-footer a:hover, body.navyred .post-meta a:hover {
+  border-bottom-color: #7E0C00; }
+body.navyred .post-title a {
+  color: #7E0C00; }
+body.navyred .post-title a:hover {
+  border-bottom-color: #7E0C00; }
+body.navyred .read-more:hover {
+  border-bottom-color: #000A99; }
+body.navyred .pagination .older-posts, body.navyred .pagination .newer-posts {
+  border-color: #000A99; }
+body.navyred .pagination .older-posts:hover, body.navyred .pagination .newer-posts:hover {
+  background-color: #000A99; }
+body.navyred .post-template .post-content a {
+  color: #7E0C00; }
+body.navyred .post-template .post-signature .author-link-holder a {
+  color: #7E0C00; }
+body.navyred .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #7E0C00; }
+body.navyred .reading-list-table a .reading-list-book-title {
+  color: #7E0C00; }
+
 /*# sourceMappingURL=screen.css.map */
