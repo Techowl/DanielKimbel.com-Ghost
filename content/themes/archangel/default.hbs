@@ -62,9 +62,9 @@
     {{/if}}
 
     <nav class="main-nav flex-container">
-      <a href="/about" class="nav-button" id="about-nav-button">About</a>
-      <a href="/" class="nav-button" id="blog-nav-button">Blog</a>
-      <a href="/reading-list" class="nav-button" id="reading-list-nav-button">Reading List</a>
+      <a href="/about" class="nav-button" id="about-nav-button"><span class="nav-button-text">About</span></a>
+      <a href="/" class="nav-button" id="blog-nav-button"><span class="nav-button-text">Blog</span></a>
+      <a href="/reading-list" class="nav-button" id="reading-list-nav-button"><span class="nav-button-text">Reading List</span></a>
     </nav>{{!-- .main-nav --}}
 
   </header>{{!-- .main-header --}}
@@ -72,7 +72,7 @@
   {{{body}}}
 
   <footer class="site-footer full-width">
-    <div>&copy; {{date format="YYYY"}} <a href="{{@blog.url}}/about">Daniel Kimbel</a> &#124; Powered by <a href="https://ghost.org">Ghost</a> &#124; Coded in <a href="http://en.wikipedia.org/wiki/California">California</a></div>
+    <div><span class="site-footer-text">&copy; {{date format="YYYY"}} </span><a href="{{@blog.url}}/about">Daniel Kimbel</a><span class="site-footer-text"> &#124; Powered by </span><a href="https://ghost.org">Ghost</a><span class="site-footer-text"> &#124; Coded in </span><a href="http://en.wikipedia.org/wiki/California">California</a></div>
   </footer>
 
   {{ghost_foot}}

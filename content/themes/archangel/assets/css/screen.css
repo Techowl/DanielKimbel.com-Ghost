@@ -708,7 +708,8 @@ blockquote {
   transition: border 0.2s linear; }
 
 .image-attributions a:hover {
-  border-bottom: 1px solid #888888; }
+  border-bottom: 1px solid;
+  border-bottom-color: #888888; }
 
 /* ==========================================================================
    5. Reading List page
@@ -1209,6 +1210,10 @@ body .post-template .post-signature .author-link-holder a, body.gold .post-templ
   color: #8A4707; }
 body .post-template .post-signature .author-link-holder a:hover, body.gold .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #8A4707; }
+body .image-attributions a, body.gold .image-attributions a {
+  color: #888888; }
+body .image-attributions a:hover, body.gold .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body .reading-list-table a .reading-list-book-title, body.gold .reading-list-table a .reading-list-book-title {
   color: #8A4707; }
 
@@ -1266,6 +1271,10 @@ body.red .post-template .post-signature .author-link-holder a {
   color: #A60000; }
 body.red .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #A60000; }
+body.red .image-attributions a {
+  color: #888888; }
+body.red .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.red .reading-list-table a .reading-list-book-title {
   color: #A60000; }
 
@@ -1323,6 +1332,10 @@ body.blue .post-template .post-signature .author-link-holder a {
   color: #1D22A4; }
 body.blue .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #1D22A4; }
+body.blue .image-attributions a {
+  color: #888888; }
+body.blue .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.blue .reading-list-table a .reading-list-book-title {
   color: #1D22A4; }
 
@@ -1380,6 +1393,10 @@ body.purple .post-template .post-signature .author-link-holder a {
   color: #512E7C; }
 body.purple .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #512E7C; }
+body.purple .image-attributions a {
+  color: #888888; }
+body.purple .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.purple .reading-list-table a .reading-list-book-title {
   color: #512E7C; }
 
@@ -1437,6 +1454,10 @@ body.green .post-template .post-signature .author-link-holder a {
   color: #175702; }
 body.green .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #175702; }
+body.green .image-attributions a {
+  color: #888888; }
+body.green .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.green .reading-list-table a .reading-list-book-title {
   color: #175702; }
 
@@ -1494,6 +1515,10 @@ body.orange .post-template .post-signature .author-link-holder a {
   color: #BF4B00; }
 body.orange .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #BF4B00; }
+body.orange .image-attributions a {
+  color: #888888; }
+body.orange .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.orange .reading-list-table a .reading-list-book-title {
   color: #BF4B00; }
 
@@ -1551,6 +1576,10 @@ body.silver .post-template .post-signature .author-link-holder a {
   color: #555555; }
 body.silver .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #555555; }
+body.silver .image-attributions a {
+  color: #888888; }
+body.silver .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.silver .reading-list-table a .reading-list-book-title {
   color: #555555; }
 
@@ -1608,6 +1637,10 @@ body.pastel .post-template .post-signature .author-link-holder a {
   color: #F97E55; }
 body.pastel .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #F97E55; }
+body.pastel .image-attributions a {
+  color: #888888; }
+body.pastel .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.pastel .reading-list-table a .reading-list-book-title {
   color: #F97E55; }
 
@@ -1665,6 +1698,10 @@ body.tropical .post-template .post-signature .author-link-holder a {
   color: #8C6E60; }
 body.tropical .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #8C6E60; }
+body.tropical .image-attributions a {
+  color: #888888; }
+body.tropical .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.tropical .reading-list-table a .reading-list-book-title {
   color: #8C6E60; }
 
@@ -1722,6 +1759,10 @@ body.navyred .post-template .post-signature .author-link-holder a {
   color: #7E0C00; }
 body.navyred .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #7E0C00; }
+body.navyred .image-attributions a {
+  color: #888888; }
+body.navyred .image-attributions a:hover {
+  border-bottom-color: #888888; }
 body.navyred .reading-list-table a .reading-list-book-title {
   color: #7E0C00; }
 
@@ -1738,5 +1779,88 @@ body.sunrise-gradient .main-header, body.sunrise-gradient .site-footer, body.sun
   /* IE10+ */
   background: linear-gradient(90deg, #FFC700 0%, #F99092 100%);
   /* W3C */ }
+body.sunrise-gradient a {
+  color: #F99092; }
+body.sunrise-gradient .page-title-holder {
+  color: #FFFFFF; }
+body.sunrise-gradient .page-title-wing-holder {
+  opacity: 0.9; }
+body.sunrise-gradient .page-title-holder:hover .page-title {
+  border-bottom-color: #FFFFFF; }
+body.sunrise-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.sunrise-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.sunrise-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.sunrise-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.sunrise-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.sunrise-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.sunrise-gradient .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FFFFFF; }
+body.sunrise-gradient .wing-part-holder-short .wing-tip {
+  border-top-color: #FFFFFF; }
+body.sunrise-gradient .page-description {
+  color: #FFFFFF;
+  opacity: 0.9; }
+body.sunrise-gradient #about-nav-button, body.sunrise-gradient #blog-nav-button, body.sunrise-gradient #reading-list-nav-button {
+  border-color: #FFFFFF;
+  color: #FFFFFF; }
+body.sunrise-gradient #about-nav-button:hover, body.sunrise-gradient #blog-nav-button:hover, body.sunrise-gradient #reading-list-nav-button:hover {
+  background-color: #FFFFFF;
+  color: #F99092; }
+body.sunrise-gradient .site-footer {
+  color: #FFFFFF; }
+body.sunrise-gradient .site-footer-text {
+  opacity: 0.8; }
+body.sunrise-gradient .site-footer a {
+  opacity: 1;
+  color: #FFFFFF; }
+body.sunrise-gradient .site-footer a:hover {
+  border-bottom-color: #FFFFFF; }
+body.sunrise-gradient .post-meta a {
+  color: #F99092; }
+body.sunrise-gradient .post-meta a:hover {
+  border-bottom-color: #F99092; }
+body.sunrise-gradient .post-title a {
+  color: #F99092; }
+body.sunrise-gradient .post-title a:hover {
+  border-bottom-color: #F99092; }
+body.sunrise-gradient .read-more {
+  color: #fbb7b8; }
+body.sunrise-gradient .read-more:hover {
+  border-bottom-color: #fbb7b8; }
+body.sunrise-gradient .pagination .older-posts, body.sunrise-gradient .pagination .newer-posts {
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
+body.sunrise-gradient .pagination .older-posts:hover, body.sunrise-gradient .pagination .newer-posts:hover {
+  background-color: #FFFFFF;
+  color: #F99092; }
+body.sunrise-gradient .page-number {
+  color: #FFFFFF;
+  opacity: 0.8; }
+body.sunrise-gradient .post-template .post-content a {
+  color: #F99092; }
+body.sunrise-gradient .post-template .post-signature .author-link-holder a {
+  color: #F99092; }
+body.sunrise-gradient .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #F99092; }
+body.sunrise-gradient .image-attributions a {
+  color: #888888; }
+body.sunrise-gradient .image-attributions a:hover {
+  border-bottom-color: #888888; }
+body.sunrise-gradient .reading-list-table a .reading-list-book-title {
+  color: #F99092; }
+body.sunrise-gradient .reading-list-table a .reading-list-book-author {
+  color: #fbb7b8; }
 
 /*# sourceMappingURL=screen.css.map */

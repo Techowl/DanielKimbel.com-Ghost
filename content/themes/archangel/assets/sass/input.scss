@@ -767,7 +767,8 @@ blockquote {
 }
 
 .image-attributions a:hover {
-  border-bottom: 1px solid #888888;
+  border-bottom: 1px solid;
+  border-bottom-color: #888888;
 }
 
 
@@ -1454,12 +1455,21 @@ blockquote {
     border-bottom-color: $darkest-color;
   }
 
+  .image-attributions a {
+    color: #888888;
+  }
+
+  .image-attributions a:hover {
+    border-bottom-color: #888888;
+  }
+
   .reading-list-table a .reading-list-book-title {
     color: $darkest-color;
   }
 }
 
-@mixin gradient-scheme($left-color, $right-color, $wing-color, $text-color) {
+@mixin gradient-scheme($left-color, $right-color, $wing-color,
+  $text-color, $light-text-color, $opacity, $lower-opacity) {
   .main-header, .site-footer, .pagination-holder {
     background: $left-color; /* Old browsers */
     background: -moz-linear-gradient(90deg, $left-color 0%,  $right-color 100%); /* FF3.6+ */
@@ -1467,6 +1477,159 @@ blockquote {
     background: -o-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* IE10+ */
     background: linear-gradient(90deg, $left-color 0%, $right-color 100%); /* W3C */
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  .page-title-holder {
+    color: $wing-color;
+  }
+
+  .page-title-wing-holder {
+    opacity: $opacity;
+  }
+
+  .page-title-holder:hover .page-title {
+    border-bottom-color: $wing-color;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+    border-color: $wing-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+    border-color: $wing-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+    border-color: $wing-color;
+    border-left-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+    border-color: $wing-color;
+    border-right-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+    border-color: $wing-color;
+    border-right-color: transparent;
+  }
+
+  .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+    border-color: $wing-color;
+    border-right-color: transparent;
+  }
+
+  .wing-part-holder-long .wing-tip {
+    border-bottom-color: $wing-color;
+  }
+
+  .wing-part-holder-short .wing-tip {
+    border-top-color: $wing-color;
+  }
+
+  .page-description {
+    color: $wing-color;
+    opacity: $opacity;
+  }
+
+  #about-nav-button, #blog-nav-button, #reading-list-nav-button {
+    border-color: $wing-color;
+    color: $wing-color;
+  }
+
+  #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
+    background-color: $wing-color;
+    color: $text-color;
+  }
+
+  .site-footer {
+    color: $wing-color;
+  }
+
+  .site-footer-text {
+    opacity: $lower-opacity;
+  }
+
+  .site-footer a {
+    opacity: 1;
+    color: $wing-color;
+  }
+
+  .site-footer a:hover {
+    border-bottom-color: $wing-color;
+  }
+
+  .post-meta a {
+    color: $text-color;
+  }
+
+  .post-meta a:hover {
+    border-bottom-color: $text-color;
+  }
+
+  .post-title a {
+    color: $text-color;
+  }
+
+  .post-title a:hover {
+    border-bottom-color: $text-color;
+  }
+
+  .read-more {
+    color: $light-text-color;
+  }
+
+  .read-more:hover {
+    border-bottom-color: $light-text-color;
+  }
+
+  .pagination .older-posts, .pagination .newer-posts {
+    color: $wing-color;
+    border-color: $wing-color;
+  }
+
+  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+    background-color: $wing-color;
+    color: $text-color;
+  }
+
+  .page-number {
+    color: $wing-color;
+    opacity: $lower-opacity;
+  }
+
+  .post-template .post-content a {
+    color: $text-color;
+  }
+
+  .post-template .post-signature .author-link-holder a {
+    color: $text-color;
+  }
+
+  .post-template .post-signature .author-link-holder a:hover {
+    border-bottom-color: $text-color;
+  }
+
+  .image-attributions a {
+    color: #888888;
+  }
+
+  .image-attributions a:hover {
+    border-bottom-color: #888888;
+  }
+
+  .reading-list-table a .reading-list-book-title {
+    color: $text-color;
+  }
+
+  .reading-list-table a .reading-list-book-author {
+    color: $light-text-color;
   }
 }
 
@@ -1523,7 +1686,10 @@ $light-navyred: #FE432E;
 $left-sunrise-gradient: #FFC700;
 $right-sunrise-gradient: #F99092;
 $wing-sunrise-gradient: #FFFFFF;
-$text-sunrise-gradient: darken(#F99092, 20%);
+$text-sunrise-gradient: $right-sunrise-gradient;
+$light-text-sunrise-gradient: lighten($right-sunrise-gradient, 8%);
+$opacity-sunrise-gradient: 0.9;
+$lower-opacity-sunrise-gradient: 0.8;
 
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
@@ -1566,7 +1732,9 @@ body.navyred {
 }
 
 body.sunrise-gradient {
-  @include gradient-scheme($left-sunrise-gradient, $right-sunrise-gradient, $wing-sunrise-gradient, $text-sunrise-gradient);
+  @include gradient-scheme($left-sunrise-gradient, $right-sunrise-gradient,
+    $wing-sunrise-gradient, $text-sunrise-gradient, $light-text-sunrise-gradient,
+    $opacity-sunrise-gradient, $lower-opacity-sunrise-gradient);
 }
 
 
