@@ -1459,6 +1459,17 @@ blockquote {
   }
 }
 
+@mixin gradient-scheme($left-color, $right-color, $wing-color, $text-color) {
+  .main-header, .site-footer, .pagination-holder {
+    background: $left-color; /* Old browsers */
+    background: -moz-linear-gradient(90deg, $left-color 0%,  $right-color 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* IE10+ */
+    background: linear-gradient(90deg, $left-color 0%, $right-color 100%); /* W3C */
+  }
+}
+
 $darkest-gold: #8A4707;
 $dark-gold: #D67E10;
 $medium-gold: #F6AD2E;
@@ -1509,6 +1520,11 @@ $dark-navyred: #000A99;
 $medium-navyred: #CB1400;
 $light-navyred: #FE432E;
 
+$left-sunrise-gradient: #FFC700;
+$right-sunrise-gradient: #F99092;
+$wing-sunrise-gradient: #FFFFFF;
+$text-sunrise-gradient: darken(#F99092, 20%);
+
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
@@ -1547,6 +1563,10 @@ body.tropical {
 
 body.navyred {
   @include scheme($darkest-navyred, $dark-navyred, $medium-navyred, $light-navyred);
+}
+
+body.sunrise-gradient {
+  @include gradient-scheme($left-sunrise-gradient, $right-sunrise-gradient, $wing-sunrise-gradient, $text-sunrise-gradient);
 }
 
 
