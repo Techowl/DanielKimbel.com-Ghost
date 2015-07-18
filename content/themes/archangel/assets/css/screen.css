@@ -2009,4 +2009,114 @@ body.sunrise-gradient .reading-list-table a .reading-list-book-title {
 body.sunrise-gradient .reading-list-table a .reading-list-book-author {
   color: #fbb7b8; }
 
+body.chill-gradient .main-header, body.chill-gradient .site-footer, body.chill-gradient .pagination-holder {
+  background: #1B9FFF;
+  /* Old browsers */
+  background: -moz-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  /* IE10+ */
+  background: linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  /* W3C */ }
+body.chill-gradient a {
+  color: #6F4E99; }
+body.chill-gradient .page-title-holder {
+  color: #FFFFFF; }
+body.chill-gradient .page-title-wing-holder {
+  opacity: 0.9; }
+body.chill-gradient .page-title-holder:hover .page-title {
+  border-bottom-color: #FFFFFF; }
+body.chill-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.chill-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.chill-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.chill-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.chill-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.chill-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.chill-gradient .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FFFFFF; }
+body.chill-gradient .wing-part-holder-short .wing-tip {
+  border-top-color: #FFFFFF; }
+body.chill-gradient .page-description {
+  color: #FFFFFF;
+  opacity: 0.9; }
+body.chill-gradient #about-nav-button, body.chill-gradient #blog-nav-button, body.chill-gradient #reading-list-nav-button {
+  border-color: #FFFFFF;
+  color: #FFFFFF; }
+body.chill-gradient #about-nav-button:hover, body.chill-gradient #blog-nav-button:hover, body.chill-gradient #reading-list-nav-button:hover {
+  background-color: #FFFFFF;
+  color: #6F4E99; }
+body.chill-gradient .site-footer {
+  color: #FFFFFF; }
+body.chill-gradient .site-footer-text {
+  opacity: 0.8; }
+body.chill-gradient .site-footer a {
+  opacity: 1;
+  color: #FFFFFF; }
+body.chill-gradient .site-footer a:hover {
+  border-bottom-color: #FFFFFF; }
+body.chill-gradient .post-meta a {
+  color: #6F4E99; }
+body.chill-gradient .post-meta a:hover {
+  border-bottom-color: #6F4E99; }
+body.chill-gradient .post-title a {
+  color: #6F4E99; }
+body.chill-gradient .post-title a:hover {
+  border-bottom-color: #6F4E99; }
+body.chill-gradient .read-more {
+  color: #8a35f6; }
+body.chill-gradient .read-more:hover {
+  border-bottom-color: #8a35f6; }
+body.chill-gradient .pagination .older-posts, body.chill-gradient .pagination .newer-posts {
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
+body.chill-gradient .pagination .older-posts:hover, body.chill-gradient .pagination .newer-posts:hover {
+  background-color: #FFFFFF;
+  color: #6F4E99; }
+body.chill-gradient .page-number {
+  color: #FFFFFF;
+  opacity: 0.8; }
+body.chill-gradient .post-template .post-content a {
+  color: #6F4E99; }
+body.chill-gradient .post-template .post-signature .author-link-holder a {
+  color: #6F4E99; }
+body.chill-gradient .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #6F4E99; }
+body.chill-gradient .share-twitter {
+  color: #55ACEE; }
+body.chill-gradient .share-facebook {
+  color: #3B5998; }
+body.chill-gradient .share-google-plus {
+  color: #DD4B39; }
+body.chill-gradient .share-email {
+  color: #FF9400; }
+body.chill-gradient .share-twitter:hover,
+body.chill-gradient .share-facebook:hover,
+body.chill-gradient .share-google-plus:hover,
+body.chill-gradient .share-email:hover {
+  color: #FFFFFF; }
+body.chill-gradient .image-attributions a {
+  color: #888888; }
+body.chill-gradient .image-attributions a:hover {
+  border-bottom-color: #888888; }
+body.chill-gradient .reading-list-table a .reading-list-book-title {
+  color: #6F4E99; }
+body.chill-gradient .reading-list-table a .reading-list-book-author {
+  color: #8a35f6; }
+
 /*# sourceMappingURL=screen.css.map */
