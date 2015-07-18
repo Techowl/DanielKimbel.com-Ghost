@@ -2119,4 +2119,224 @@ body.chill-gradient .reading-list-table a .reading-list-book-title {
 body.chill-gradient .reading-list-table a .reading-list-book-author {
   color: #8a35f6; }
 
+body.lime-gradient .main-header, body.lime-gradient .site-footer, body.lime-gradient .pagination-holder {
+  background: #35DB58;
+  /* Old browsers */
+  background: -moz-linear-gradient(90deg, #35DB58 0%, #00E39D 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(90deg, #35DB58 0%, #00E39D 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(90deg, #35DB58 0%, #00E39D 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #35DB58 0%, #00E39D 100%);
+  /* IE10+ */
+  background: linear-gradient(90deg, #35DB58 0%, #00E39D 100%);
+  /* W3C */ }
+body.lime-gradient a {
+  color: #00BF84; }
+body.lime-gradient .page-title-holder {
+  color: #FFFFFF; }
+body.lime-gradient .page-title-wing-holder {
+  opacity: 0.9; }
+body.lime-gradient .page-title-holder:hover .page-title {
+  border-bottom-color: #FFFFFF; }
+body.lime-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.lime-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.lime-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.lime-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.lime-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.lime-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.lime-gradient .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FFFFFF; }
+body.lime-gradient .wing-part-holder-short .wing-tip {
+  border-top-color: #FFFFFF; }
+body.lime-gradient .page-description {
+  color: #FFFFFF;
+  opacity: 0.9; }
+body.lime-gradient #about-nav-button, body.lime-gradient #blog-nav-button, body.lime-gradient #reading-list-nav-button {
+  border-color: #FFFFFF;
+  color: #FFFFFF; }
+body.lime-gradient #about-nav-button:hover, body.lime-gradient #blog-nav-button:hover, body.lime-gradient #reading-list-nav-button:hover {
+  background-color: #FFFFFF;
+  color: #00BF84; }
+body.lime-gradient .site-footer {
+  color: #FFFFFF; }
+body.lime-gradient .site-footer-text {
+  opacity: 0.8; }
+body.lime-gradient .site-footer a {
+  opacity: 1;
+  color: #FFFFFF; }
+body.lime-gradient .site-footer a:hover {
+  border-bottom-color: #FFFFFF; }
+body.lime-gradient .post-meta a {
+  color: #00BF84; }
+body.lime-gradient .post-meta a:hover {
+  border-bottom-color: #00BF84; }
+body.lime-gradient .post-title a {
+  color: #00BF84; }
+body.lime-gradient .post-title a:hover {
+  border-bottom-color: #00BF84; }
+body.lime-gradient .read-more {
+  color: #00ca8b; }
+body.lime-gradient .read-more:hover {
+  border-bottom-color: #00ca8b; }
+body.lime-gradient .pagination .older-posts, body.lime-gradient .pagination .newer-posts {
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
+body.lime-gradient .pagination .older-posts:hover, body.lime-gradient .pagination .newer-posts:hover {
+  background-color: #FFFFFF;
+  color: #00BF84; }
+body.lime-gradient .page-number {
+  color: #FFFFFF;
+  opacity: 0.8; }
+body.lime-gradient .post-template .post-content a {
+  color: #00BF84; }
+body.lime-gradient .post-template .post-signature .author-link-holder a {
+  color: #00BF84; }
+body.lime-gradient .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #00BF84; }
+body.lime-gradient .share-twitter {
+  color: #55ACEE; }
+body.lime-gradient .share-facebook {
+  color: #3B5998; }
+body.lime-gradient .share-google-plus {
+  color: #DD4B39; }
+body.lime-gradient .share-email {
+  color: #FF9400; }
+body.lime-gradient .share-twitter:hover,
+body.lime-gradient .share-facebook:hover,
+body.lime-gradient .share-google-plus:hover,
+body.lime-gradient .share-email:hover {
+  color: #FFFFFF; }
+body.lime-gradient .image-attributions a {
+  color: #888888; }
+body.lime-gradient .image-attributions a:hover {
+  border-bottom-color: #888888; }
+body.lime-gradient .reading-list-table a .reading-list-book-title {
+  color: #00BF84; }
+body.lime-gradient .reading-list-table a .reading-list-book-author {
+  color: #00ca8b; }
+
+body.red-gradient .main-header, body.red-gradient .site-footer, body.red-gradient .pagination-holder {
+  background: #FF6F32;
+  /* Old browsers */
+  background: -moz-linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
+  /* IE10+ */
+  background: linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
+  /* W3C */ }
+body.red-gradient a {
+  color: #BF0E00; }
+body.red-gradient .page-title-holder {
+  color: #FFFFFF; }
+body.red-gradient .page-title-wing-holder {
+  opacity: 0.9; }
+body.red-gradient .page-title-holder:hover .page-title {
+  border-bottom-color: #FFFFFF; }
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-left-color: transparent; }
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+  border-color: #FFFFFF;
+  border-right-color: transparent; }
+body.red-gradient .wing-part-holder-long .wing-tip {
+  border-bottom-color: #FFFFFF; }
+body.red-gradient .wing-part-holder-short .wing-tip {
+  border-top-color: #FFFFFF; }
+body.red-gradient .page-description {
+  color: #FFFFFF;
+  opacity: 0.9; }
+body.red-gradient #about-nav-button, body.red-gradient #blog-nav-button, body.red-gradient #reading-list-nav-button {
+  border-color: #FFFFFF;
+  color: #FFFFFF; }
+body.red-gradient #about-nav-button:hover, body.red-gradient #blog-nav-button:hover, body.red-gradient #reading-list-nav-button:hover {
+  background-color: #FFFFFF;
+  color: #BF0E00; }
+body.red-gradient .site-footer {
+  color: #FFFFFF; }
+body.red-gradient .site-footer-text {
+  opacity: 0.8; }
+body.red-gradient .site-footer a {
+  opacity: 1;
+  color: #FFFFFF; }
+body.red-gradient .site-footer a:hover {
+  border-bottom-color: #FFFFFF; }
+body.red-gradient .post-meta a {
+  color: #BF0E00; }
+body.red-gradient .post-meta a:hover {
+  border-bottom-color: #BF0E00; }
+body.red-gradient .post-title a {
+  color: #BF0E00; }
+body.red-gradient .post-title a:hover {
+  border-bottom-color: #BF0E00; }
+body.red-gradient .read-more {
+  color: #e81100; }
+body.red-gradient .read-more:hover {
+  border-bottom-color: #e81100; }
+body.red-gradient .pagination .older-posts, body.red-gradient .pagination .newer-posts {
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
+body.red-gradient .pagination .older-posts:hover, body.red-gradient .pagination .newer-posts:hover {
+  background-color: #FFFFFF;
+  color: #BF0E00; }
+body.red-gradient .page-number {
+  color: #FFFFFF;
+  opacity: 0.8; }
+body.red-gradient .post-template .post-content a {
+  color: #BF0E00; }
+body.red-gradient .post-template .post-signature .author-link-holder a {
+  color: #BF0E00; }
+body.red-gradient .post-template .post-signature .author-link-holder a:hover {
+  border-bottom-color: #BF0E00; }
+body.red-gradient .share-twitter {
+  color: #55ACEE; }
+body.red-gradient .share-facebook {
+  color: #3B5998; }
+body.red-gradient .share-google-plus {
+  color: #DD4B39; }
+body.red-gradient .share-email {
+  color: #FF9400; }
+body.red-gradient .share-twitter:hover,
+body.red-gradient .share-facebook:hover,
+body.red-gradient .share-google-plus:hover,
+body.red-gradient .share-email:hover {
+  color: #FFFFFF; }
+body.red-gradient .image-attributions a {
+  color: #888888; }
+body.red-gradient .image-attributions a:hover {
+  border-bottom-color: #888888; }
+body.red-gradient .reading-list-table a .reading-list-book-title {
+  color: #BF0E00; }
+body.red-gradient .reading-list-table a .reading-list-book-author {
+  color: #e81100; }
+
 /*# sourceMappingURL=screen.css.map */

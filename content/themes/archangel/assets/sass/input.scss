@@ -1746,6 +1746,22 @@ $light-text-chill-gradient: darken($right-chill-gradient, 15%);
 $opacity-chill-gradient: 0.9;
 $lower-opacity-chill-gradient: 0.8;
 
+$left-lime-gradient: #35DB58;
+$right-lime-gradient: #00E39D;
+$wing-lime-gradient: #FFFFFF;
+$text-lime-gradient: #00BF84;
+$light-text-lime-gradient: darken($right-lime-gradient, 5%);
+$opacity-lime-gradient: 0.9;
+$lower-opacity-lime-gradient: 0.8;
+
+$left-red-gradient: #FF6F32;
+$right-red-gradient: #BF0E00;
+$wing-red-gradient: #FFFFFF;
+$text-red-gradient: $right-red-gradient;
+$light-text-red-gradient: lighten($right-red-gradient, 8%);
+$opacity-red-gradient: 0.9;
+$lower-opacity-red-gradient: 0.8;
+
 body, body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
@@ -1796,6 +1812,18 @@ body.chill-gradient {
   @include gradient-scheme($left-chill-gradient, $right-chill-gradient,
     $wing-chill-gradient, $text-chill-gradient, $light-text-chill-gradient,
     $opacity-chill-gradient, $lower-opacity-chill-gradient);
+}
+
+body.lime-gradient {
+  @include gradient-scheme($left-lime-gradient, $right-lime-gradient,
+    $wing-lime-gradient, $text-lime-gradient, $light-text-lime-gradient,
+    $opacity-lime-gradient, $lower-opacity-lime-gradient);
+}
+
+body.red-gradient {
+  @include gradient-scheme($left-red-gradient, $right-red-gradient,
+    $wing-red-gradient, $text-red-gradient, $light-text-red-gradient,
+    $opacity-red-gradient, $lower-opacity-red-gradient);
 }
 
 
