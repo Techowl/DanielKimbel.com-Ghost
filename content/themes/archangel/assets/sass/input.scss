@@ -490,6 +490,7 @@ blockquote {
 
 .post-footer {
   padding: 20px 0;
+  margin-bottom: 20px;
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
@@ -740,7 +741,7 @@ blockquote {
 
 .image-attributions-holder {
   text-align: center;
-  margin: 30px auto 20px;
+  margin: 30px auto 40px;
   color: #BBBBBB;
 }
 
@@ -1187,7 +1188,7 @@ blockquote {
 
   .site-footer {
     padding: 20px 0;
-    width: 75%;
+    // width: 75%;
   }
 
   .site-footer, .post-meta {
@@ -1455,6 +1456,29 @@ blockquote {
     border-bottom-color: $darkest-color;
   }
 
+  .share-twitter {
+    color: #55ACEE;
+  }
+
+  .share-facebook {
+    color: #3B5998;
+  }
+
+  .share-google-plus {
+    color: #DD4B39;
+  }
+
+  .share-email {
+    color: #FF9400;
+  }
+
+  .share-twitter:hover,
+  .share-facebook:hover,
+  .share-google-plus:hover,
+  .share-email:hover {
+    color: #FFFFFF;
+  }
+
   .image-attributions a {
     color: #888888;
   }
@@ -1616,6 +1640,29 @@ blockquote {
     border-bottom-color: $text-color;
   }
 
+  .share-twitter {
+    color: #55ACEE;
+  }
+
+  .share-facebook {
+    color: #3B5998;
+  }
+
+  .share-google-plus {
+    color: #DD4B39;
+  }
+
+  .share-email {
+    color: #FF9400;
+  }
+
+  .share-twitter:hover,
+  .share-facebook:hover,
+  .share-google-plus:hover,
+  .share-email:hover {
+    color: #FFFFFF;
+  }
+
   .image-attributions a {
     color: #888888;
   }
@@ -1683,7 +1730,7 @@ $dark-navyred: #000A99;
 $medium-navyred: #CB1400;
 $light-navyred: #FE432E;
 
-$left-sunrise-gradient: #FFC700;
+$left-sunrise-gradient: lighten(#FFA400, 10%);
 $right-sunrise-gradient: #F99092;
 $wing-sunrise-gradient: #FFFFFF;
 $text-sunrise-gradient: $right-sunrise-gradient;
