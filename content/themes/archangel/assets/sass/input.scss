@@ -1762,7 +1762,7 @@ $light-text-red-gradient: lighten($right-red-gradient, 8%);
 $opacity-red-gradient: 0.9;
 $lower-opacity-red-gradient: 0.8;
 
-body, body.gold {
+body.gold {
   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
 }
 
@@ -1820,7 +1820,7 @@ body.lime-gradient {
     $opacity-lime-gradient, $lower-opacity-lime-gradient);
 }
 
-body.red-gradient {
+body, body.red-gradient {
   @include gradient-scheme($left-red-gradient, $right-red-gradient,
     $wing-red-gradient, $text-red-gradient, $light-text-red-gradient,
     $opacity-red-gradient, $lower-opacity-red-gradient);
