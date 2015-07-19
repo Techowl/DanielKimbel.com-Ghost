@@ -330,7 +330,8 @@ blockquote {
   box-sizing: border-box; }
 
 #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
 
 .home-template #blog-nav-button,
 .archive-template #blog-nav-button,
@@ -2226,7 +2227,7 @@ body.lime-gradient .reading-list-table a .reading-list-book-title {
 body.lime-gradient .reading-list-table a .reading-list-book-author {
   color: #00ca8b; }
 
-body .main-header, body .site-footer, body .pagination-holder, body.red-gradient .main-header, body.red-gradient .site-footer, body.red-gradient .pagination-holder {
+body.red-gradient .main-header, body.red-gradient .site-footer, body.red-gradient .pagination-holder {
   background: #FF6F32;
   /* Old browsers */
   background: -moz-linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
@@ -2239,104 +2240,101 @@ body .main-header, body .site-footer, body .pagination-holder, body.red-gradient
   /* IE10+ */
   background: linear-gradient(90deg, #FF6F32 0%, #BF0E00 100%);
   /* W3C */ }
-body a, body.red-gradient a {
+body.red-gradient a {
   color: #BF0E00; }
-body .page-title-holder, body.red-gradient .page-title-holder {
+body.red-gradient .page-title-holder {
   color: #FFFFFF; }
-body .page-title-wing-holder, body.red-gradient .page-title-wing-holder {
+body.red-gradient .page-title-wing-holder {
   opacity: 0.9; }
-body .page-title-holder:hover .page-title, body.red-gradient .page-title-holder:hover .page-title {
+body.red-gradient .page-title-holder:hover .page-title {
   border-bottom-color: #FFFFFF; }
-body .page-title-wing-holder-left .wing-part-holder-long .wing-body, body.red-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-long .wing-body {
   border-color: #FFFFFF;
   border-left-color: transparent; }
-body .page-title-wing-holder-left .wing-part-holder-medium .wing-body, body.red-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-medium .wing-body {
   border-color: #FFFFFF;
   border-left-color: transparent; }
-body .page-title-wing-holder-left .wing-part-holder-short .wing-body, body.red-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
+body.red-gradient .page-title-wing-holder-left .wing-part-holder-short .wing-body {
   border-color: #FFFFFF;
   border-left-color: transparent; }
-body .page-title-wing-holder-right .wing-part-holder-long .wing-body, body.red-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-long .wing-body {
   border-color: #FFFFFF;
   border-right-color: transparent; }
-body .page-title-wing-holder-right .wing-part-holder-medium .wing-body, body.red-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-medium .wing-body {
   border-color: #FFFFFF;
   border-right-color: transparent; }
-body .page-title-wing-holder-right .wing-part-holder-short .wing-body, body.red-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
+body.red-gradient .page-title-wing-holder-right .wing-part-holder-short .wing-body {
   border-color: #FFFFFF;
   border-right-color: transparent; }
-body .wing-part-holder-long .wing-tip, body.red-gradient .wing-part-holder-long .wing-tip {
+body.red-gradient .wing-part-holder-long .wing-tip {
   border-bottom-color: #FFFFFF; }
-body .wing-part-holder-short .wing-tip, body.red-gradient .wing-part-holder-short .wing-tip {
+body.red-gradient .wing-part-holder-short .wing-tip {
   border-top-color: #FFFFFF; }
-body .page-description, body.red-gradient .page-description {
+body.red-gradient .page-description {
   color: #FFFFFF;
   opacity: 0.9; }
-body #about-nav-button, body #blog-nav-button, body #reading-list-nav-button, body.red-gradient #about-nav-button, body.red-gradient #blog-nav-button, body.red-gradient #reading-list-nav-button {
+body.red-gradient #about-nav-button, body.red-gradient #blog-nav-button, body.red-gradient #reading-list-nav-button {
   border-color: #FFFFFF;
   color: #FFFFFF; }
-body #about-nav-button:hover, body #blog-nav-button:hover, body #reading-list-nav-button:hover, body.red-gradient #about-nav-button:hover, body.red-gradient #blog-nav-button:hover, body.red-gradient #reading-list-nav-button:hover {
+body.red-gradient #about-nav-button:hover, body.red-gradient #blog-nav-button:hover, body.red-gradient #reading-list-nav-button:hover {
   background-color: #FFFFFF;
   color: #BF0E00; }
-body .site-footer, body.red-gradient .site-footer {
+body.red-gradient .site-footer {
   color: #FFFFFF; }
-body .site-footer-text, body.red-gradient .site-footer-text {
+body.red-gradient .site-footer-text {
   opacity: 0.8; }
-body .site-footer a, body.red-gradient .site-footer a {
+body.red-gradient .site-footer a {
   opacity: 1;
   color: #FFFFFF; }
-body .site-footer a:hover, body.red-gradient .site-footer a:hover {
+body.red-gradient .site-footer a:hover {
   border-bottom-color: #FFFFFF; }
-body .post-meta a, body.red-gradient .post-meta a {
+body.red-gradient .post-meta a {
   color: #BF0E00; }
-body .post-meta a:hover, body.red-gradient .post-meta a:hover {
+body.red-gradient .post-meta a:hover {
   border-bottom-color: #BF0E00; }
-body .post-title a, body.red-gradient .post-title a {
+body.red-gradient .post-title a {
   color: #BF0E00; }
-body .post-title a:hover, body.red-gradient .post-title a:hover {
+body.red-gradient .post-title a:hover {
   border-bottom-color: #BF0E00; }
-body .read-more, body.red-gradient .read-more {
+body.red-gradient .read-more {
   color: #e81100; }
-body .read-more:hover, body.red-gradient .read-more:hover {
+body.red-gradient .read-more:hover {
   border-bottom-color: #e81100; }
-body .pagination .older-posts, body .pagination .newer-posts, body.red-gradient .pagination .older-posts, body.red-gradient .pagination .newer-posts {
+body.red-gradient .pagination .older-posts, body.red-gradient .pagination .newer-posts {
   color: #FFFFFF;
   border-color: #FFFFFF; }
-body .pagination .older-posts:hover, body .pagination .newer-posts:hover, body.red-gradient .pagination .older-posts:hover, body.red-gradient .pagination .newer-posts:hover {
+body.red-gradient .pagination .older-posts:hover, body.red-gradient .pagination .newer-posts:hover {
   background-color: #FFFFFF;
   color: #BF0E00; }
-body .page-number, body.red-gradient .page-number {
+body.red-gradient .page-number {
   color: #FFFFFF;
   opacity: 0.8; }
-body .post-template .post-content a, body.red-gradient .post-template .post-content a {
+body.red-gradient .post-template .post-content a {
   color: #BF0E00; }
-body .post-template .post-signature .author-link-holder a, body.red-gradient .post-template .post-signature .author-link-holder a {
+body.red-gradient .post-template .post-signature .author-link-holder a {
   color: #BF0E00; }
-body .post-template .post-signature .author-link-holder a:hover, body.red-gradient .post-template .post-signature .author-link-holder a:hover {
+body.red-gradient .post-template .post-signature .author-link-holder a:hover {
   border-bottom-color: #BF0E00; }
-body .share-twitter, body.red-gradient .share-twitter {
+body.red-gradient .share-twitter {
   color: #55ACEE; }
-body .share-facebook, body.red-gradient .share-facebook {
+body.red-gradient .share-facebook {
   color: #3B5998; }
-body .share-google-plus, body.red-gradient .share-google-plus {
+body.red-gradient .share-google-plus {
   color: #DD4B39; }
-body .share-email, body.red-gradient .share-email {
+body.red-gradient .share-email {
   color: #FF9400; }
-body .share-twitter:hover,
-body .share-facebook:hover,
-body .share-google-plus:hover,
-body .share-email:hover, body.red-gradient .share-twitter:hover,
+body.red-gradient .share-twitter:hover,
 body.red-gradient .share-facebook:hover,
 body.red-gradient .share-google-plus:hover,
 body.red-gradient .share-email:hover {
   color: #FFFFFF; }
-body .image-attributions a, body.red-gradient .image-attributions a {
+body.red-gradient .image-attributions a {
   color: #888888; }
-body .image-attributions a:hover, body.red-gradient .image-attributions a:hover {
+body.red-gradient .image-attributions a:hover {
   border-bottom-color: #888888; }
-body .reading-list-table a .reading-list-book-title, body.red-gradient .reading-list-table a .reading-list-book-title {
+body.red-gradient .reading-list-table a .reading-list-book-title {
   color: #BF0E00; }
-body .reading-list-table a .reading-list-book-author, body.red-gradient .reading-list-table a .reading-list-book-author {
+body.red-gradient .reading-list-table a .reading-list-book-author {
   color: #e81100; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -299,6 +299,7 @@ blockquote {
 
 #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
   color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .home-template #blog-nav-button,
@@ -1820,7 +1821,7 @@ body.lime-gradient {
     $opacity-lime-gradient, $lower-opacity-lime-gradient);
 }
 
-body, body.red-gradient {
+body.red-gradient {
   @include gradient-scheme($left-red-gradient, $right-red-gradient,
     $wing-red-gradient, $text-red-gradient, $light-text-red-gradient,
     $opacity-red-gradient, $lower-opacity-red-gradient);
