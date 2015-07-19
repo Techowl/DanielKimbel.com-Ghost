@@ -1142,18 +1142,31 @@ blockquote {
     margin: 10px auto 0; }
 
   .reading-list-table .table-cell {
-    padding: 25px 0 20px; }
+    padding: 25px 0 30px;
+    display: inline-block;
+    vertical-align: top; }
+
+  .reading-list-table .table-cell:nth-of-type(3n-2) {
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 30px 0 0 0; }
+
+  .reading-list-table .table-cell.table-header {
+    padding-bottom: 10px; }
 
   .reading-list-table .table-header {
     padding: 15px 0 0; }
 
   .reading-list-table img {
+    display: block;
+    margin: 0 auto;
     height: 120px; }
 
   .reading-list-book-info {
     margin-left: 0;
-    margin-top: 10px;
-    min-width: 190px; } }
+    margin-top: 10px; } }
 /* ==========================================================================
    9. Color Schemes
    ========================================================================== */
