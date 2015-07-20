@@ -326,8 +326,9 @@ blockquote {
   border: 1px solid;
   border-radius: 4px;
   padding: 5px 12px;
-  transition: color 0.2s linear, background-color 0.2s linear;
-  box-sizing: border-box; }
+  transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear;
+  box-sizing: border-box;
+  border-color: #FFFFFF; }
 
 #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
   color: #FFFFFF;
@@ -339,12 +340,14 @@ blockquote {
 .post-template #blog-nav-button {
   padding: 4px 12px;
   border: 2px solid;
-  font-weight: 400; }
+  font-weight: 400;
+  border-color: #FFFFFF; }
 
 .page-about #about-nav-button {
   padding: 4px 12px;
   border: 2px solid;
-  font-weight: 400; }
+  font-weight: 400;
+  border-color: #FFFFFF; }
 
 .page-reading-list #reading-list-nav-button {
   padding: 4px 12px;
@@ -1171,20 +1174,20 @@ blockquote {
    9. Color Schemes
    ========================================================================== */
 body .main-header, body .site-footer, body .pagination-holder {
-  background: #1B9FFF;
+  background: #2362FF;
   /* Old browsers */
-  background: -moz-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  background: -moz-linear-gradient(90deg, #2362FF 0%, #9F2CFF 100%);
   /* FF3.6+ */
-  background: -webkit-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  background: -webkit-linear-gradient(90deg, #2362FF 0%, #9F2CFF 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  background: -o-linear-gradient(90deg, #2362FF 0%, #9F2CFF 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  background: -ms-linear-gradient(90deg, #2362FF 0%, #9F2CFF 100%);
   /* IE10+ */
-  background: linear-gradient(90deg, #1B9FFF 0%, #B47EF9 100%);
+  background: linear-gradient(90deg, #2362FF 0%, #9F2CFF 100%);
   /* W3C */ }
 body a {
-  color: #0077ce; }
+  color: #003dd6; }
 body .page-title-holder {
   color: #FFFFFF; }
 body .page-title-wing-holder {
@@ -1221,7 +1224,8 @@ body #about-nav-button, body #blog-nav-button, body #reading-list-nav-button {
   color: #FFFFFF; }
 body #about-nav-button:hover, body #blog-nav-button:hover, body #reading-list-nav-button:hover {
   background-color: #FFFFFF;
-  color: #0077ce; }
+  border-color: #FFFFFF;
+  color: #003dd6; }
 body .site-footer {
   color: #FFFFFF; }
 body .site-footer-text {
@@ -1232,32 +1236,32 @@ body .site-footer a {
 body .site-footer a:hover {
   border-bottom-color: #FFFFFF; }
 body .post-meta a {
-  color: #0077ce; }
+  color: #003dd6; }
 body .post-meta a:hover {
-  border-bottom-color: #0077ce; }
+  border-bottom-color: #003dd6; }
 body .post-title a {
-  color: #0077ce; }
+  color: #003dd6; }
 body .post-title a:hover {
-  border-bottom-color: #0077ce; }
+  border-bottom-color: #003dd6; }
 body .read-more {
-  color: #0294ff; }
+  color: #0a50ff; }
 body .read-more:hover {
-  border-bottom-color: #0294ff; }
+  border-bottom-color: #0a50ff; }
 body .pagination .older-posts, body .pagination .newer-posts {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 body .pagination .older-posts:hover, body .pagination .newer-posts:hover {
   background-color: #FFFFFF;
-  color: #0077ce; }
+  color: #003dd6; }
 body .page-number {
   color: #FFFFFF;
   opacity: 0.8; }
 body .post-template .post-content a {
-  color: #0077ce; }
+  color: #003dd6; }
 body .post-template .post-signature .author-link-holder a {
-  color: #0077ce; }
+  color: #003dd6; }
 body .post-template .post-signature .author-link-holder a:hover {
-  border-bottom-color: #0077ce; }
+  border-bottom-color: #003dd6; }
 body .share-twitter {
   color: #55ACEE; }
 body .share-facebook {
@@ -1276,8 +1280,8 @@ body .image-attributions a {
 body .image-attributions a:hover {
   border-bottom-color: #888888; }
 body .reading-list-table a .reading-list-book-title {
-  color: #0077ce; }
+  color: #003dd6; }
 body .reading-list-table a .reading-list-book-author {
-  color: #0294ff; }
+  color: #0a50ff; }
 
 /*# sourceMappingURL=screen.css.map */

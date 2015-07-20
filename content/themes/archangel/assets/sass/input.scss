@@ -293,8 +293,9 @@ blockquote {
   border: 1px solid;
   border-radius: 4px;
   padding: 5px 12px;
-  transition: color 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear;
   box-sizing: border-box;
+  border-color: #FFFFFF;
 }
 
 #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
@@ -309,12 +310,14 @@ blockquote {
   padding: 4px 12px;
   border: 2px solid;
   font-weight: 400;
+  border-color: #FFFFFF;
 }
 
 .page-about #about-nav-button {
   padding: 4px 12px;
   border: 2px solid;
   font-weight: 400;
+  border-color: #FFFFFF;
 }
 
 .page-reading-list #reading-list-nav-button {
@@ -1585,6 +1588,7 @@ blockquote {
 
   #about-nav-button:hover, #blog-nav-button:hover, #reading-list-nav-button:hover {
     background-color: $wing-color;
+    border-color: $wing-color;
     color: $text-color;
   }
 
@@ -1754,8 +1758,8 @@ $light-text-sunrise-gradient: lighten($right-sunrise-gradient, 8%);
 $opacity-sunrise-gradient: 0.9;
 $lower-opacity-sunrise-gradient: 0.8;
 
-$left-chill-gradient: #1B9FFF;
-$right-chill-gradient: #B47EF9;
+$left-chill-gradient: #2362FF;
+$right-chill-gradient: #9F2CFF;
 $wing-chill-gradient: #FFFFFF;
 $text-chill-gradient: darken($left-chill-gradient, 15%);
 $light-text-chill-gradient: darken($left-chill-gradient, 5%);
