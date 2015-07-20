@@ -379,26 +379,53 @@ var _              = require('lodash'),
 
             // ### grunt-contrib-copy
             // Copy files into their correct locations as part of building assets, or creating release zips
-            copy: {
-                jquery: {
-                    cwd: 'core/client/bower_components/jquery/dist/',
-                    src: 'jquery.js',
-                    dest: 'core/built/public/',
-                    expand: true,
-                    nonull: true
+            // copy: {
+            //     jquery: {
+            //         cwd: 'core/client/bower_components/jquery/dist/',
+            //         src: 'jquery.js',
+            //         dest: 'core/built/public/',
+            //         expand: true,
+            //         nonull: true
+            //     },
+            //     release: {
+            //         files: [{
+            //             cwd: 'core/client/bower_components/jquery/dist/',
+            //             src: 'jquery.js',
+            //             dest: 'core/built/public/',
+            //             expand: true
+            //         }, {
+            //             expand: true,
+            //             src: buildGlob,
+            //             dest: '<%= paths.releaseBuild %>/'
+            //         }]
+            //     }
+            // },
+
+            // ### grunt-autoprefixer
+            // Add vendor prefixes to css
+            autoprefixer: {
+                options: {
+                    map: true, // Use and update the sourcemap
+                    browsers: ["last 2 versions", "> 1%", "Explorer 10"]
                 },
-                release: {
-                    files: [{
-                        cwd: 'core/client/bower_components/jquery/dist/',
-                        src: 'jquery.js',
-                        dest: 'core/built/public/',
-                        expand: true
-                    }, {
-                        expand: true,
-                        src: buildGlob,
-                        dest: '<%= paths.releaseBuild %>/'
-                    }]
+                single_file: {
+                    src: 'screen.css',
+                    dest: 'screen.css'
                 }
+            },
+
+            // ### grunt-contrib-cssmin
+            // Minify css
+            cssmin: {
+              target: {
+                files: [{
+                  expand: true,
+                  cwd: 'release/css',
+                  src: ['*.css', '!*.min.css'],
+                  dest: 'content/themes/archangel/assets/css',
+                  ext: '.min.css'
+                }]
+              }
             },
 
             // ### grunt-contrib-compress
@@ -416,24 +443,24 @@ var _              = require('lodash'),
 
             // ### grunt-contrib-uglify
             // Minify concatenated javascript files ready for production
-            uglify: {
-                prod: {
-                    options: {
-                        sourceMap: false
-                    },
-                    files: {
-                        'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
-                    }
-                },
-                release: {
-                    options: {
-                        sourceMap: false
-                    },
-                    files: {
-                        'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
-                    }
-                }
-            },
+            // uglify: {
+            //     prod: {
+            //         options: {
+            //             sourceMap: false
+            //         },
+            //         files: {
+            //             'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
+            //         }
+            //     },
+            //     release: {
+            //         options: {
+            //             sourceMap: false
+            //         },
+            //         files: {
+            //             'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
+            //         }
+            //     }
+            // },
 
             // ### grunt-update-submodules
             // Grunt task to update git submodules
@@ -454,49 +481,49 @@ var _              = require('lodash'),
         // ### Spawn Casper.js
         // Custom test runner for our Casper.js functional tests
         // This really ought to be refactored into a separate grunt task module
-        grunt.registerTask('spawnCasperJS', function (target) {
-            target = _.contains(['client', 'setup'], target) ? target + '/' : undefined;
+        // grunt.registerTask('spawnCasperJS', function (target) {
+        //     target = _.contains(['client', 'setup'], target) ? target + '/' : undefined;
 
-            var done = this.async(),
-                options = ['host', 'noPort', 'port', 'email', 'password'],
-                args = ['test']
-                    .concat(grunt.option('target') || target || ['client/'])
-                    .concat(['--includes=base.js', '--log-level=debug', '--port=2369']);
+        //     var done = this.async(),
+        //         options = ['host', 'noPort', 'port', 'email', 'password'],
+        //         args = ['test']
+        //             .concat(grunt.option('target') || target || ['client/'])
+        //             .concat(['--includes=base.js', '--log-level=debug', '--port=2369']);
 
-            // Forward parameters from grunt to casperjs
-            _.each(options, function processOption(option) {
-                if (grunt.option(option)) {
-                    args.push('--' + option + '=' + grunt.option(option));
-                }
-            });
+        //     // Forward parameters from grunt to casperjs
+        //     _.each(options, function processOption(option) {
+        //         if (grunt.option(option)) {
+        //             args.push('--' + option + '=' + grunt.option(option));
+        //         }
+        //     });
 
-            if (grunt.option('fail-fast')) {
-                args.push('--fail-fast');
-            }
+        //     if (grunt.option('fail-fast')) {
+        //         args.push('--fail-fast');
+        //     }
 
-            // Show concise logs in Travis as ours are getting too long
-            if (grunt.option('concise') || process.env.TRAVIS) {
-                args.push('--concise');
-            } else {
-                args.push('--verbose');
-            }
+        //     // Show concise logs in Travis as ours are getting too long
+        //     if (grunt.option('concise') || process.env.TRAVIS) {
+        //         args.push('--concise');
+        //     } else {
+        //         args.push('--verbose');
+        //     }
 
-            grunt.util.spawn({
-                cmd: 'casperjs',
-                args: args,
-                opts: {
-                    cwd: path.resolve('core/test/functional'),
-                    stdio: 'inherit'
-                }
-            }, function (error, result, code) {
-                /*jshint unused:false*/
-                if (error) {
-                    grunt.fail.fatal(result.stdout);
-                }
-                grunt.log.writeln(result.stdout);
-                done();
-            });
-        });
+        //     grunt.util.spawn({
+        //         cmd: 'casperjs',
+        //         args: args,
+        //         opts: {
+        //             cwd: path.resolve('core/test/functional'),
+        //             stdio: 'inherit'
+        //         }
+        //     }, function (error, result, code) {
+        //         /*jshint unused:false*/
+        //         if (error) {
+        //             grunt.fail.fatal(result.stdout);
+        //         }
+        //         grunt.log.writeln(result.stdout);
+        //         done();
+        //     });
+        // });
 
         // # Custom Tasks
 
@@ -919,7 +946,7 @@ var _              = require('lodash'),
             ' - Copy files to release-folder/#/#{version} directory\n' +
             ' - Clean out unnecessary files (travis, .git*, etc)\n' +
             ' - Zip files in release-folder to dist-folder/#{version} directory',
-            ['init', 'shell:ember:prod', 'uglify:release', 'clean:release',  'shell:shrinkwrap', 'copy:release', 'compress:release']);
+            ['init', 'autoprefixer', 'cssmin', 'clean:release',  'shell:shrinkwrap', 'copy:release', 'compress:release']);
     };
 
 // Export the configuration
