@@ -795,7 +795,7 @@ blockquote {
 }
 
 .reading-list-table {
-  margin: 0px auto 30px;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -1057,7 +1057,7 @@ blockquote {
 
   .reading-list-table .table-cell:nth-of-type(3n-2) {
     padding-right: 0;
-    width: 190px;
+    max-width: 320px;
   }
 
   .reading-list-table .table-header:nth-of-type(3n-2) {
