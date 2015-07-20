@@ -1757,8 +1757,8 @@ $lower-opacity-sunrise-gradient: 0.8;
 $left-chill-gradient: #1B9FFF;
 $right-chill-gradient: #B47EF9;
 $wing-chill-gradient: #FFFFFF;
-$text-chill-gradient: #6F4E99;
-$light-text-chill-gradient: darken($right-chill-gradient, 15%);
+$text-chill-gradient: darken($left-chill-gradient, 15%);
+$light-text-chill-gradient: darken($left-chill-gradient, 5%);
 $opacity-chill-gradient: 0.9;
 $lower-opacity-chill-gradient: 0.8;
 
@@ -1773,73 +1773,79 @@ $lower-opacity-lime-gradient: 0.8;
 $left-red-gradient: #FF6F32;
 $right-red-gradient: #BF0E00;
 $wing-red-gradient: #FFFFFF;
-$text-red-gradient: $right-red-gradient;
-$light-text-red-gradient: lighten($right-red-gradient, 8%);
+$text-red-gradient: darken($left-red-gradient, 13%);
+$light-text-red-gradient: $left-red-gradient;
 $opacity-red-gradient: 0.9;
 $lower-opacity-red-gradient: 0.8;
 
-body.gold {
-  @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
-}
+// body.gold {
+//   @include scheme($darkest-gold, $dark-gold, $medium-gold, $light-gold);
+// }
 
-body.red {
-  @include scheme($darkest-red, $dark-red, $medium-red, $light-red);
-}
+// body.red {
+//   @include scheme($darkest-red, $dark-red, $medium-red, $light-red);
+// }
 
-body.blue {
-  @include scheme($darkest-blue, $dark-blue, $medium-blue, $light-blue);
-}
+// body.blue {
+//   @include scheme($darkest-blue, $dark-blue, $medium-blue, $light-blue);
+// }
 
-body.purple {
-  @include scheme($darkest-purple, $dark-purple, $medium-purple, $light-purple);
-}
+// body.purple {
+//   @include scheme($darkest-purple, $dark-purple, $medium-purple, $light-purple);
+// }
 
-body.green {
-  @include scheme($darkest-green, $dark-green, $medium-green, $light-green);
-}
+// body.green {
+//   @include scheme($darkest-green, $dark-green, $medium-green, $light-green);
+// }
 
-body.orange {
-  @include scheme($darkest-orange, $dark-orange, $medium-orange, $light-orange);
-}
+// body.orange {
+//   @include scheme($darkest-orange, $dark-orange, $medium-orange, $light-orange);
+// }
 
-body.silver {
-  @include scheme($darkest-silver, $dark-silver, $medium-silver, $light-silver);
-}
+// body.silver {
+//   @include scheme($darkest-silver, $dark-silver, $medium-silver, $light-silver);
+// }
 
-body.pastel {
-  @include scheme($darkest-pastel, $dark-pastel, $medium-pastel, $light-pastel);
-}
+// body.pastel {
+//   @include scheme($darkest-pastel, $dark-pastel, $medium-pastel, $light-pastel);
+// }
 
-body.tropical {
-  @include scheme($darkest-tropical, $dark-tropical, $medium-tropical, $light-tropical);
-}
+// body.tropical {
+//   @include scheme($darkest-tropical, $dark-tropical, $medium-tropical, $light-tropical);
+// }
 
-body.navyred {
-  @include scheme($darkest-navyred, $dark-navyred, $medium-navyred, $light-navyred);
-}
+// body.navyred {
+//   @include scheme($darkest-navyred, $dark-navyred, $medium-navyred, $light-navyred);
+// }
 
-body.sunrise-gradient {
-  @include gradient-scheme($left-sunrise-gradient, $right-sunrise-gradient,
-    $wing-sunrise-gradient, $text-sunrise-gradient, $light-text-sunrise-gradient,
-    $opacity-sunrise-gradient, $lower-opacity-sunrise-gradient);
-}
+// body.sunrise-gradient {
+//   @include gradient-scheme($left-sunrise-gradient, $right-sunrise-gradient,
+//     $wing-sunrise-gradient, $text-sunrise-gradient, $light-text-sunrise-gradient,
+//     $opacity-sunrise-gradient, $lower-opacity-sunrise-gradient);
+// }
 
-body.chill-gradient {
+// body.chill-gradient {
+//   @include gradient-scheme($left-chill-gradient, $right-chill-gradient,
+//     $wing-chill-gradient, $text-chill-gradient, $light-text-chill-gradient,
+//     $opacity-chill-gradient, $lower-opacity-chill-gradient);
+// }
+
+// body.lime-gradient {
+//   @include gradient-scheme($left-lime-gradient, $right-lime-gradient,
+//     $wing-lime-gradient, $text-lime-gradient, $light-text-lime-gradient,
+//     $opacity-lime-gradient, $lower-opacity-lime-gradient);
+// }
+
+// body.red-gradient {
+//   @include gradient-scheme($left-red-gradient, $right-red-gradient,
+//     $wing-red-gradient, $text-red-gradient, $light-text-red-gradient,
+//     $opacity-red-gradient, $lower-opacity-red-gradient);
+// }
+
+body {
   @include gradient-scheme($left-chill-gradient, $right-chill-gradient,
     $wing-chill-gradient, $text-chill-gradient, $light-text-chill-gradient,
     $opacity-chill-gradient, $lower-opacity-chill-gradient);
-}
-
-body.lime-gradient {
-  @include gradient-scheme($left-lime-gradient, $right-lime-gradient,
-    $wing-lime-gradient, $text-lime-gradient, $light-text-lime-gradient,
-    $opacity-lime-gradient, $lower-opacity-lime-gradient);
-}
-
-body.red-gradient {
-  @include gradient-scheme($left-red-gradient, $right-red-gradient,
-    $wing-red-gradient, $text-red-gradient, $light-text-red-gradient,
-    $opacity-red-gradient, $lower-opacity-red-gradient);
 }
 
 
