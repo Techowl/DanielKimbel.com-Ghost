@@ -3,6 +3,7 @@
 
 # Unwanted from Grunt
 core/client
+.dist
 
 # Config files
 config.js

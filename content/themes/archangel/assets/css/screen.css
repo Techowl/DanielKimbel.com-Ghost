@@ -720,19 +720,17 @@ blockquote {
 .about-card h2 {
   font-size: 30px;
   margin: 0 auto 20px;
-  -webkit-box-flex: 100%;
-  -webkit-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
   padding-bottom: 10px;
   border-bottom: 1px solid #333;
   text-align: center; }
 
-.about-card.vertical-card h2 {
+.about-card.horizontal-card h2 {
   -webkit-box-flex: 100%;
   -webkit-flex: 100%;
       -ms-flex: 100%;
-          flex: 100%;
+          flex: 100%; }
+
+.about-card.vertical-card h2 {
   width: 100%; }
 
 .about-card .icon {
@@ -1447,4 +1445,5 @@ body .reading-list-table a .reading-list-book-title {
   color: #003dd6; }
 body .reading-list-table a .reading-list-book-author {
   color: #0a50ff; }
+
 /*# sourceMappingURL=screen.css.map */
