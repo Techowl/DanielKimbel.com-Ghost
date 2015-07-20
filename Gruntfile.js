@@ -26,16 +26,16 @@ var _              = require('lodash'),
     // This is read from the `.npmignore` file and all patterns are inverted as the `.npmignore`
     // file defines what to ignore, whereas we want to define what to include.
     buildGlob = (function () {
-        /*jslint stupid:true */
-        return fs.readFileSync('.npmignore', {encoding: 'utf8'}).split('\n').map(function (pattern) {
-            if (pattern[0] === '!') {
-                return pattern.substr(1);
-            }
-            return '!' + pattern;
-        }).filter(function (pattern) {
-            // Remove empty patterns
-            return pattern !== '!';
-        });
+        // /*jslint stupid:true */
+        // return fs.readFileSync('.npmignore', {encoding: 'utf8'}).split('\n').map(function (pattern) {
+        //     if (pattern[0] === '!') {
+        //         return pattern.substr(1);
+        //     }
+        //     return '!' + pattern;
+        // }).filter(function (pattern) {
+        //     // Remove empty patterns
+        //     return pattern !== '!';
+        // });
     }()),
 
     // ## Grunt configuration
@@ -379,7 +379,7 @@ var _              = require('lodash'),
 
             // ### grunt-contrib-copy
             // Copy files into their correct locations as part of building assets, or creating release zips
-            // copy: {
+            copy: {
             //     jquery: {
             //         cwd: 'core/client/bower_components/jquery/dist/',
             //         src: 'jquery.js',
@@ -387,19 +387,14 @@ var _              = require('lodash'),
             //         expand: true,
             //         nonull: true
             //     },
-            //     release: {
-            //         files: [{
-            //             cwd: 'core/client/bower_components/jquery/dist/',
-            //             src: 'jquery.js',
-            //             dest: 'core/built/public/',
-            //             expand: true
-            //         }, {
-            //             expand: true,
-            //             src: buildGlob,
-            //             dest: '<%= paths.releaseBuild %>/'
-            //         }]
-            //     }
-            // },
+                release: {
+                    files: [{
+                        expand: true,
+                        src: buildGlob,
+                        dest: '<%= paths.releaseBuild %>/'
+                    }]
+                }
+            },
 
             // ### grunt-autoprefixer
             // Add vendor prefixes to css
@@ -409,23 +404,21 @@ var _              = require('lodash'),
                     browsers: ["last 2 versions", "> 1%", "Explorer 10"]
                 },
                 single_file: {
-                    src: 'screen.css',
-                    dest: 'screen.css'
+                    src: 'content/themes/archangel/assets/css/screen.css',
+                    dest: 'content/themes/archangel/assets/css/screen.css'
                 }
             },
 
             // ### grunt-contrib-cssmin
             // Minify css
             cssmin: {
-              target: {
-                files: [{
-                  expand: true,
-                  cwd: 'release/css',
-                  src: ['*.css', '!*.min.css'],
-                  dest: 'content/themes/archangel/assets/css',
-                  ext: '.min.css'
-                }]
-              }
+                target: {
+                    files: [{
+                      src: 'content/themes/archangel/assets/css/screen.css',
+                      dest: 'content/themes/archangel/assets/css/screen.min.css',
+                      ext: '.min.css'
+                    }]
+                }
             },
 
             // ### grunt-contrib-compress
@@ -900,26 +893,26 @@ var _              = require('lodash'),
         // `bower` does have some quirks, such as not running as root. If you have problems please try running
         // `grunt init --verbose` to see if there are any errors.
         grunt.registerTask('init', 'Prepare the project for development',
-            ['shell:ember:init', 'shell:bower', 'update_submodules', 'assets', 'default']);
+            ['update_submodules', 'assets']);
 
         // ### Basic Asset Building
         // Builds and moves necessary client assets. Prod additionally builds the ember app.
         grunt.registerTask('assets', 'Basic asset building & moving',
-            ['clean:tmp', 'buildAboutPage', 'copy:jquery']);
+            ['clean:tmp', 'buildAboutPage']);
 
         // ### Default asset build
         // `grunt` - default grunt task
         //
         // Build assets and dev version of the admin app.
-        grunt.registerTask('default', 'Build JS & templates for development',
-            ['shell:ember:dev']);
+        // grunt.registerTask('default', 'Build JS & templates for development',
+        //     []);
 
         // ### Production assets
         // `grunt prod` - will build the minified assets used in production.
         //
         // It is otherwise the same as running `grunt`, but is only used when running Ghost in the `production` env.
-        grunt.registerTask('prod', 'Build JS & templates for production',
-            ['shell:ember:prod', 'uglify:prod', 'master-warn']);
+        // grunt.registerTask('prod', 'Build JS & templates for production',
+        //     []);
 
         // ### Live reload
         // `grunt dev` - build assets on the fly whilst developing
@@ -932,8 +925,8 @@ var _              = require('lodash'),
         // frontend code changes.
         //
         // Note that the current implementation of watch only works with casper, not other themes.
-        grunt.registerTask('dev', 'Dev Mode; watch files and restart server on changes',
-           ['bgShell:ember', 'express:dev', 'watch']);
+        // grunt.registerTask('dev', 'Dev Mode; watch files and restart server on changes',
+        //    ['bgShell:ember', 'express:dev', 'watch']);
 
         // ### Release
         // Run `grunt release` to create a Ghost release zip file.
@@ -946,7 +939,7 @@ var _              = require('lodash'),
             ' - Copy files to release-folder/#/#{version} directory\n' +
             ' - Clean out unnecessary files (travis, .git*, etc)\n' +
             ' - Zip files in release-folder to dist-folder/#{version} directory',
-            ['init', 'autoprefixer', 'cssmin', 'clean:release',  'shell:shrinkwrap', 'copy:release', 'compress:release']);
+            ['init', 'autoprefixer', 'cssmin', 'clean:release', 'shell:shrinkwrap', 'compress:release']);
     };
 
 // Export the configuration
