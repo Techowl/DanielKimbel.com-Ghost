@@ -1,6 +1,9 @@
 # Sass files
 .sass-cache/
 
+# Unwanted from Grunt
+core/client
+
 # Config files
 config.js
 config.example.js
