@@ -334,16 +334,28 @@ blockquote {
 
 .site-footer {
   margin: 0 auto;
+}
+
+.upper-footer {
+  padding-top: 28px;
+  text-align: center;
+}
+
+.upper-footer > * {
+  display: inline-block;
+}
+
+.lower-footer {
   padding: 28px 0;
   text-align: center;
 }
 
-.site-footer, .post-meta {
+.lower-footer, .post-meta {
   color: #666;
   font-size: 14px;
 }
 
-.site-footer a, .post-meta a {
+.lower-footer a, .post-meta a {
   border-bottom: 1px solid transparent;
   transition: border 0.2s linear;
   box-sizing: border-box;
@@ -351,7 +363,7 @@ blockquote {
   height: 19px;
 }
 
-.site-footer a:hover, .post-meta a:hover {
+.lower-footer a:hover, .post-meta a:hover {
   border-bottom: 1px solid;
 }
 
@@ -442,7 +454,7 @@ blockquote {
   border-bottom: 1px solid;
 }
 
-.pagination {
+.pagination, .upper-footer {
   position: relative;
   text-align: center;
   height: 34px;
@@ -453,11 +465,18 @@ blockquote {
   margin-top: 6px;
 }
 
-.pagination .older-posts, .pagination .newer-posts {
+.pagination .older-posts,
+.pagination .newer-posts,
+.upper-footer a,
+.upper-footer button {
   padding: 5px 12px;
   border: 1px solid;
+  font-weight: 300;
   border-radius: 4px;
   transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.pagination .older-posts, .pagination .newer-posts {
   position: absolute;
 }
 
@@ -469,8 +488,11 @@ blockquote {
   left: 0;
 }
 
-.pagination .older-posts:hover, .pagination .newer-posts:hover {
-  color: #FFF;
+.pagination .older-posts:hover,
+.pagination .newer-posts:hover,
+.upper-footer a:hover,
+.upper-footer button:hover {
+  color: #FFFFFF;
 }
 
 
@@ -962,7 +984,7 @@ blockquote {
     font-size: 14px;
   }
 
-  .site-footer {
+  .lower-footer {
     padding: 24px 0;
   }
 
@@ -1004,7 +1026,7 @@ blockquote {
     font-size: 17px;
   }
 
-  .pagination {
+  .pagination, .upper-footer {
     font-size: 14px;
   }
 
@@ -1192,16 +1214,15 @@ blockquote {
     padding: 5px 6px;
   }
 
-  .site-footer {
+  .lower-footer {
     padding: 20px 0;
-    // width: 75%;
   }
 
-  .site-footer, .post-meta {
+  .lower-footer, .post-meta {
     font-size: 12px;
   }
 
-  .site-footer a, .post-meta a {
+  .lower-footer a, .post-meta a {
     height: 16px;
   }
 
@@ -1244,7 +1265,7 @@ blockquote {
     height: 20px;
   }
 
-  .pagination {
+  .pagination, .upper-footer {
     font-size: 13px;
     height: 30px;
   }
@@ -1254,7 +1275,10 @@ blockquote {
     font-size: 11px;
   }
 
-  .pagination .older-posts, .pagination .newer-posts {
+  .pagination .older-posts,
+  .pagination .newer-posts,
+  .upper-footer a,
+  .upper-footer button {
     padding: 5px 0;
     width: 100px;
   }
@@ -1437,11 +1461,11 @@ blockquote {
     color: #FFFFFF;
   }
 
-  .site-footer a, .post-meta a {
+  .lower-footer a, .post-meta a {
     color: $darkest-color;
   }
 
-  .site-footer a:hover, .post-meta a:hover {
+  .lower-footer a:hover, .post-meta a:hover {
     border-bottom-color: $darkest-color;
   }
 
@@ -1457,11 +1481,17 @@ blockquote {
     border-bottom-color: $dark-color;
   }
 
-  .pagination .older-posts, .pagination .newer-posts {
+  .pagination .older-posts,
+  .pagination .newer-posts,
+  .upper-footer a,
+  .upper-footer button {
     border-color: $dark-color;
   }
 
-  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+  .pagination .older-posts:hover,
+  .pagination .newer-posts:hover,
+  .upper-footer a:hover,
+  .upper-footer button:hover {
     background-color: $dark-color;
   }
 
@@ -1594,7 +1624,7 @@ blockquote {
     color: $text-color;
   }
 
-  .site-footer {
+  .lower-footer {
     color: $wing-color;
   }
 
@@ -1602,12 +1632,12 @@ blockquote {
     opacity: $lower-opacity;
   }
 
-  .site-footer a {
+  .lower-footer a {
     opacity: 1;
     color: $wing-color;
   }
 
-  .site-footer a:hover {
+  .lower-footer a:hover {
     border-bottom-color: $wing-color;
   }
 
@@ -1635,12 +1665,19 @@ blockquote {
     border-bottom-color: $light-text-color;
   }
 
-  .pagination .older-posts, .pagination .newer-posts {
+  .pagination .older-posts,
+  .pagination .newer-posts,
+  .upper-footer a,
+  .upper-footer button {
     color: $wing-color;
     border-color: $wing-color;
+    background-color: transparent;
   }
 
-  .pagination .older-posts:hover, .pagination .newer-posts:hover {
+  .pagination .older-posts:hover,
+  .pagination .newer-posts:hover,
+  .upper-footer a:hover,
+  .upper-footer button:hover {
     background-color: $wing-color;
     color: $text-color;
   }
