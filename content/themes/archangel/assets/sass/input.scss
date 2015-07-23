@@ -1318,6 +1318,9 @@ blockquote {
 
   .pagination, .upper-footer {
     font-size: 13px;
+  }
+
+  .pagination {
     height: 30px;
   }
 
@@ -1328,10 +1331,35 @@ blockquote {
 
   .pagination .older-posts,
   .pagination .newer-posts,
-  .upper-footer a,
-  .upper-footer button {
+  .upper-footer a {
     padding: 5px 0;
     width: 100px;
+  }
+
+  .upper-footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+  .upper-footer > * {
+    display: block;
+  }
+
+  .upper-footer .rss-btn {
+    margin: 0 auto;
+    order: -1;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .upper-footer form {
+    margin-right: 0;
   }
 
   .post-footer {
