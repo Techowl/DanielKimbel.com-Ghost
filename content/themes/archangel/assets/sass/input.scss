@@ -380,11 +380,9 @@ blockquote {
   display: border-box;
   border-radius: 4px 0 0 4px;
   border: 1px solid;
-  border-color: #FFFFFF;
   position: relative;
   left: 1px;
   font-weight: 300;
-  color: #FFFFFF;
 }
 
 .upper-footer button[type="submit"] {
@@ -397,27 +395,19 @@ blockquote {
 }
 
 ::-webkit-input-placeholder {
-   color: #FFFFFF;
    font-weight: 300;
-   opacity: 0.3;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #FFFFFF;
    font-weight: 300;
-   opacity: 0.3;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #FFFFFF;
    font-weight: 300;
-   opacity: 0.3;
 }
 
 :-ms-input-placeholder {
-   color: #FFFFFF;
    font-weight: 300;
-   opacity: 0.3;
 }
 
 .lower-footer {
@@ -561,13 +551,6 @@ blockquote {
 
 .pagination .newer-posts {
   left: 0;
-}
-
-.pagination .older-posts:hover,
-.pagination .newer-posts:hover,
-.upper-footer a:hover,
-.upper-footer button:hover {
-  color: #FFFFFF;
 }
 
 
@@ -1727,6 +1710,31 @@ blockquote {
     background-color: $wing-color;
     border-color: $wing-color;
     color: $text-color;
+  }
+
+  .upper-footer input[type="email"] {
+    border-color: $wing-color;
+    color: $wing-color;
+  }
+
+  ::-webkit-input-placeholder {
+     color: $wing-color;
+     opacity: 0.3;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $wing-color;
+     opacity: 0.3;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $wing-color;
+     opacity: 0.3;
+  }
+
+  :-ms-input-placeholder {
+     color: $wing-color;
+     opacity: 0.3;
   }
 
   .lower-footer {

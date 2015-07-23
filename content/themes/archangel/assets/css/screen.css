@@ -399,11 +399,9 @@ blockquote {
   display: border-box;
   border-radius: 4px 0 0 4px;
   border: 1px solid;
-  border-color: #FFFFFF;
   position: relative;
   left: 1px;
-  font-weight: 300;
-  color: #FFFFFF; }
+  font-weight: 300; }
 
 .upper-footer button[type="submit"] {
   border-radius: 0 4px 4px 0; }
@@ -413,26 +411,18 @@ blockquote {
   bottom: 1px; }
 
 ::-webkit-input-placeholder {
-  color: #FFFFFF;
-  font-weight: 300;
-  opacity: 0.3; }
+  font-weight: 300; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #FFFFFF;
-  font-weight: 300;
-  opacity: 0.3; }
+  font-weight: 300; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #FFFFFF;
-  font-weight: 300;
-  opacity: 0.3; }
+  font-weight: 300; }
 
 :-ms-input-placeholder {
-  color: #FFFFFF;
-  font-weight: 300;
-  opacity: 0.3; }
+  font-weight: 300; }
 
 .lower-footer {
   padding: 28px 0;
@@ -547,12 +537,6 @@ blockquote {
 
 .pagination .newer-posts {
   left: 0; }
-
-.pagination .older-posts:hover,
-.pagination .newer-posts:hover,
-.upper-footer a:hover,
-.upper-footer button:hover {
-  color: #FFFFFF; }
 
 /* ==========================================================================
    3. Single Post - When you click on an individual post
@@ -1247,7 +1231,7 @@ blockquote {
     margin: 0 8px 15px; }
 
   .image-attributions-holder {
-    padding: 10px 0 10px; }
+    padding: 10px 0; }
 
   .reading-list-description {
     font-size: 16px; }
@@ -1337,6 +1321,23 @@ body #about-nav-button:hover, body #blog-nav-button:hover, body #reading-list-na
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #003dd6; }
+body .upper-footer input[type="email"] {
+  border-color: #FFFFFF;
+  color: #FFFFFF; }
+body ::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3; }
+body :-moz-placeholder {
+  /* Firefox 18- */
+  color: #FFFFFF;
+  opacity: 0.3; }
+body ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FFFFFF;
+  opacity: 0.3; }
+body :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3; }
 body .lower-footer {
   color: #FFFFFF; }
 body .site-footer-text {
