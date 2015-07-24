@@ -383,7 +383,7 @@ blockquote {
   margin: 0 auto; }
 
 .upper-footer {
-  padding-top: 28px;
+  padding-top: 34px;
   text-align: center; }
 
 .upper-footer > * {
@@ -461,7 +461,8 @@ blockquote {
   padding-bottom: 28px; }
 
 .lower-pagination-holder {
-  padding-top: 28px; }
+  padding-top: 28px;
+  margin-bottom: -8px; }
 
 .post-summary {
   margin: 0 auto;
@@ -934,8 +935,12 @@ blockquote {
   .upper-pagination-holder {
     padding-bottom: 16px; }
 
+  .upper-footer {
+    padding-top: 30px; }
+
   .lower-pagination-holder {
-    padding-top: 16px; }
+    padding-top: 24px;
+    margin-bottom: -4px; }
 
   .post-summary {
     padding-bottom: 30px; }
@@ -1112,8 +1117,12 @@ blockquote {
   .upper-pagination-holder {
     padding-bottom: 14px; }
 
+  .upper-footer {
+    padding-top: 26px; }
+
   .lower-pagination-holder {
-    padding-top: 14px; }
+    padding-top: 22px;
+    margin-bottom: 0; }
 
   .post-summary {
     margin: 0 auto;
