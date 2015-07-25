@@ -104,7 +104,7 @@ $left-chill-gradient: #2362FF;
 $right-chill-gradient: #9F2CFF;
 $wing-chill-gradient: #FFFFFF;
 $text-chill-gradient: darken($left-chill-gradient, 15%);
-$light-text-chill-gradient: darken($left-chill-gradient, 5%);
+$light-text-chill-gradient: lighten($left-chill-gradient, 10%);
 $opacity-chill-gradient: 0.9;
 $lower-opacity-chill-gradient: 0.8;
 
@@ -900,7 +900,7 @@ blockquote {
 }
 
 .reading-list-table .table-cell {
-  padding: 15px 0;
+  padding: 20px 0 15px;
 }
 
 .reading-list-table .table-header {
