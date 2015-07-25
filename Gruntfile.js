@@ -436,24 +436,16 @@ var _              = require('lodash'),
 
             // ### grunt-contrib-uglify
             // Minify concatenated javascript files ready for production
-            // uglify: {
-            //     prod: {
-            //         options: {
-            //             sourceMap: false
-            //         },
-            //         files: {
-            //             'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
-            //         }
-            //     },
-            //     release: {
-            //         options: {
-            //             sourceMap: false
-            //         },
-            //         files: {
-            //             'core/built/public/jquery.min.js': 'core/built/public/jquery.js'
-            //         }
-            //     }
-            // },
+            uglify: {
+                prod: {
+                    options: {
+                        sourceMap: false
+                    },
+                    files: {
+                        'content/themes/archangel/assets/js/index.min.js': 'content/themes/archangel/assets/js/index.js'
+                    }
+                }
+            },
 
             // ### grunt-update-submodules
             // Grunt task to update git submodules
@@ -911,8 +903,8 @@ var _              = require('lodash'),
         // `grunt prod` - will build the minified assets used in production.
         //
         // It is otherwise the same as running `grunt`, but is only used when running Ghost in the `production` env.
-        // grunt.registerTask('prod', 'Build JS & templates for production',
-        //     []);
+        grunt.registerTask('prod', 'Build JS & templates for production',
+            ['init', 'autoprefixer', 'cssmin', 'uglify']);
 
         // ### Live reload
         // `grunt dev` - build assets on the fly whilst developing
