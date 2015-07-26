@@ -904,7 +904,7 @@ var _              = require('lodash'),
         //
         // It is otherwise the same as running `grunt`, but is only used when running Ghost in the `production` env.
         grunt.registerTask('prod', 'Build JS & templates for production',
-            ['init', 'autoprefixer', 'cssmin', 'uglify']);
+            ['init', 'autoprefixer', 'cssmin']);
 
         // ### Live reload
         // `grunt dev` - build assets on the fly whilst developing
