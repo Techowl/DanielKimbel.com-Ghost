@@ -161,6 +161,7 @@ blockquote {
 }
 
 .main-header {
+  margin: 0 auto;
   text-align: center;
   padding: 17px 0 28px;
 }
@@ -741,7 +742,7 @@ blockquote {
 }
 
 .about-card {
-  border: 2px solid #333;
+  border: 1px solid #999;
   border-radius: 7px;
   padding: 10px;
   background: #FFFFFF;
@@ -761,7 +762,7 @@ blockquote {
   font-size: 30px;
   margin: 0 auto 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #999;
   text-align: center;
 }
 
@@ -1711,15 +1712,6 @@ blockquote {
 
 @mixin gradient-scheme($left-color, $right-color, $wing-color,
   $text-color, $light-text-color, $opacity, $lower-opacity) {
-
-  .main-header, .site-footer, .pagination-holder {
-    background: $left-color; /* Old browsers */
-    background: -moz-linear-gradient(90deg, $left-color 0%,  $right-color 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(90deg, $left-color 0%, $right-color 100%); /* IE10+ */
-    background: linear-gradient(90deg, $left-color 0%, $right-color 100%); /* W3C */
-  }
 
   a {
     color: $text-color;
