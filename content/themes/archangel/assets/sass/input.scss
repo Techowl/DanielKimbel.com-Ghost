@@ -502,6 +502,10 @@ blockquote {
   background: #F6F6F6;
 }
 
+.post-summary:nth-of-type(even) {
+  background: #FFFFFF;
+}
+
 .post-summary-inner {
   padding: 0;
 }
@@ -534,6 +538,10 @@ blockquote {
 
 .post-excerpt, .post-content, .post-signature {
   font-size: 18px;
+}
+
+.post-content {
+  line-height: 30px;
 }
 
 .post-date {
@@ -1145,6 +1153,10 @@ blockquote {
     font-size: 17px;
   }
 
+  .post-content {
+    line-height: 28px;
+  }
+
   .pagination, .upper-footer {
     font-size: 14px;
   }
@@ -1393,6 +1405,10 @@ blockquote {
 
   .post-excerpt, .post-content, .post-signature {
     font-size: 15px;
+  }
+
+  .post-content {
+    line-height: 24px;
   }
 
   .read-more {
